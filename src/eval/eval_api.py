@@ -218,9 +218,7 @@ Response example:
 <reasoning goes here>
 1
 """
-        #try:
-        if True:
-
+        try:
             if 'rag' in self.modelname:
                 cr = self.indexer_loaded.query_image(_prev, top_k=5)
                 if self.blind:
@@ -268,9 +266,9 @@ Response example:
                 results[1] = datapoint['justification_shuffle'][results[1]]
 
             return [{'results': results, 'correct': correct}, datapoint['id']]
-        # except Exception as e:
-        #     print(f"Error: {e}, skipping.")
-        #     return [{'results': [4, 4], 'correct': correct}, datapoint['id']]
+        except Exception as e:
+            print(f"Error: {e}, skipping.")
+            return [{'results': [4, 4], 'correct': correct}, datapoint['id']]
 
 
     def pick_sensible(self, datapoint):
