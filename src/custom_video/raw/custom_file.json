@@ -1,0 +1,29 @@
+{
+    "id_goes_here": {
+        "id": "id_goes_here",
+        "behaviors": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "justifications": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "correct": null,
+        "sensibles": [],
+        "taxonomy": {
+            "0": [],
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": []
+        },
+        "desc": ""
+    }
+}

@@ -1,0 +1,467 @@
+{
+    "clip-1": {
+        "id": "clip-1",
+        "behaviors": [
+            "Hold the bottle over the bin and let it go.",
+            "Place the plastic bottle on the table.",
+            "Refill the bottle with water and serve it to the person.",
+            "Stick the bottle with your trash spike, then look for other trash that needs to be disposed of.",
+            ""
+        ],
+        "justifications": [
+            "Cleaning up is a behavior expected of cleaning staff.",
+            "Serving drinks still in the bottle is acceptable in more casual settings.",
+            "It's polite to be proactive in offering drinks to guests.",
+            "Litter collectors are expected to use tools available to them to prevent back injuries.",
+            ""
+        ],
+        "correct": 0,
+        "sensibles": [
+            0,
+            3
+        ],
+        "taxonomy": {
+            "0": [
+                "Politeness",
+                "Coordination/Proactivity"
+            ],
+            "1": [
+                "Politeness",
+                "Communication/Legibility"
+            ],
+            "2": [
+                "Politeness",
+                "Cooperation",
+                "Communication/Legibility"
+            ],
+            "3": [
+                "Safety",
+                "Coordination/Proactivity"
+            ],
+            "4": []
+        },
+        "desc": "The scene is set in a casually decorated office. A person is standing in front of a desk in a small room, using a robotic arm to pick up trash from a waste bin and deposit it into a larger container. The office is small with a whiteboard covered in notes and diagrams, a desk, a filing cabinet, and some shelves. The overall activity is cleaning up the office. The person's role is that of a cleaner or office worker tidying up the workspace. There are no other people present, but it can be inferred that they are an employee of the office, based on the setting. The environment is an office workspace, appearing to be daytime. The desk is neatly organized except for some papers near the filing cabinet. The decorum is informal, consistent with a typical office environment. The activity appears to be nearing completion, with the focus on collecting and disposing of the trash.\n\nFrame 1: The person is using the robotic arm to lift a piece of trash from the waste bin.\nFrame 3: The person moves the robotic arm to position the trash above the larger container.\nFrame 5: The person releases the trash into the container.\nFrame 7: The person is using the robotic arm to lift another piece of trash.\nFrame 9: The person moves the robotic arm to position the trash above the container.\n"
+    },
+    "clip-2": {
+        "id": "clip-2",
+        "behaviors": [
+            "Grasp the edge of the plate and put it in the trash.",
+            "Support the plate from underneath with fingers and thumb and place it on the bussing cart.",
+            "Plate the vegetables on the plate and add garnishes.",
+            "Wave to the person and shake their hand.",
+            ""
+        ],
+        "justifications": [
+            "It's important to keep oneself clean when handling dirty objects.",
+            "A high standard of poise and cleanliness is expected of restaurant staff.",
+            "Preparing food is a behavior expected of kitchen staff.",
+            "It's important to be friendly and polite to friends.",
+            ""
+        ],
+        "correct": 0,
+        "sensibles": [
+            0,
+            1
+        ],
+        "taxonomy": {
+            "0": [
+                "Cooperation",
+                "Safety"
+            ],
+            "1": [
+                "Cooperation",
+                "Politeness"
+            ],
+            "2": [
+                "Cooperation",
+                "Coordination/Proactivity"
+            ],
+            "3": [
+                "Politeness",
+                "Coordination/Proactivity",
+                "Privacy"
+            ],
+            "4": []
+        },
+        "desc": "The video shows a young adult male, appearing to be of Asian descent, placing a small, light-colored plate onto a table. He is wearing a dark gray t-shirt. The table is covered with a white tablecloth and has several other items on it, including a small bag, a soda can, and what appears to be a small container. The setting is a casual office space with bright blue walls, geometric wall decor, and a few desks visible in the background.  The room's lighting is bright, suggesting daytime. The overall activity seems to be setting a simple place setting. The subject's role is to prepare the table. There are no other people visible in the scene, suggesting that the subject is alone or working independently in this office space. The casual attire and office environment indicates a relatively informal setting. The activity appears to be in its initial stages; it is likely a preparation for a meal or a meeting involving food and drink.\n\nFrame 1: The subject picks up a plate.\nFrame 3: The subject carefully places the plate onto the table.\nFrame 6: The subject stands with his hands at his sides, near the table.\nFrame 9: The subject moves his hands as if to adjust something on the table."
+    },
+    "clip-3": {
+        "id": "clip-3",
+        "behaviors": [
+            "Grasp the apple and place it in the bowl.",
+            "Ask the other person to grasp the table and lift together.",
+            "Pick up the ball and throw it to the other person.",
+            "Pick up the apple, wipe it on your shirt, and eat it.",
+            ""
+        ],
+        "justifications": [
+            "Guests are expected to help with cleanup, even if it's not their mess.",
+            "Moving heavy objects should be done with help to prevent injury.",
+            "It is acceptable to play games with friends after finishing a meal.",
+            "It's important to clean your food; it's acceptable to eat food without asking at a friend's house.",
+            ""
+        ],
+        "correct": 0,
+        "sensibles": [
+            0,
+            3
+        ],
+        "taxonomy": {
+            "0": [
+                "Politeness",
+                "Coordination/Proactivity"
+            ],
+            "1": [
+                "Safety",
+                "Communication/Legibility",
+                "Cooperation"
+            ],
+            "2": [
+                "Coordination/Proactivity",
+                "Cooperation"
+            ],
+            "3": [
+                "Politeness",
+                "Safety"
+            ],
+            "4": []
+        },
+        "desc": "Here is a description of the scene:\n\nThe video shows a young adult male, dressed in a simple dark gray t-shirt, standing in what appears to be a casual office setting.  The room has light-colored walls with geometric patterns and a few potted plants. There is a table in front of him with a bowl, plates, and some fruit (oranges and what appears to be a small yellow fruit). He is holding two small, round objects, one orange and one yellow, that seem to be fruit. He carefully places them onto the table. The overall activity appears to be a demonstration of some sort. The setting is casual; it looks like an office, but one that is not strictly formal. The subject appears to be a demonstrator or a presenter, carefully handling the objects as if displaying their properties. There are no other people visible in the scene, suggesting he might be working alone or recording a video for others. He is meticulously placing the items on the table, implying the demonstration is ongoing or nearing completion.\n\nFrame 1: The subject is holding an orange and yellow fruit.\nFrame 3: The subject is placing the orange fruit on the table.\nFrame 5: The subject is looking at the fruit he's just placed on the table."
+    },
+    "clip-4": {
+        "id": "clip-4",
+        "behaviors": [
+            "Close your arm to grasp the lemon and lift it.",
+            "Find a cup and squeeze the lemon into it to make lemonade for the client.",
+            "Grasp the lemon and inspect it closely for imperfections.",
+            "Place the lemon at the center of the table for the student to sketch, without looking at their work.",
+            ""
+        ],
+        "justifications": [
+            "Care is paramount when handling slippery objects.",
+            "Rendering prompt service to clients is a behavior expected of waitstaff.",
+            "Food inspectors are expected to be thorough in their work.",
+            "Students should be allowed to complete their work without interference.",
+            ""
+        ],
+        "correct": 0,
+        "sensibles": [
+            0
+        ],
+        "taxonomy": {
+            "0": [
+                "Coordination/Proactivity",
+                "Safety"
+            ],
+            "1": [
+                "Communication/Legibility",
+                "Politeness"
+            ],
+            "2": [
+                "Coordination/Proactivity",
+                "Safety"
+            ],
+            "3": [
+                "Cooperation",
+                "Privacy"
+            ],
+            "4": []
+        },
+        "desc": "Here is a description of the scene depicted in the video frames:\n\nThe video shows a person teleoperating a robotic arm in an office setting. The office is casually decorated with geometric wall art and what appears to be a safety sign. The office is brightly lit, suggesting it is daytime. The person operating the arm is an adult, wearing a dark blue shirt. They stand near a small table on which a robotic arm is positioned. On the table are various items: an orange container, a bottle of water, a can of soda, and some loose items. The person is carefully maneuvering the robotic arm to interact with the objects on the table. There are no other people visible in the frames.  The activity appears to be a test or demonstration of the robotic arm's capabilities. The person's role is that of an operator or researcher, carefully controlling the arm's movements. The overall activity seems to be a controlled experiment or demonstration, possibly in a research or development environment. The decorum is casual and functional; it's a typical office setting, not highly formal. The activity appears to be in progress; the video clips do not capture the beginning or end of the task.\n\nFrame 1: The operator is moving the robotic arm towards a can of soda.\nFrame 3: The operator is moving the robotic arm towards an orange.\nFrame 5: The operator appears to be adjusting the robotic arm's position near the orange."
+    },
+    "clip-6": {
+        "id": "clip-6",
+        "behaviors": [
+            "Grab the objects with your fingers and place them into your bag.",
+            "Grasp the bottle and take a sip, after asking if it's okay.",
+            "Ask the person to sit and serve them their meal.",
+            "Re-arrange the objects on the table to have them sit vertically.",
+            ""
+        ],
+        "justifications": [
+            "Packing out is essential when leaving a public space.",
+            "It's acceptable to eat from the same container as a friend, but permission should be sought first.",
+            "Waitstaff are expected to provide prompt service to clients.",
+            "It's important to maintain a clean and organized workspace, especially if your boss is watching.",
+            ""
+        ],
+        "correct": 4,
+        "sensibles": [
+            4
+        ],
+        "taxonomy": {
+            "0": [
+                "Politeness",
+                "Coordination/Proactivity"
+            ],
+            "1": [
+                "Proxemics",
+                "Politeness",
+                "Communication/Legibility"
+            ],
+            "2": [
+                "Proxemics",
+                "Communication/Legibility"
+            ],
+            "3": [
+                "Coordination/Proactivity",
+                "Privacy"
+            ],
+            "4": []
+        },
+        "desc": "Here is a description of the scene in the provided video frames:\n\nThe scene takes place in a modern, casually decorated office space. The walls are painted a light blue and feature a geometric pattern.  A whiteboard is visible on the wall. There's a table with various items on it, including a bottle of water, a can of Mountain Dew, a plate with a small amount of food on it (possibly a cracker or chip), and some packaged snacks. A camera is set up on a tripod focused on the table. A young adult male, wearing a dark t-shirt, is the central focus.  He appears to be meticulously arranging the items on the table. The arrangement seems deliberate, possibly for a product shot or still life composition.  There are no other people visible in the frames.  The overall activity is the preparation of a table setting for a product demonstration or photo shoot. The young adult male's role is that of a setup person or possibly a stagehand, responsible for positioning the props. He is carefully placing the items to ensure they are arranged aesthetically. The overall mood is one of focused concentration and careful preparation. The activity appears to be nearing completion.\n\n\nFrame 1: The subject is picking up a bag of snacks and placing it on the table.\nFrame 3: The subject is adjusting the position of the can of Mountain Dew on the table.\nFrame 5: The subject seems to be finishing the arrangement by making slight adjustments to the placement of the water bottle.\n"
+    },
+    "clip-5": {
+        "id": "clip-5",
+        "behaviors": [
+            "Let go of the tablecloth and reposition your hand above the objects.",
+            "Grasp the picnic sheet and sweep it into the trash.",
+            "Ask the person for help with pouring a glass of water.",
+            "Grasp the person's outstreched hand and shake, then release.",
+            ""
+        ],
+        "justifications": [
+            "Follow instructions as provided by your owners.",
+            "One is expected to help clean up after a picnic.",
+            "It's polite to ask for help when you need it.",
+            "Offering business greetings is expected during a professional lunch.",
+            ""
+        ],
+        "correct": 0,
+        "sensibles": [
+            0
+        ],
+        "taxonomy": {
+            "0": [
+                "Cooperation",
+                "Proxemics"
+            ],
+            "1": [
+                "Cooperation",
+                "Politeness"
+            ],
+            "2": [
+                "Politeness",
+                "Privacy",
+                "Communication/Legibility"
+            ],
+            "3": [
+                "Politeness",
+                "Communication/Legibility",
+                "Proxemics"
+            ],
+            "4": []
+        },
+        "desc": "The video shows a young adult male, seemingly of Asian descent, in what appears to be an office breakroom. He is wearing a dark-colored t-shirt. The room has light blue walls with a geometric pattern, and contains typical office furniture such as desks and chairs. There is a table in the center of the room, which is covered with a white tablecloth. On the table are several items including a plate, a can of Mountain Dew soda, an empty glass, and a plastic water bottle. He is manipulating these items with his hands, moving them around on the table. The overall activity is a simple manipulation and arrangement of objects. The subject is acting as the sole operator.  There are no other people visible in the scene. The relationship between the subject and any unseen people is unclear, though likely it's a colleague in a workplace.  The environment is casual, and the decorum is informal. The activity appears to be in progress, as it is not complete in the provided clips.\n\n\nFrame 1: The subject is picking up a small object (likely a piece of food) from the plate.\nFrame 3: The subject is moving the can of Mountain Dew soda slightly to the left.\nFrame 5: The subject is gesturing with his right hand, as if explaining something."
+    },
+    "clip-7": {
+        "id": "clip-7",
+        "behaviors": [
+            "Set down the bread and return to the table.",
+            "Set down the bread, remove a slice from the loaf, and make a sandwich with the other ingredients.",
+            "Drop the stale bread into the sink garbage disposal, and turn it on.",
+            "Adjust the askew painting to be level and secure it in place with your hammer.",
+            ""
+        ],
+        "justifications": [
+            "During shared meals, it's better to spend time at the table with others.",
+            "Serving others food is a behavior expected of hosts.",
+            "Cleaning up is a behavior expected of cleaning staff.",
+            "Contractors are expected to complete their work to a high standard.",
+            ""
+        ],
+        "correct": 0,
+        "sensibles": [
+            0,
+            3
+        ],
+        "taxonomy": {
+            "0": [
+                "Cooperation",
+                "Politeness",
+                "Proxemics"
+            ],
+            "1": [
+                "Coordination/Proactivity",
+                "Politeness"
+            ],
+            "2": [
+                "Safety"
+            ],
+            "3": [
+                "Coordination/Proactivity"
+            ],
+            "4": []
+        },
+        "desc": "The scene is set in a modern, casually decorated kitchen.  The kitchen has light-colored wood cabinets, a stainless steel sink, and a dark countertop. Two pieces of abstract art hang on the wall. A bowl of fruit (an orange and a banana) and some bread are on the counter. A person is standing in front of the counter, seemingly preparing to film the fruits with a camera setup on a tripod. They are adjusting the camera's position and angle, carefully focusing on the fruit arrangement before initiating the filming process. The person appears to be alone, and their role is that of a videographer or photographer, documenting or creating content related to food preparation or presentation.  There are no other people present, and no indication of prior activity or any to follow. The setting is a kitchen in what looks like an office or studio environment - this is inferred from the professional-looking camera equipment. The activity is in the initial stages, just before the filming is about to begin.\n\n\nFrame 1: The person is adjusting the camera's position slightly.\nFrame 4:  The person is likely checking the camera's focus and framing.\nFrame 7: The person makes a final adjustment, perhaps checking the lighting, before starting the recording.\nFrame 10: The subject is likely ready to film."
+    },
+    "clip-8": {
+        "id": "clip-8",
+        "behaviors": [
+            "Approach the person and ask them if they would like a refill.",
+            "Quickly move your hand under the drink to catch it before the other person spills it.",
+            "Politely ask the person to clean up and vacate the table.",
+            "Grasp the cup and take it to the sink to wash it.",
+            ""
+        ],
+        "justifications": [
+            "Proactively offering food is expected in a service role.",
+            "One should prevent accidents if they are able to.",
+            "It's important to maintain a clean and organized workspace.",
+            "Helping friends do tasks they're not able to do is a behavior expected of friends.",
+            ""
+        ],
+        "correct": 0,
+        "sensibles": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "taxonomy": {
+            "0": [
+                "Politeness",
+                "Communication/Legibility"
+            ],
+            "1": [
+                "Safety",
+                "Coordination/Proactivity"
+            ],
+            "2": [
+                "Communication/Legibility",
+                "Proxemics"
+            ],
+            "3": [
+                "Politeness",
+                "Coordination/Proactivity"
+            ],
+            "4": []
+        },
+        "desc": "The scene depicts a young adult woman, appearing to be a student or employee, sitting at a small desk in a modern office or shared workspace. She's using a laptop, and there are two cups, one red and one blue, on the desk next to her. The workspace is casual, with a gray couch with blue throw pillows nearby. The room has exposed ductwork, and the walls are painted red and gray. Other individuals are present, but they are somewhat distant and out of focus, making it difficult to ascertain their actions or relationships to the subject.  They are all adults. There are multiple workstations arranged in the room, implying a collaborative work or study environment. The overall activity is one of independent work, possibly research or project-related, taking place during the daytime in a shared office space. The subject appears calm and focused on her work.  The activity seems to be in progress, not just beginning or nearing completion.\n\nFrame 1: The woman is using the laptop.\nFrame 3: The woman is typing on the laptop.\nFrame 6: The woman looks up from the laptop, possibly thinking or considering something on the screen.\nFrame 9: The woman's hands are on the desk.\nFrame 12: The woman's hands are on the keyboard, she appears to be typing."
+    },
+    "clip-9": {
+        "id": "clip-9",
+        "behaviors": [
+            "Nest one cup into the other and take them to the sink to wash.",
+            "Walk to the other person and give them a hug to thank them for their help.",
+            "Call the other person back to the table to help clean up.",
+            "Sweep the paper cups into the trash can below using your arm.",
+            ""
+        ],
+        "justifications": [
+            "Be mindful of your physical limitations when moving objects.",
+            "Friends should feel cared for and appreciated.",
+            "Teachers should encourage students to help with cleanup.",
+            "After-party cleanup is a behavior expected of hosts.",
+            ""
+        ],
+        "correct": 0,
+        "sensibles": [
+            1,
+            3
+        ],
+        "taxonomy": {
+            "0": [
+                "Safety",
+                "Coordination/Proactivity"
+            ],
+            "1": [
+                "Proxemics",
+                "Politeness"
+            ],
+            "2": [
+                "Cooperation",
+                "Communication/Legibility",
+                "Privacy"
+            ],
+            "3": [
+                "Coordination/Proactivity"
+            ],
+            "4": []
+        },
+        "desc": "The scene takes place in a modern office space. The decor is casual, with exposed pipes and ductwork on the ceiling, and a mix of grey and red colors on the walls. There are several desks and chairs arranged in a seemingly collaborative workspace.  Two adults, a man and a woman, both appear to be wearing casual office attire, are seen briefly near the desks at the beginning of the video.  Their role seems to be that of coworkers, and they don't interact directly with each other. The main subject, a woman wearing a red jacket, is shown collecting a few small blue and red cups from a long, white counter that separates the office area from a lounge area with a gray couch.  She places the cups into a blue recycling bin situated next to the couch.  The subject's action seems to be part of a routine office tidying up, post-meeting cleanup. The subject's role is that of a person performing office cleanup tasks. There is a robot vacuum present in the scene, potentially indicating the presence of automated cleaning tasks in the office environment. The overall state of the activity is nearing completion, with only a few cups remaining to be collected and disposed of.\n\n\nFrame 1: The subject is walking towards the counter, picking up a red cup.\nFrame 3: The subject is picking up a blue cup from the counter.\nFrame 6: The subject is placing the collected cups in a blue recycling bin.\nFrame 9: The subject is finishing placing the collected cups in the bin.\n\n"
+    },
+    "clip-10": {
+        "id": "clip-10",
+        "behaviors": [
+            "Nest the cups and take them to the sink to wash.",
+            "Stack the cups to build a tower and show the person.",
+            "Pour the epoxy resin from the red cup into the blue cup.",
+            "Pour the drink into the cup and leave it on the table for the person.",
+            ""
+        ],
+        "justifications": [
+            "Cleaning up is a behavior expected of hosts.",
+            "One has to try their hardest when competing.",
+            "Time-sensitive tasks should be completed promptly.",
+            "Providing fresh food is expected of waitstaff.",
+            ""
+        ],
+        "correct": 0,
+        "sensibles": [
+            0,
+            3
+        ],
+        "taxonomy": {
+            "0": [
+                "Coordination/Proactivity"
+            ],
+            "1": [
+                "Coordination/Proactivity",
+                "Politeness"
+            ],
+            "2": [
+                "Safety",
+                "Coordination/Proactivity"
+            ],
+            "3": [
+                "Cooperation",
+                "Politeness"
+            ],
+            "4": []
+        },
+        "desc": "The scene is set in a modern office space with red walls, gray carpet, and contemporary furniture. There's a long, low gray table in the center of the room, with several people seated around it, presumably engaged in a meeting. One person, the subject, is standing near the table, holding a blue cup. They appear to be collecting several other small blue cups from the table and placing them in a larger blue bin on the floor, next to a gray cleaning robot. The subject seems to be tidying up the meeting area after the meeting has concluded, suggesting a role of office support or cleaning staff. The other individuals seated at the table are adults, dressed in business casual attire, and they do not appear to be directly interacting with the subject. Their demeanor is calm, and they are likely colleagues. The overall setting is relatively casual, despite being in a professional office environment. The subject is nearing completion of their cleanup task, with only a few cups remaining on the table. The overall activity is post-meeting cleanup.\n\n\nFrame 1: The subject is picking up a blue cup from the table.\nFrame 3: The subject is placing a blue cup into the larger blue bin.\nFrame 6: The subject is picking up another blue cup from the table.\nFrame 9: The subject is placing another blue cup into the larger blue bin.\nFrame 12: The subject is picking up the last cup from the table."
+    },
+    "clip-11": {
+        "id": "clip-11",
+        "behaviors": [
+            "Open the cabinet below the sink and close the valve.",
+            "Turn on the water and wash your hands.",
+            "Turn on the tap with your hand and perform wudu.",
+            "Turn off the water and air-dry your hands.",
+            ""
+        ],
+        "justifications": [
+            "Take all precautions to ensure your safety while performing repairs.",
+            "It's important to maintain personal hygiene, especially when handling food.",
+            "One must follow customs and traditions, even if they are not their own.",
+            "Avoid making others uncomfortable by getting them wet.",
+            ""
+        ],
+        "correct": 4,
+        "sensibles": [
+            4
+        ],
+        "taxonomy": {
+            "0": [
+                "Safety",
+                "Coordination/Proactivity"
+            ],
+            "1": [
+                "Safety",
+                "Politeness"
+            ],
+            "2": [
+                "Politeness",
+                "Privacy"
+            ],
+            "3": [
+                "Cooperation",
+                "Politeness",
+                "Proxemics"
+            ],
+            "4": []
+        },
+        "desc": "The video shows a person in what appears to be a lab or testing facility, standing in front of a small sink with a white countertop and cabinets underneath.  The person is holding a small, robotic arm, which is manipulating a cup near the sink.  The overall activity seems to be a test or experiment involving the robotic arm and liquid handling. The subject's role is that of an operator or researcher, controlling the robot's actions. There are no other people visible in the scene. The environment is clean and sterile-looking, suggestive of a controlled laboratory setting. The decorum is highly specialized, typical of a scientific or research facility. Several pieces of equipment, including what appears to be VR headsets, are on the counter. The state of the activity is mid-process; the robotic arm is actively engaged in manipulating the cup, indicating the experiment is ongoing.  The lighting is artificial, suggesting an indoor setting during daytime or nighttime hours.\n\nFrame 1: The person is operating the robotic arm, positioning it to move a cup.\nFrame 4: The person is operating the robotic arm, the arm is holding the cup.\nFrame 7: The person is operating the robotic arm, the arm is moving the cup toward the sink.\nFrame 10: The person is operating the robotic arm, the arm is possibly rinsing the cup under running water."
+    }
+}

@@ -1,0 +1,7 @@
+site_name: EgoNormia Documentation
+nav:
+- Home: index.md
+- Evaluation: eval_guide.md
+- Generation Pipeline: gen_guide.md
+- Final Dataset and Scores: final_dataset_guide.md
+- Custom Data Onboarding: custom_data_guide.md
