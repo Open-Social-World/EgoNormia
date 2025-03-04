@@ -8,11 +8,74 @@ args = parser.parse_args()
 if args.noblind:
     noblind = True
 else:
+    noblind = Falseimport json
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument('--noblind', type=str, required=False, help='Report blind')
+parser.add_argument('--file', type=str, required=True, help='Target eval file')
+args = parser.parse_args()
+
+if args.noblind:
+    noblind = True
+else:
     noblind = False
 
 file = args.file
 
 with open(f'src/final_dataset/{file}.json', 'r') as f:
+    data = json.load(f)
+
+scores = {}
+
+missed_ids = {}
+
+modeltotals = {}
+nets = {}
+
+for key in data:
+    datapoint = data[key]
+
+    answers = datapoint
+
+    for model in answers:
+        if noblind and 'blind' in model:
+            continue
+        nets[model] = 0
+        scores[model] = {
+                'best': {'a': 0, 'j': 0, 'both': 0},
+                'sensible': 0
+            }
+        modeltotals[model] = 0
+        
+what = {}
+
+for key in data:
+    datapoint = data[key]
+
+    answers = datapoint
+    for model in sorted(list(answers.keys())):
+        if noblind and 'blind' in model:
+            continue
+        if model:
+
+            # Best
+            best_a = answers[model]['best']['results'][0] == answers[model]['best']['correct'][0]
+            best_j = answers[model]['best']['results'][1] == answers[model]['best']['correct'][1]
+
+            if best_a:
+                nets[model] += 1
+
+            if not best_a or not best_j:
+                missed_ids[key] = datapoint
+            scores[model]['best']['a'] += best_a
+            scores[model]['best']['j'] += best_j
+            scores[model]['best']['both'] += best_a and best_j
+
+        print(f"Sensible: {scores[model]['sensible'] / total * 100}")
+
+file = args.file
+
+with open(f'{file}_eval.json', 'r') as f:
     data = json.load(f)
 
 scores = {}
