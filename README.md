@@ -66,14 +66,14 @@ This project is licensed under the Apache License - see the [LICENSE](LICENSE) f
 
 If you use EgoNormia in any of your work, please cite:
 
-#TODO: Update citation
 ```
-@article{example.2023.001,
-  title     = {EgoNormia},
-  author    = {MohammadHossein Rezaei* and Yicheng Fu* and Philippe Cuvin* and Caleb Ziems and Yanzhe Zhang and Hao Zhu and Diyi Yang},
-  journal   = {Open Social World},
-  year      = {2025},
-  doi       = {10.1234/example.2023.001},
-  publisher = {Open Social World}
+@misc{rezaei2025egonormiabenchmarkingphysicalsocial,
+      title={EgoNormia: Benchmarking Physical Social Norm Understanding},
+      author={MohammadHossein Rezaei and Yicheng Fu and Phil Cuvin and Caleb Ziems and Yanzhe Zhang and Hao Zhu and Diyi Yang},
+      year={2025},
+      eprint={2502.20490},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2502.20490},
 }
 ```
