@@ -7,6 +7,9 @@ from datasets import load_dataset
 import decord
 import requests
 import base64
+from anthropic import AnthropicVertex
+import PIL.Image
+import io
 
 import api_keys
 
@@ -51,7 +54,6 @@ class EvalAPI:
 
         if self.desc:
             self.prefix = "The following descrption: {desc} describes a first-person perspective video of a person in a given situation"
-
         elif not self.blind:
             self.prefix = "The following images from a first-person perspective video depict"
         else:
@@ -117,6 +119,9 @@ class EvalAPI:
             random_indices_behaviors = random.sample(range(n), n)
             random_indices_justifications = random.sample(range(n), n)
 
+            # random_indices_behaviors = [i for i in range(n)]
+            # random_indices_justifications = [i for i in range(n)]
+
             behaviors = [behaviors[i] for i in random_indices_behaviors]
             justifications = [justifications[i] for i in random_indices_justifications]
             sensible = [random_indices_behaviors[i] for i in sensible]
@@ -125,11 +130,6 @@ class EvalAPI:
             correct_behavior = random_indices_behaviors[index_of_corr]
             correct_justification = random_indices_justifications[index_of_corr]
             prev_images_paths = img_url.format(img_id=vid_id) # Single image
-
-            # Claude temporarily deprecated
-            if 'claude' in self.modelname and not self.freeform and False:
-                prev_images_paths = prev_images_paths[:-1][::2]
-                during_images_paths = during_images_paths[:-1][::2]
 
             # Build random mappings as current index:original index
             b_mappings = {random_indices_behaviors[i]: i for i in range(n)}
@@ -152,6 +152,8 @@ class EvalAPI:
         print(f"Task set size: {len(task_set)}")
 
         task_set = random.sample(task_set, len(task_set))
+
+        task_set = task_set[:] # Look here!!!
 
         return task_set      
     
@@ -546,3 +548,58 @@ class RagEval(EvalAPI):
         response = response.choices[0].message.content
 
         return response
+
+class ClaudeEvalAPI(EvalAPI):
+    
+    def set_model(self):
+
+        client = AnthropicVertex(region=api_keys.LOCATION, project_id=api_keys.PROJECT_ID)
+
+        return client, RateLimiterObject(self.rl)
+
+    def inference(self, prompt, image):
+            contents = []
+
+            # Load image and resize
+            img = PIL.Image.open(io.BytesIO(requests.get(image).content))
+
+            # Reduce image size to 25% to not exceed size limit
+            img = img.resize((int(img.width * 0.25), int(img.height * 0.25)))
+
+            byte_io = io.BytesIO()
+            img.save(byte_io, format='JPEG')
+            byte_data = byte_io.getvalue() 
+
+            # Encode image to base64 after resizing
+            image_b64 = base64.b64encode(byte_data).decode('utf-8')
+
+            contents.append({
+                "type": "image",
+                "source": {
+                    "type": "base64",
+                    "media_type": "image/jpeg",
+                    "data": image_b64,
+                }
+            })
+            contents.append({"type": "text", "text": prompt})
+
+            temp_modelname = self.modelname.strip('blind_').strip('desc_')
+            temp_modelname = "c" + temp_modelname
+
+            response = self.model.messages.create(
+                max_tokens=1024,
+                messages=[
+                    {
+                        "role": "user",
+                        "content": contents
+                    }
+                ],
+
+                model=temp_modelname,
+                temperature=0.0,
+
+            )
+
+            list_response = response.content[0].text
+        
+            return list_response

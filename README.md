@@ -41,7 +41,10 @@ This can be directly exported:
 
 ```bash
 export OPENAI_API_KEY=<KEY>
-export ANTHROPIC_API_KEY=<KEY>
+export GEMINI_API_KEY=<KEY>
+export GOOGLE_APPLICATION_CREDENTIALS=<PATH_TO_GCP_CREDENTIALS>
+export LOCATION=<GCP_PROJECT_LOCATION>
+export PROJECT_ID=<GCP_PROJECT_ID>
 ```
 
 Or you can modify the `SECRETS.env` file, adding your api keys.
@@ -49,7 +52,7 @@ Or you can modify the `SECRETS.env` file, adding your api keys.
 You can then run the evaluation from the `egonormia/src` directory with the following command:
 
 ```bash
-python3 evaluate.py --modelname gemini-1.5-flash-002 --jsonfile final_data.json (--blind) (--description)
+python3 evaluate.py --modelname [modelname] --jsonfile [jsonfile].json (--blind) (--description)
 
 ```
 Include the `--blind` flag to run the evaluation without the ground truth, and the `--description` flag to include the description in the evaluation.

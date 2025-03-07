@@ -12,7 +12,7 @@ else:
 
 file = args.file
 
-with open(f'src/final_dataset/{file}.json', 'r') as f:
+with open(f'{file}_eval.json', 'r') as f:
     data = json.load(f)
 
 scores = {}

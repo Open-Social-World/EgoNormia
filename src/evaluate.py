@@ -31,15 +31,17 @@ if description and blind:
 
 # Define which model you're using - make sure you select the right rate limit in calls/min
 if 'o3' in model_type:
-    model = eval_api.OpenAIO3EvalAPI(model=model_type, rl=60, blind=blind, jsonfile=jsonfile, num_workers=10, desc=description)
+    model = eval_api.OpenAIO3EvalAPI(model=model_type, rl=60, blind=blind, jsonfile=jsonfile, num_workers=1, desc=description)
 elif 'gemini' in model_type:
-    model = eval_api.GeminiEvalAPI(model=model_type, rl=60, blind=blind, jsonfile=jsonfile, num_workers=10, desc=description)
+    model = eval_api.GeminiEvalAPI(model=model_type, rl=60, blind=blind, jsonfile=jsonfile, num_workers=1, desc=description)
 elif 'gpt' in model_type:
-    model = eval_api.OpenAIEvalAPI(model=model_type, rl=60, blind=blind, jsonfile=jsonfile, num_workers=10, desc=description)
+    model = eval_api.OpenAIEvalAPI(model=model_type, rl=60, blind=blind, jsonfile=jsonfile, num_workers=1, desc=description)
 elif 'rag' in model_type.lower():
-    model = eval_api.RagEval(model=model_type, rl=60, blind=blind, jsonfile=jsonfile, num_workers=10, desc=description)
+    model = eval_api.RagEval(model=model_type, rl=60, blind=blind, jsonfile=jsonfile, num_workers=1, desc=description)
+elif 'claude' in model_type:
+    model = eval_api.ClaudeEvalAPI(model=model_type, rl=60, blind=blind, jsonfile=jsonfile, num_workers=1, desc=description)
 elif 'custom' in model_type:
-    model = custom_eval_api.CustomEvalAPI(model=model_type, blind=blind, jsonfile=jsonfile, num_workers=10, desc=description)
+    model = custom_eval_api.CustomEvalAPI(model=model_type, blind=blind, jsonfile=jsonfile, num_workers=1, desc=description)
 
 model.evaluate()
 
