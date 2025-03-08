@@ -1,5 +1,7 @@
 # EgoNormia: Benchmarking Physical Social Norm Understanding
 
+[Leaderboard](https://egonormia.org) | [Blog](https://opensocial.world/articles/egonormia)
+
 EgoNormia is a comprehensive benchmark evaluating agentic VLM capabilities in grounded reasoning scenarios.
 
 ## Features
@@ -29,7 +31,6 @@ To run using a custom VLM, replace self.modelname in `eval/custom_eval_api.py` w
 and fill in any remaining fields as necessary.
 
 Then, simply evaluate using API the evaluation API with `--modelname custom`.
-```bash
 
 ## Evaluate using API
 
@@ -45,6 +46,9 @@ export GEMINI_API_KEY=<KEY>
 export GOOGLE_APPLICATION_CREDENTIALS=<PATH_TO_GCP_CREDENTIALS>
 export LOCATION=<GCP_PROJECT_LOCATION>
 export PROJECT_ID=<GCP_PROJECT_ID>
+export AZURE_KEY=<AZURE_KEY>
+export AZURE_ENDPOINT=<AZURE_ENDPOINT>
+export OPENAI_API_BASE=<OPENAI_API_BASE>
 ```
 
 Or you can modify the `SECRETS.env` file, adding your api keys.
