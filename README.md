@@ -1,5 +1,7 @@
 # EgoNormia: Benchmarking Physical Social Norm Understanding
 
+[Leaderboard](https://egonormia.org) | [Blog](https://opensocial.world/articles/egonormia)
+
 EgoNormia is a comprehensive benchmark evaluating agentic VLM capabilities in grounded reasoning scenarios.
 
 ## Features

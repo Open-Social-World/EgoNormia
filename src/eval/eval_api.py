@@ -4,7 +4,6 @@ import random
 import os
 import tqdm
 from datasets import load_dataset
-import decord
 import requests
 import base64
 from anthropic import AnthropicVertex
