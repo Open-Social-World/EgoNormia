@@ -1,5 +1,7 @@
 # EgoNormia: Benchmarking Physical Social Norm Understanding
 
+[Leaderboard](https://egonormia.org) | [Blog](https://opensocial.world/articles/egonormia)
+
 EgoNormia is a comprehensive benchmark evaluating agentic VLM capabilities in grounded reasoning scenarios.
 
 ## Features
@@ -23,13 +25,17 @@ cd EgoNormia
 pip install -e .
 ```
 
+## Evaluate locally using HuggingFace VLM
+
+To run using a HuggingFace VLM, specify the `-hf` flag when calling the evaluation API, and give the modelname as
+`--modelname [org/modelname]`, where org/modelname is the organization and name of the model as specified in HuggingFace.
+
 ## Evaluate using custom VLM (if openai API compatible)
 
 To run using a custom VLM, replace self.modelname in `eval/custom_eval_api.py` with the model name of your openai API-compatible VLM,
 and fill in any remaining fields as necessary.
 
 Then, simply evaluate using API the evaluation API with `--modelname custom`.
-```bash
 
 ## Evaluate using API
 

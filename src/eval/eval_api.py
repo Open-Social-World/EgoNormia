@@ -4,12 +4,12 @@ import random
 import os
 import tqdm
 from datasets import load_dataset
-import decord
 import requests
 import base64
 from anthropic import AnthropicVertex
 import PIL.Image
 import io
+from transformers import AutoModelForCausalLM, AutoTokenizer
 
 import api_keys
 
@@ -603,3 +603,44 @@ class ClaudeEvalAPI(EvalAPI):
             list_response = response.content[0].text
         
             return list_response
+
+
+class HuggingfaceEvalAPI(EvalAPI):
+
+    def set_model(self):
+
+        mn = self.modelname.replace('blind_','').replace('desc_','')
+        
+        model = AutoModelForCausalLM.from_pretrained(
+            mn,
+            torch_dtype="auto",
+            device_map="auto"
+        )
+        self.tokenizer = AutoTokenizer.from_pretrained(self.model_name)
+
+        ratelimiter = RateLimiterObject(self.rl)
+
+        return model, ratelimiter
+    
+    def inference(self, prompt, image):
+
+        contents = []
+
+        contents.append({"type": "text", "text": prompt})
+
+        if not self.blind:
+            img = PIL.Image.open(io.BytesIO(requests.get(image).content))
+            contents.append({"type": "image", "image": img})
+
+        tokenized_content = self.tokenizer.apply_chat_template(contents,
+                                                               tokenize=False
+        )
+
+        inputs = self.tokenizer(tokenized_content, return_tensors="pt").to(self.model.device)
+
+        response = self.model.generate(**inputs)
+
+        response = self.tokenizer.decode(response[0], skip_special_tokens=True)[0]
+
+        return response
+

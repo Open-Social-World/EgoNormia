@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "egonormia"
+version = "1.0.0"
+description = "Benchmarking Physical Social Norm Understanding"
+readme = { file = "README.md", content-type = "text/markdown" }
+keywords = ["ai", "nlp"]
+license = { text = "MIT" }
+authors = [
+    { name = "MohammadHossein Rezaei" },
+    { name = "Yicheng Fu" },
+    { name = "Phil Cuvin" }
+]
+dependencies = [
+  "numpy",
+  "tqdm",
+  "spacy",
+  "google-genai",
+  "requests",
+  "httpx",
+  "Pillow",
+  "openai",
+  "anthropic",
+  "opencv-python",
+  "python-dotenv",
+  "datasets",
+  "faiss-cpu",
+  "torch",
+  "mkdocs",
+  "transformers"
+]
+
+[project.urls]
+website = "https://opensocial.world/articles/egonormia"
+repository = "https://github.com/Open-Social-World/EgoNormia"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["*"]
