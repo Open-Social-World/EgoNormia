@@ -9,7 +9,7 @@ import base64
 from anthropic import AnthropicVertex
 import PIL.Image
 import io
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from transformers import AutoModelForImageTextToText, AutoTokenizer
 
 import api_keys
 
@@ -174,15 +174,15 @@ class EvalAPI:
 
         prompt = prefix+f""" a person in a given situation.
 
-Given the below list of behaviors, choose the single most normatively relevant or appropriate action to perform next, 
-based on the context you are given and commonsense norms.
+Given the below list of behaviors, choose the single most normatively relevant or appropriate action to perform next.
+You shouldn't use the info in options to learn about the context, but rather to make a decision based on the normative appropriateness of the behavior.
 
-Some behaviors will be incorrect because they incorrectly make reference to elements of the context. These should be eliminated.
+You shouldn't eliminate any options only based on the presence of elements in the context; you should focus on normative appropriateness.
 
 Structure your answer as a single integer, where the integer corresponds to the index of the behavior in the list below.
 
 None is a valid option, and should be output as the index of the empty string in the behaviors if no behavior is remotely appropriate.
-Only pick this option if none of the others are plausible.
+Don't use None to indicate that you don't know the answer, only use it if you are certain that no behavior is appropriate.
 
 Think carefully about your response and reason over it in the output.
 
@@ -196,10 +196,10 @@ Response example:
 <reasoning goes here>
 1
 """
-        
         justification_prompt = """ a person in a given situation.
 
-You selected {behavior} as the most normatively relevant or appropriate action for the person to perform in the given situation.
+"{behavior}" is selected as the most normatively relevant or appropriate action for the person to perform in the given situation.
+However, this behavior might not be the most normatively correct action to perform in the given situation. Be open to the possibility that the behavior might be incorrect.
 
 Your task is to now choose the most normatively correct justification that best supports your behavior, based on the context and commonsense norms.
 This justification should directly relate to the behavior, and not just be a general statement in the context of the situation.
@@ -611,7 +611,7 @@ class HuggingfaceEvalAPI(EvalAPI):
 
         mn = self.modelname.replace('blind_','').replace('desc_','')
         
-        model = AutoModelForCausalLM.from_pretrained(
+        model = AutoModelForImageTextToText.from_pretrained(
             mn,
             torch_dtype="auto",
             device_map="auto"
@@ -644,3 +644,42 @@ class HuggingfaceEvalAPI(EvalAPI):
 
         return response
 
+class VLLMAPI(EvalAPI):
+
+    def set_model(self):
+
+        mn = self.modelname.replace('blind_','').replace('desc_','')
+        
+        client = openai.OpenAI(
+            api_key=api_keys.openai_api_key,
+            base_url=api_keys.openai_api_base,
+        )
+
+        ratelimiter = RateLimiterObject(self.rl)
+
+        return client, ratelimiter
+    
+    def inference(self, prompt, image):
+
+        contents = []
+        if not self.blind:
+            contents.append({"type": "image_url", "image_url": {"url":image}})
+        contents.append({"type": "text", "text": prompt})
+
+        mn = self.modelname.replace('blind_','').replace('desc_','')
+
+        response = self.model.chat.completions.create(
+            model = mn,
+            messages=[
+                {
+                    "role": "user",
+                    "content": contents
+                }
+            ],
+            max_tokens=2000,
+            temperature=0.0
+        )
+
+        response = response.choices[0].message.content
+
+        return response
