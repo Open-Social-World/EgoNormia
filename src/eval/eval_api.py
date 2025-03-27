@@ -11,6 +11,7 @@ import PIL.Image
 import io
 
 import api_keys
+from eval.utils import backoff
 
 # Gemini imports
 from google import genai
@@ -23,11 +24,10 @@ import openai
 import concurrent.futures
 
 class EvalAPI:
-    def __init__(self, model, rl, blind, jsonfile, num_workers, desc):
+    def __init__(self, model, blind, jsonfile, num_workers, desc):
 
-        self.rl = rl
         self.modelname = model
-        self.model, self.rate_limit = self.set_model()
+        self.model = self.set_model()
 
         self.blind = blind
         srcdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -118,8 +118,8 @@ class EvalAPI:
             random_indices_behaviors = random.sample(range(n), n)
             random_indices_justifications = random.sample(range(n), n)
 
-            # random_indices_behaviors = [i for i in range(n)]
-            # random_indices_justifications = [i for i in range(n)]
+            #random_indices_behaviors = [i for i in range(n)]
+            #random_indices_justifications = [i for i in range(n)]
 
             behaviors = [behaviors[i] for i in random_indices_behaviors]
             justifications = [justifications[i] for i in random_indices_justifications]
@@ -158,9 +158,6 @@ class EvalAPI:
     
     def pick_best(self, datapoint):
 
-        self.rate_limit.rc()
-        self.rate_limit.rc()
-
         behaviors = datapoint['behaviors']
         justifications = datapoint['justifications']
         correct = datapoint['correct']
@@ -170,18 +167,17 @@ class EvalAPI:
             prefix = self.prefix.format(desc=datapoint['description'])
         else:
             prefix = self.prefix
-
         prompt = prefix+f""" a person in a given situation.
 
-Given the below list of behaviors, choose the single most normatively relevant or appropriate action to perform next, 
-based on the context you are given and commonsense norms.
+Given the below list of behaviors, choose the single most normatively relevant or appropriate action to perform next.
+You shouldn't use the info in options to learn about the context, but rather to make a decision based on the normative appropriateness of the behavior.
 
-Some behaviors will be incorrect because they incorrectly make reference to elements of the context. These should be eliminated.
+You shouldn't eliminate any options only based on the presence of elements in the context; you should focus on normative appropriateness.
 
 Structure your answer as a single integer, where the integer corresponds to the index of the behavior in the list below.
 
 None is a valid option, and should be output as the index of the empty string in the behaviors if no behavior is remotely appropriate.
-Only pick this option if none of the others are plausible.
+Don't use None to indicate that you don't know the answer, only use it if you are certain that no behavior is appropriate.
 
 Think carefully about your response and reason over it in the output.
 
@@ -195,10 +191,10 @@ Response example:
 <reasoning goes here>
 1
 """
-        
         justification_prompt = """ a person in a given situation.
 
-You selected {behavior} as the most normatively relevant or appropriate action for the person to perform in the given situation.
+"{behavior}" is selected as the most normatively relevant or appropriate action for the person to perform in the given situation.
+However, this behavior might not be the most normatively correct action to perform in the given situation. Be open to the possibility that the behavior might be incorrect.
 
 Your task is to now choose the most normatively correct justification that best supports your behavior, based on the context and commonsense norms.
 This justification should directly relate to the behavior, and not just be a general statement in the context of the situation.
@@ -273,9 +269,6 @@ Response example:
 
 
     def pick_sensible(self, datapoint):
-
-        # Only one call, so one rate limit call
-        self.rate_limit.rc()
 
         behaviors = datapoint['behaviors']
         sensible = datapoint['sensible']
@@ -403,34 +396,14 @@ Response example:
         with open(self.savefile, 'w') as f:
             json.dump(data, f, indent=4)
 
-class RateLimiterObject:
-    def __init__(self, rate_limit):
-        self.rate_limit = rate_limit
-        self.hard_limit = rate_limit
-        self.last_call = time.time()
-        self.start_time = time.time()
-        self.num_of_calls = 0
-        # Always assuming per minute rate limit
-        current_avg = (self.num_of_calls) / (time.time() - self.start_time)
-        print(f"Rate limit: {self.hard_limit/60}, Current average: {current_avg}")
-
-    def rc(self):
-
-        current_avg = (self.num_of_calls) / (time.time() - self.start_time)
-
-        while current_avg > self.hard_limit/60:
-            current_avg = (self.num_of_calls) / (time.time() - self.start_time)
-        self.num_of_calls += 1
-
 class GeminiEvalAPI(EvalAPI):
 
     def set_model(self):
-        ratelimiter = RateLimiterObject(self.rl)
-
         model = genai.Client(api_key=api_keys.gem_key)
 
-        return model, ratelimiter
+        return model
 
+    @backoff(max_retries=5, base_delay=3)
     def inference(self, prompt, image):
 
         if self.blind:
@@ -453,12 +426,12 @@ class GeminiEvalAPI(EvalAPI):
 class OpenAIEvalAPI(EvalAPI):
 
     def set_model(self):
-        ratelimiter = RateLimiterObject(self.rl)
 
         model = openai.Client()
 
-        return model, ratelimiter
+        return model
     
+    @backoff(max_retries=5, base_delay=3)
     def inference(self, prompt, image):
 
         contents = []
@@ -487,12 +460,12 @@ class OpenAIEvalAPI(EvalAPI):
 class OpenAIO3EvalAPI(EvalAPI):
 
     def set_model(self):
-        ratelimiter = RateLimiterObject(self.rl)
 
         model = openai.Client()
 
-        return model, ratelimiter
+        return model
     
+    @backoff(max_retries=5, base_delay=3)
     def inference(self, prompt, image):
 
         contents = []
@@ -519,12 +492,12 @@ class OpenAIO3EvalAPI(EvalAPI):
 class RagEval(EvalAPI):
 
     def set_model(self):
-        ratelimiter = RateLimiterObject(self.rl)
 
         self.oaiclient = openai.OpenAI()
 
-        return None, ratelimiter # Model not used here as implicitly defined
+        return None # Model not used here as implicitly defined
 
+    @backoff(max_retries=5, base_delay=3)
     def inference(self, prompt, image):
 
         contents = []
@@ -554,8 +527,9 @@ class ClaudeEvalAPI(EvalAPI):
 
         client = AnthropicVertex(region=api_keys.LOCATION, project_id=api_keys.PROJECT_ID)
 
-        return client, RateLimiterObject(self.rl)
+        return client
 
+    @backoff(max_retries=5, base_delay=3)
     def inference(self, prompt, image):
             contents = []
 

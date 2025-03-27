@@ -6,10 +6,12 @@ import random
 import cv2
 import sys
 
+from eval.utils import backoff
+
 # # OpenAI imports
 import openai
 
-from eval.eval_api import EvalAPI, RateLimiterObject
+from eval.eval_api import EvalAPI
 
 # Define your custom eval here (i.e. modelname and custom inference pipeline)
 
@@ -21,9 +23,6 @@ class CustomEvalAPI(EvalAPI):
         # Define self.modelname explicitly
         self.modelname = ""
 
-        # Hardcode the rate limit for the model (in (calls-1)/min), as it is only known to you
-        ratelimiter = RateLimiterObject()
-
         if self.modelname == "":
             raise ValueError("Please specify a model when running the custom eval API")
         
@@ -33,8 +32,9 @@ class CustomEvalAPI(EvalAPI):
             raise ValueError("Please specify a model when running the custom eval API")
             sys.exit(1)
 
-        return model, ratelimiter
+        return model
 
+    @backoff(max_retries=5, base_delay=3)
     def inference(self, prompt, image):
         # Modify this function as you see fit, so long as you are using only the data available per datapoint
 
