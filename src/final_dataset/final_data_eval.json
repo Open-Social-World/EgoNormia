@@ -6855,6 +6855,30 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    0,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "54a421d2-763e-4751-a6b4-54e3d6c46cc1_1143-22": {
@@ -9638,6 +9662,27 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "b925520a-853c-442e-8a39-6679cce1e9f4_1253-01": {
@@ -10126,6 +10171,28 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "6f93978d-a3d0-467d-b401-e23b3c92f3bf_5299-41": {
@@ -11928,6 +11995,27 @@
             "sensible": {
                 "results": [
                     4
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
                 ],
                 "correct": [
                     1
@@ -23931,6 +24019,27 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "eb20bebd-41e5-4a02-aa7e-73d3da5bc97e_1106-81": {
@@ -27190,6 +27299,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "59857657-5cb1-4268-9c8f-ab6cb3c3ad3b_9450-00": {
@@ -27670,6 +27801,28 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    0,
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "c34effc7-6198-4c85-80c7-c8be85b77dd3_5220-71": {
@@ -28519,6 +28672,29 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    0,
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "342cb558-ab3e-4b04-8169-a68bbf06a448_1575-74": {
@@ -35427,6 +35603,30 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2
+                ],
+                "correct": [
+                    0,
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "1c983176-b07a-4a69-ae51-de7829de6b6a_1090-54": {
@@ -40431,6 +40631,25 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "4efdd63d-515c-401a-a5b0-e2c84cbee0e6_4175-60": {
@@ -41774,6 +41993,27 @@
                     0
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "aa3237b2-4a62-4676-b81c-a9726003b420_1532-19": {
@@ -43094,6 +43334,28 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "6956cb48-951c-4607-a42b-a66de2c186be_292-00": {
@@ -55922,6 +56184,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "3ffb9247-a141-4056-a644-dd3fbab708a4_364-69": {
@@ -56323,6 +56607,28 @@
             "sensible": {
                 "results": [
                     1,
+                    3
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
                     3
                 ],
                 "correct": [
@@ -57116,6 +57422,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "4c53aaac-76f0-4874-ab1c-738286b9698e_902-84": {
@@ -57869,6 +58196,28 @@
             }
         },
         "claude-3-7-sonnet@20250219": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
             "best": {
                 "results": [
                     1,
@@ -60336,6 +60685,25 @@
             }
         },
         "claude-3-7-sonnet@20250219": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
             "best": {
                 "results": [
                     4,
@@ -62962,6 +63330,28 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0,
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "e6d852dd-2510-482f-ad25-3d731388ea44_0-00": {
@@ -68811,6 +69201,28 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    3,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "214b62df-2fb1-4b0e-af9d-42b0dd37defb_1955-31": {
@@ -69573,6 +69985,28 @@
                     0
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "abca0171-5e73-426e-9ba1-49a6339b2ef5_979-03": {
@@ -71826,6 +72260,27 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    0
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "5e193b30-3e79-4851-801b-dab99125cd44_3348-61": {
@@ -72531,6 +72986,29 @@
                     0
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2,
+                    3
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "0f038f2a-7b3d-40ec-a22a-9f764bfbde74_4-93": {
@@ -73820,6 +74298,27 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "11586867-f4d9-4341-9532-4de21a47585d_394-60": {
@@ -76902,6 +77401,30 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "8cda2388-6f45-46d4-8ded-4ba2e23b309f_463-28": {
@@ -77282,6 +77805,28 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "54a421d2-763e-4751-a6b4-54e3d6c46cc1_676-59": {
@@ -77668,6 +78213,29 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "ec3556de-be79-4ad4-aa0f-eaca48abb5d5_547-69": {
@@ -79779,6 +80347,27 @@
             }
         },
         "claude-3-7-sonnet@20250219": {
+            "best": {
+                "results": [
+                    4,
+                    3
+                ],
+                "correct": [
+                    4,
+                    4
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
+                "correct": [
+                    4
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
             "best": {
                 "results": [
                     4,
@@ -86246,6 +86835,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    2
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "b9de7a2c-d02e-4d66-9556-381f0b7ca51a_3795-42": {
@@ -86634,6 +87246,27 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "652f0590-aab5-4de1-b578-238adb54fa0e_3914-88": {
@@ -95402,6 +96035,30 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "c8b61175-cfa4-44f9-a88b-76609ffa4ca3_3008-85": {
@@ -97492,6 +98149,25 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "aa19d5c0-35b6-4ec2-9865-07f556c341de_76-28": {
@@ -98254,6 +98930,25 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "0235dafb-ec68-4177-8aff-e36d6c63742d_15-76": {
@@ -109390,6 +110085,27 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "dd508a2a-1ea7-43d2-805a-8080eeae9985_1133-08": {
@@ -110582,6 +111298,26 @@
                 "results": [
                     0
                 ],
+                "correct": [
+                    0,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [],
                 "correct": [
                     0,
                     3
@@ -112623,6 +113359,29 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "839c2689-76f1-4e8c-893d-93675663dd93_582-68": {
@@ -113053,6 +113812,30 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "5b0c9075-f81d-488c-9862-c9c3b9ca27b5_843-40": {
@@ -116950,6 +117733,27 @@
                     4
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    3
+                ],
+                "correct": [
+                    4,
+                    4
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
+                "correct": [
+                    4
+                ]
+            },
+            "followed": {}
         }
     },
     "dd82f801-fc96-4ced-b066-ad559da3faab_905-66": {
@@ -122714,6 +123518,27 @@
                     0
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "2b7ace86-149f-4354-b617-c8ebd08c5310_381-65": {
@@ -123564,6 +124389,27 @@
                     0
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "8d900b59-e95d-4c9b-9432-8f5096aac2db_503-05": {
@@ -124370,6 +125216,27 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "c6b5d782-d267-410e-8566-f7fe5d4a78a9_2700-04": {
@@ -124752,6 +125619,27 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [],
+                "correct": [
+                    0,
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "ff15140a-4747-4c45-b95f-ff2bd36ef178_1065-69": {
@@ -125525,6 +126413,27 @@
                     0
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "b2508929-e3e4-4583-b1db-41dc3bb0fd21_542-36": {
@@ -126306,6 +127215,28 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "3455a3f3-1657-46bb-ae42-52d16ec5ffaa_4842-46": {
@@ -128420,6 +129351,29 @@
             "sensible": {
                 "results": [
                     1
+                ],
+                "correct": [
+                    3,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    1
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
                 ],
                 "correct": [
                     3,
@@ -134362,6 +135316,27 @@
                 "results": [
                     2,
                     2
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    0,
+                    0
                 ],
                 "correct": [
                     0,
@@ -145024,6 +145999,27 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    0
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "ecdc4071-1903-4024-a357-d0082720168e_3-20": {
@@ -146824,6 +147820,28 @@
             }
         },
         "claude-3-7-sonnet@20250219": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
             "best": {
                 "results": [
                     3,
@@ -149726,6 +150744,30 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "99f41d39-cc65-4aad-b186-23b66e282f19_68-52": {
@@ -150867,6 +151909,28 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "05d5d7cf-9fb9-4390-bcd3-dd626b948771_1543-50": {
@@ -156109,6 +157173,32 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2,
+                    3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "55ef5db5-af7c-4ccd-9c7d-a4d415e195b7_857-01": {
@@ -157574,6 +158664,27 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "8f0f8606-b696-4bb2-909d-703e4e076d80_641-77": {
@@ -157953,6 +159064,27 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "513f572f-6d1c-4a8a-8b57-9c1d0aa363f7_1015-09": {
@@ -159594,6 +160726,28 @@
                     0
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "2eb4e516-9d71-4b68-847e-e1b0cb339b0a_684-96": {
@@ -161297,6 +162451,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "695cefe9-04c0-42fb-80fc-d308b314b788_789-70": {
@@ -162000,6 +163176,28 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "c20e2722-11e5-4181-960c-305cfcd7cfec_183-32": {
@@ -165392,6 +166590,25 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "b4814b66-f564-48cb-a11f-3b0a1ee73704_24-49": {
@@ -169606,6 +170823,27 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "fd2ae8b4-b683-4c4b-935c-78b4dadbdbf8_4100-48": {
@@ -169964,6 +171202,27 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "06ee22fd-ecfc-4e34-9ed2-a330548abf71_519-15": {
@@ -172130,6 +173389,31 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2,
+                    3
+                ],
+                "correct": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "eefcde42-5ea1-4a85-9f34-72c3ceca50f6_817-78": {
@@ -179522,6 +180806,25 @@
                     0
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "fe0d5ffc-686e-4846-bce0-1a18e513bf95_483-81": {
@@ -181807,6 +183110,27 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "10a848ed-f258-4930-abdd-1fd60b788abc_75-21": {
@@ -182180,6 +183504,27 @@
             "followed": {}
         },
         "claude-3-5-sonnet-v2@20241022": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
             "best": {
                 "results": [
                     0,
@@ -187336,6 +188681,25 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "e3f37c38-bf24-481f-b1c6-8d472fab4290_3800-16": {
@@ -190173,6 +191537,28 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "5a009b9f-fed2-45a8-8006-b59b655334d1_50-58": {
@@ -191452,6 +192838,27 @@
                     4
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    3
+                ],
+                "correct": [
+                    4,
+                    4
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
+                "correct": [
+                    4
+                ]
+            },
+            "followed": {}
         }
     },
     "ed792c47-5cb3-427c-a0e9-5dac33456e6a_662-64": {
@@ -194010,6 +195417,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    0,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "d0396c77-6ecc-4d9f-bda1-af051699d0cf_4546-97": {
@@ -196462,6 +197891,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    0,
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "2dbdd409-0be0-447c-8ae8-3f107fe9af80_1872-88": {
@@ -197980,6 +199432,31 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2,
+                    3
+                ],
+                "correct": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "be7ede7a-c212-45ff-8601-e15dd2f7e531_1651-77": {
@@ -200436,6 +201913,29 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    3
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "d1a27322-8acd-4297-9029-db45af8d7cc2_127-67": {
@@ -202091,6 +203591,31 @@
             },
             "sensible": {
                 "results": [],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
+                ],
                 "correct": [
                     0,
                     1,
@@ -204482,6 +206007,28 @@
                     0
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "a40f2c59-c795-4893-9ec5-6a58632a2b49_635-34": {
@@ -205976,6 +207523,29 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "b4b27c5b-2b73-4083-a41c-a6a960475c1a_1618-99": {
@@ -209993,6 +211563,27 @@
                     0
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "2a97736a-4fff-4753-84de-e6586a5603cc_185-44": {
@@ -211984,6 +213575,27 @@
                     0
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "2a97736a-4fff-4753-84de-e6586a5603cc_297-35": {
@@ -216541,6 +218153,29 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "ab865129-78fa-47d4-8a50-ff8c5533246f_318-49": {
@@ -218584,6 +220219,28 @@
                 "results": [
                     3,
                     4
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    4
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    0
                 ],
                 "correct": [
                     3,
@@ -225251,6 +226908,26 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [],
+                "correct": [
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "fb92d350-9bf9-4b16-8a1f-7858de276226_2422-37": {
@@ -229468,6 +231145,28 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "4930cced-9b84-464e-88ce-3990188efed6_1781-50": {
@@ -230993,6 +232692,27 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "b4814b66-f564-48cb-a11f-3b0a1ee73704_42-69": {
@@ -233748,6 +235468,30 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "fb92d350-9bf9-4b16-8a1f-7858de276226_2423-62": {
@@ -234945,6 +236689,28 @@
                     0
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "261edec2-f089-4a74-b25f-ddf32c92f90c_801-93": {
@@ -236102,6 +237868,28 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    4
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "6fc30ceb-ace8-49f8-8244-71f14c6d773c_936-70": {
@@ -237944,6 +239732,28 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "98334b78-967f-4980-ba86-56d34b4aaf2e_1109-83": {
@@ -239549,6 +241359,28 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "2dbdd409-0be0-447c-8ae8-3f107fe9af80_164-34": {
@@ -244235,6 +246067,27 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "89d8c9c5-fa11-4674-b08f-007f81958555_1642-22": {
@@ -247222,6 +249075,32 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2,
+                    3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "49b14463-2172-4b0e-ad13-fdf9383e9a77_426-72": {
@@ -247976,6 +249855,28 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "b6bee905-eddf-4b41-bfe6-d57c9059fe61_1119-76": {
@@ -251889,6 +253790,28 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "0ece1a2a-2da0-4b28-ac8c-bf9f04c0d17c_335-84": {
@@ -252319,6 +254242,28 @@
             "best": {
                 "results": [
                     3,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
                     2
                 ],
                 "correct": [
@@ -256109,6 +258054,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "e402df54-0a64-424e-a7e6-3e68b18a761c_242-70": {
@@ -256920,6 +258888,26 @@
                     0,
                     3
                 ],
+                "correct": [
+                    0,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [],
                 "correct": [
                     0,
                     3
@@ -258450,6 +260438,28 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    0,
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "0f82d425-f8be-4e69-8c59-0a1a2e980b20_1108-13": {
@@ -258922,6 +260932,28 @@
             "followed": {}
         },
         "claude-3-5-sonnet-v2@20241022": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
             "best": {
                 "results": [
                     1,
@@ -261925,6 +263957,26 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [],
+                "correct": [
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "f0041c6c-06b2-4c3b-b8e6-934305b4226e_3757-69": {
@@ -265163,6 +267215,30 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2
+                ],
+                "correct": [
+                    0,
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "89d8c9c5-fa11-4674-b08f-007f81958555_179-03": {
@@ -266306,6 +268382,28 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "fcb62109-9f54-42d7-9ecd-7a60817868dc_663-41": {
@@ -267162,6 +269260,29 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "fdbe0fbc-90a3-41b9-8898-a0c7ce3f966c_672-30": {
@@ -269409,6 +271530,29 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    0,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "8d4895eb-b2d1-43b8-90f1-e80fcc37797b_9565-47": {
@@ -270612,6 +272756,26 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [],
+                "correct": [
+                    0,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "608f2b9c-d004-42db-9f0c-e89b203dfb01_8-92": {
@@ -272081,6 +274245,27 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "998d4e6e-f579-4872-b706-767c5f392825_698-26": {
@@ -272895,6 +275080,29 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "ecdc4071-1903-4024-a357-d0082720168e_107-60": {
@@ -273985,6 +276193,27 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "b0937ec3-7645-4f68-b9cd-549ff7c01819_2030-83": {
@@ -275291,6 +277520,29 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "624a6c0a-a4cb-4073-b501-48e4b6b679e4_1095-75": {
@@ -276909,6 +279161,30 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    3
+                ],
+                "correct": [
+                    0,
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "54a421d2-763e-4751-a6b4-54e3d6c46cc1_1458-60": {
@@ -278590,6 +280866,28 @@
             "sensible": {
                 "results": [
                     1,
+                    2
+                ],
+                "correct": [
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
                     2
                 ],
                 "correct": [
@@ -287516,6 +289814,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    0,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "f6da4761-4774-4e05-bb2a-beca6db68f51_4196-85": {
@@ -288264,6 +290584,29 @@
                     0
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2,
+                    3
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "b9bc5b47-ae9a-4220-84c7-ada93722c4fe_909-02": {
@@ -297535,6 +299878,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "cdfd99eb-88c6-4bc7-8f66-e0318216feab_820-48": {
@@ -297948,6 +300314,27 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    0
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "c00a27da-98bb-4761-8093-45fd30a3f43f_1156-34": {
@@ -299206,6 +301593,29 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    0,
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "af215e0f-56c7-4356-9aad-a3a5fb7bbc4f_1332-04": {
@@ -301985,6 +304395,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "9fc3678b-86e2-44ab-adbc-9aeda78ceb60_992-74": {
@@ -303144,6 +305575,30 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    3
+                ],
+                "correct": [
+                    0,
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "555ff1a5-c30b-434c-a251-b5105cdc1fb9_1647-31": {
@@ -303527,6 +305982,29 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    0,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "3d93c92c-8c12-4972-9f29-c8bef5c321ba_1742-89": {
@@ -304662,6 +307140,29 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "17be1d0a-f213-4126-ab6e-08e5c8ee5b93_1056-33": {
@@ -306944,6 +309445,31 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    3
+                ],
+                "correct": [
+                    0,
+                    3,
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "29e45749-f8d5-42c7-af09-7fbb3d6697e9_876-21": {
@@ -310892,6 +313418,28 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "1c983176-b07a-4a69-ae51-de7829de6b6a_1270-21": {
@@ -316324,6 +318872,28 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "d3dafc0b-c623-4c4b-9a4a-ee56538e257c_519-43": {
@@ -320129,6 +322699,29 @@
                     0
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    3
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "5605bd9a-d151-4d5b-b0f6-cfc28ae6937e_3534-55": {
@@ -321203,6 +323796,29 @@
                 "results": [
                     1,
                     2
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2,
+                    3
                 ],
                 "correct": [
                     1
@@ -322516,6 +325132,27 @@
             }
         },
         "claude-3-7-sonnet@20250219": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
             "best": {
                 "results": [
                     3,
@@ -324542,6 +327179,32 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "6a847d75-e20f-409d-8b91-77ada97d8fb9_1582-87": {
@@ -326028,6 +328691,28 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "c34effc7-6198-4c85-80c7-c8be85b77dd3_5294-07": {
@@ -331849,6 +334534,30 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    0,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "48d7d009-425f-4d1a-a6a9-a4742bd0d9fe_2349-91": {
@@ -332558,6 +335267,28 @@
             },
             "sensible": {
                 "results": [],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
                 "correct": [
                     2,
                     3
@@ -335384,6 +338115,30 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    0,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "b5c3c1e3-7ee7-4b4a-b938-4d008d5aa49b_644-73": {
@@ -337654,6 +340409,31 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2,
+                    3
+                ],
+                "correct": [
+                    0,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "19f2ea20-5041-4be2-bdc9-714473f16236_4525-17": {
@@ -339062,6 +341842,27 @@
                 "results": [
                     2
                 ],
+                "correct": [
+                    0,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [],
                 "correct": [
                     0,
                     2,
@@ -340984,6 +343785,27 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "dbcca18b-4b62-4ba1-b799-a6a65231d084_2471-26": {
@@ -350727,6 +353549,29 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "3de48a49-665d-4c1b-9655-82532e108e6a_1395-29": {
@@ -353382,6 +356227,28 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "4c70179a-f411-4f81-b44d-cfe34b8f9180_800-64": {
@@ -357741,6 +360608,27 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    4,
+                    4
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    4
+                ]
+            },
+            "followed": {}
         }
     },
     "944aacb0-f596-460d-b5a6-9ae05df1d430_3528-77": {
@@ -358624,6 +361512,32 @@
                 "results": [
                     1,
                     2
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2,
+                    3
                 ],
                 "correct": [
                     0,
@@ -359772,6 +362686,29 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "225a1ffe-3e7e-4ff8-a47e-2e80989077fe_94-47": {
@@ -360514,6 +363451,27 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "a8197601-7474-4cb0-8d08-e8a8febcecfc_854-68": {
@@ -360881,6 +363839,30 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    0,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "9d26362a-4411-4d8b-b114-03f4f89928d7_694-92": {
@@ -371999,6 +374981,29 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "10a848ed-f258-4930-abdd-1fd60b788abc_788-28": {
@@ -372805,6 +375810,27 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "a055e4e8-cc07-47c1-a438-06f45c4f724c_2257-57": {
@@ -382247,6 +385273,28 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "fb92d350-9bf9-4b16-8a1f-7858de276226_561-78": {
@@ -384225,6 +387273,27 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "1de5ae42-ca61-4a76-a514-8b70c40553fc_1576-85": {
@@ -401761,6 +404830,28 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "4209376c-04be-47f0-b905-835fedde4cd0_5602-77": {
@@ -405181,6 +408272,32 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2,
+                    3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "2a97736a-4fff-4753-84de-e6586a5603cc_2711-38": {
@@ -405590,6 +408707,28 @@
             },
             "sensible": {
                 "results": [],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    0
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
                 "correct": [
                     2,
                     3
@@ -409067,6 +412206,27 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "fe827643-62c3-4cb9-b009-7ed43731c9bd_273-13": {
@@ -412260,6 +415420,27 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "294c8827-a667-49a5-9e7e-9c910001ce54_101-30": {
@@ -416229,6 +419410,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "d6f9d174-2d42-49e7-83e4-daa9e8b0aa25_1389-10": {
@@ -418346,6 +421549,27 @@
                     0
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "3a9a814d-222f-4712-97b4-a71d9f8b5a4a_288-34": {
@@ -420235,6 +423459,28 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "fdfa65a5-9d90-4d27-8667-cd2c511614e3_513-55": {
@@ -420611,6 +423857,29 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "4f549225-e82e-4294-9379-4891e47725c7_1121-97": {
@@ -423827,6 +427096,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "110f9870-6b6c-4a20-a3c8-8c2e29c53bb7_1388-88": {
@@ -426804,6 +430095,27 @@
                     4
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    3
+                ],
+                "correct": [
+                    4,
+                    4
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
+                "correct": [
+                    4
+                ]
+            },
+            "followed": {}
         }
     },
     "d3f76c88-5996-4da0-8b8f-6c1b8f85a4d8_9209-81": {
@@ -428321,6 +431633,27 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "ce121331-6a77-44c0-9c0d-8d6b21f73b24_67-61": {
@@ -431138,6 +434471,28 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "a6ae81d6-f014-4902-bae6-b06373b31c55_153-41": {
@@ -434404,6 +437759,31 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "7f296d37-a819-408f-aa34-80b63a40f01e_28-00": {
@@ -435520,6 +438900,30 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2,
+                    3
+                ],
+                "correct": [
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "39a53568-d759-4f19-ac19-bc4ba29b5c17_726-07": {
@@ -435891,6 +439295,27 @@
             }
         },
         "claude-3-7-sonnet@20250219": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
             "best": {
                 "results": [
                     1,
@@ -437095,6 +440520,28 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "5e97e33c-b3ca-48b2-9e7e-069fe39199fb_1921-41": {
@@ -438299,6 +441746,28 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    0,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "963b09ff-1da2-4168-bed2-fe1d2531dd98_1393-91": {
@@ -440618,6 +444087,25 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "7acd59a8-ed64-4a99-a469-3d5529a4098a_270-66": {
@@ -441378,6 +444866,29 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    0,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "083b7556-9dff-40e2-9fad-bef3f82dbf37_1003-31": {
@@ -449200,6 +452711,28 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    3,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "7665b96d-1a30-435b-9679-e7defed426e6_99-13": {
@@ -452051,6 +455584,29 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "b6474db0-090c-40df-8d65-0a52dd0578cc_984-29": {
@@ -454019,6 +457575,30 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2,
+                    3
+                ],
+                "correct": [
+                    0,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "cb1f1ddf-f4f6-4b0e-ab73-0285729ba790_40-06": {
@@ -455083,6 +458663,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "5cf98bc1-012f-482d-86ee-9337d8747dce_2305-61": {
@@ -455431,6 +459032,27 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "ba44d0ee-9aba-4d05-8d1b-1eac7346f479_1433-66": {
@@ -465273,6 +468895,29 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "10c73f89-cc7d-4d43-b1df-b56703de1b24_711-97": {
@@ -469663,6 +473308,27 @@
             }
         },
         "claude-3-7-sonnet@20250219": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
             "best": {
                 "results": [
                     1,
@@ -475450,6 +479116,27 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "09fe2f2d-7d90-4d7d-9dcd-baec4704f4cc_4409-86": {
@@ -479200,6 +482887,30 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    3
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "97bd40e4-be39-403d-b9ae-f7eb006c51e2_914-45": {
@@ -481206,6 +484917,28 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "069c1058-881d-49da-b45d-b9f7e08fe932_1164-27": {
@@ -486623,6 +490356,27 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    4,
+                    4
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    4
+                ]
+            },
+            "followed": {}
         }
     },
     "ac8704d3-ab1c-4412-a10e-befb387063b2_270-04": {
@@ -488596,6 +492350,30 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    0,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "1e90b2b5-5483-4ecc-b8e0-fb0bf63ccac3_546-46": {
@@ -489907,6 +493685,31 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2
+                ],
+                "correct": [
+                    0,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "ed792c47-5cb3-427c-a0e9-5dac33456e6a_1026-89": {
@@ -490275,6 +494078,29 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    0
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "66bf8281-f77c-4e37-b9a8-5f2aabf73ef9_943-34": {
@@ -492410,6 +496236,30 @@
             "sensible": {
                 "results": [
                     4
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2
                 ],
                 "correct": [
                     2,
@@ -495769,6 +499619,27 @@
                     0
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "49f87e0a-cc34-447e-87ba-209e430aafb0_2852-27": {
@@ -498636,6 +502507,28 @@
                 "results": [
                     0,
                     1,
+                    3
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
                     3
                 ],
                 "correct": [
@@ -505834,6 +509727,31 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2,
+                    3
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "44c5117d-fb5c-4fcf-b648-d7eb76d5f95a_1424-15": {
@@ -507133,6 +511051,27 @@
                     0
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "cd0c7d35-19cf-4ce2-9b40-0209547acde5_1364-91": {
@@ -509580,6 +513519,27 @@
                     4
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    0
+                ],
+                "correct": [
+                    4,
+                    4
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
+                "correct": [
+                    4
+                ]
+            },
+            "followed": {}
         }
     },
     "42263a6a-e984-4dd9-82db-a43d6e879c8f_828-54": {
@@ -511939,6 +515899,28 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "c34effc7-6198-4c85-80c7-c8be85b77dd3_5200-39": {
@@ -512753,6 +516735,27 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "929a6fbb-3fda-45af-95bf-144d851761f4_1114-91": {
@@ -522713,6 +526716,32 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2,
+                    3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "aa19d5c0-35b6-4ec2-9865-07f556c341de_34-98": {
@@ -523086,6 +527115,29 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "4065f62a-faae-4926-aee8-1d5bf73661a3_2321-27": {
@@ -523487,6 +527539,28 @@
             },
             "sensible": {
                 "results": [
+                    2
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
                     2
                 ],
                 "correct": [
@@ -524247,6 +528321,29 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "c0eea386-412b-4127-a2d3-352322a0038c_719-09": {
@@ -526635,6 +530732,29 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "2dbdd409-0be0-447c-8ae8-3f107fe9af80_1439-37": {
@@ -527008,6 +531128,26 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "6243586b-a8df-4c37-95f8-da7f4f5d57d6_868-79": {
@@ -527349,6 +531489,27 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    4,
+                    4
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    4
+                ]
+            },
+            "followed": {}
         }
     },
     "ac582760-09b1-4a6e-be08-f19f9bf5dfcb_391-13": {
@@ -529740,6 +533901,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "e14bb000-250b-4f3d-aec6-e72d4f29d123_1299-73": {
@@ -530093,6 +534276,26 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [],
+                "correct": [
+                    0,
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "94d5eff8-0fac-4719-adf2-5c0208ab89f7_3271-35": {
@@ -532484,6 +536687,30 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "9a33e9f1-a740-4810-a624-62b0c9935741_1702-28": {
@@ -534054,6 +538281,26 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    4,
+                    4
+                ]
+            },
+            "sensible": {
+                "results": [],
+                "correct": [
+                    0,
+                    4
+                ]
+            },
+            "followed": {}
         }
     },
     "c4333895-ed19-42fe-9323-271a41bdfe4c_8-13": {
@@ -535278,6 +539525,28 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "fffbaeef-577f-45f0-baa9-f10cabf62dfb_278-37": {
@@ -536837,6 +541106,32 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2,
+                    3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "49925bc0-d1f2-4623-891f-147641b0e94f_1165-19": {
@@ -537268,6 +541563,31 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    0
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "fbc425c4-def6-49a7-8b88-5d5d00b5524e_278-29": {
@@ -539613,6 +543933,29 @@
                     0
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    3
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "86fb4797-274f-4807-848a-8b1ddc5c29e8_730-35": {
@@ -540454,6 +544797,30 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "8a0de6d0-5d28-43f5-91e6-48f41eeb3752_1038-76": {
@@ -542945,6 +547312,25 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "1f216b72-21a2-4463-b5ae-13bffd779b4d_40-21": {
@@ -543698,6 +548084,28 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "ac8dba37-ce09-4dc5-b478-8194e41353c3_5240-05": {
@@ -544859,6 +549267,27 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "f22115b5-b9be-4e30-8576-7c1fcecec480_21-27": {
@@ -552460,6 +556889,28 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    4,
+                    4
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    4
+                ]
+            },
+            "followed": {}
         }
     },
     "ecdc4071-1903-4024-a357-d0082720168e_115-49": {
@@ -555190,6 +559641,29 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "1f6eb61d-74fa-411e-979c-2e66e71f2b7d_345-36": {
@@ -558341,6 +562815,28 @@
                 "results": [
                     1,
                     1
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
                 ],
                 "correct": [
                     2,
@@ -561996,6 +566492,29 @@
                     0
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    3
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "501d1e55-968d-4c10-9d29-e0f4bee907a0_654-33": {
@@ -562412,6 +566931,29 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "6baa673a-0cc6-4da2-a481-877de0d2faa5_1148-60": {
@@ -565170,6 +569712,26 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [],
+                "correct": [
+                    0,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "afd5c197-7b14-4e21-ac56-d23b6a5543d0_1256-20": {
@@ -565560,6 +570122,27 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "85782c5f-a240-44d9-951c-27f0bb3f7f4c_375-79": {
@@ -574757,6 +579340,30 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2,
+                    3
+                ],
+                "correct": [
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "a99c5790-b590-4c29-98b3-004bbf106ce7_312-10": {
@@ -578286,6 +582893,25 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "2131b8e4-79b5-48f7-b092-e4a13ed96749_2003-33": {
@@ -579064,6 +583690,30 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "2dbdd409-0be0-447c-8ae8-3f107fe9af80_163-46": {
@@ -580278,6 +584928,25 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "ca1773b8-ec8e-4f61-8e8f-7e4211830793_1043-00": {
@@ -581437,6 +586106,30 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "cd1d3c56-69ca-4602-944e-bb9fabb9710b_1637-32": {
@@ -583662,6 +588355,29 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    0,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "e70f4b34-432f-47dc-834f-5bc6bd67dc62_676-86": {
@@ -589149,6 +593865,27 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "134a4c63-583a-4e64-8cf9-002b6d26cdf1_375-78": {
@@ -589542,6 +594279,25 @@
                 "results": [
                     3
                 ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [],
                 "correct": [
                     3
                 ]
@@ -589973,6 +594729,29 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    0,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "490b4f30-9bb5-4bf2-966b-13d509b5709b_1247-51": {
@@ -598005,6 +602784,27 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "e93fdf27-c14c-4794-b4b7-20685b40156f_1313-69": {
@@ -600768,6 +605568,27 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "11663dd8-aa9d-429d-80e2-2807b341350e_224-01": {
@@ -604475,6 +609296,25 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "fec31c20-1910-4ab1-afc5-6aa3057a45f5_810-30": {
@@ -608230,6 +613070,25 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "69f1101f-cb9e-4ad1-8fe6-ed840e5bcf9b_1350-51": {
@@ -608568,6 +613427,28 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "786877d8-e353-4fae-b488-8d7443646882_224-14": {
@@ -615048,6 +619929,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "1bfe3bec-79fd-4b1b-8738-4d313f3f79b9_355-45": {
@@ -615530,6 +620434,30 @@
                 "results": [
                     0,
                     1
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
                 ],
                 "correct": [
                     0,
@@ -617889,6 +622817,29 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    0,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "307b1878-875f-4703-bfe9-32d11d20853f_63-96": {
@@ -618260,6 +623211,28 @@
             },
             "sensible": {
                 "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
                     2
                 ],
                 "correct": [
@@ -619777,6 +624750,28 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "8f4008a5-18c9-464b-9bce-1ffa824f238d_96-39": {
@@ -623355,6 +628350,28 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "1e9da62e-72ae-48d2-8b6e-00a5283d213f_571-85": {
@@ -623851,6 +628868,31 @@
             "sensible": {
                 "results": [
                     1
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2
                 ],
                 "correct": [
                     0,
@@ -626682,6 +631724,29 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    0,
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "eb20bebd-41e5-4a02-aa7e-73d3da5bc97e_68-58": {
@@ -629934,6 +634999,29 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "2c77de23-cd87-4a41-a83c-4bdc0170f45c_80-46": {
@@ -639697,6 +644785,26 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "4c70179a-f411-4f81-b44d-cfe34b8f9180_551-50": {
@@ -647954,6 +653062,29 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    0,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "e70f4b34-432f-47dc-834f-5bc6bd67dc62_78-75": {
@@ -651939,6 +657070,28 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    0,
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "9ced9631-9c8f-4a69-9984-e6b0763d11ba_278-77": {
@@ -654362,6 +659515,25 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "8d4895eb-b2d1-43b8-90f1-e80fcc37797b_2448-11": {
@@ -655208,6 +660380,28 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    0,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "421a0364-6ed6-4bd4-8db2-5de8e245c9bc_455-02": {
@@ -655603,6 +660797,28 @@
             "sensible": {
                 "results": [
                     0
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
                 ],
                 "correct": [
                     0
@@ -661596,6 +666812,27 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "1c0ba820-4a30-47dd-852d-c30685c7051e_0-00": {
@@ -666506,6 +671743,30 @@
                     3
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    0,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "ed027cb2-5b92-4de2-ab58-69d42325ef15_965-69": {
@@ -669577,6 +674838,28 @@
             "sensible": {
                 "results": [
                     2
+                ],
+                "correct": [
+                    0,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
                 ],
                 "correct": [
                     0,
@@ -672719,6 +678002,28 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    0
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "27f9cd4e-8b61-477c-9b63-ca3d437a0dff_855-42": {
@@ -673081,6 +678386,28 @@
             }
         },
         "claude-3-7-sonnet@20250219": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
             "best": {
                 "results": [
                     3,
@@ -674680,6 +680007,30 @@
             "sensible": {
                 "results": [
                     0,
+                    1
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
                     1
                 ],
                 "correct": [
@@ -685891,6 +691242,28 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "8677afac-95b4-4ec1-aec5-39c90fd8374c_271-68": {
@@ -687044,6 +692417,27 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "4b5de875-cc82-494e-b768-8ac0ae3bb279_930-87": {
@@ -687378,6 +692772,28 @@
                     1
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    0,
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "fa53388f-58ab-41a8-9f0d-55407cae3973_757-23": {
@@ -695606,6 +701022,28 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "ae59dda2-8aa0-40e1-bd48-af368ea8e149_1586-25": {
@@ -699480,6 +704918,30 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "98ff21ab-6151-4429-a6ff-39d3c6fa173b_1442-50": {
@@ -700364,6 +705826,28 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    0,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "407df63f-c7a8-4c18-aa0f-b8e6ae16a938_620-12": {
@@ -701627,6 +707111,26 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [],
+                "correct": [
+                    0,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "67bc312a-3b49-4847-aa79-63ad7d3e4217_303-11": {
@@ -702020,6 +707524,25 @@
                     2
                 ]
             }
+        },
+        "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "3625b3d9-e323-4c05-a27a-aba79f01a5bd_18-58": {

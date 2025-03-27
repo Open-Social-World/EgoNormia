@@ -164,3 +164,4 @@ cython_debug/
 #.idea/
 
 SECRETS.env
+eval/compute_scores.py
