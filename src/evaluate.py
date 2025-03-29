@@ -30,7 +30,9 @@ if description and blind:
     exit()
 
 # Define which model you're using
-if 'o3' in model_type:
+if 'video' in model_type:
+    model = eval_api.GeminiVideoEvalAPI(model=model_type, blind=blind, jsonfile=jsonfile, num_workers=1, desc=description)
+elif 'o3' in model_type:
     model = eval_api.OpenAIO3EvalAPI(model=model_type, blind=blind, jsonfile=jsonfile, num_workers=1, desc=description)
 elif 'gemini' in model_type:
     model = eval_api.GeminiEvalAPI(model=model_type, blind=blind, jsonfile=jsonfile, num_workers=1, desc=description)
