@@ -1,0 +1,1 @@
+python evaluate.py --modelname video_gemini-1.5-flash-002 --jsonfile final_data.json

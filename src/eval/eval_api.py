@@ -427,10 +427,60 @@ class GeminiEvalAPI(EvalAPI):
 
 class GeminiVideoEvalAPI(EvalAPI):
 
+    def __init__(self, model, blind, jsonfile, num_workers, desc):
+
+        self.modelname = model
+        self.model = self.set_model()
+
+        self.blind = blind
+        srcdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        self.jsonfile = srcdir+'/final_dataset/'+jsonfile
+        savefile = self.jsonfile.replace('.json','_eval.json')
+        self.savefile = os.path.join(srcdir, '/final_dataset', savefile)
+
+        self.only_best = False
+
+        self.num_workers = num_workers
+
+        self.custom = False
+
+        self.desc = desc
+
+        print(f"Testing Conditions \n Model: {self.modelname} \n Blind: {self.blind} \n JSON File: {self.jsonfile}")
+        print(f"Desc: {self.desc}")
+        print(f"Only best: {self.only_best}")
+
+        if self.only_best:
+            print("Only best mode enabled. Sensible and follow_norm tasks will not be evaluated.")
+            time.sleep(1)
+
+        if self.desc:
+            self.prefix = "The following descrption: {desc} describes a first-person perspective video of a person in a given situation"
+        elif not self.blind:
+            self.prefix = "The following first-person perspective video depicts"
+        else:
+            self.prefix = "You are blind, so do not request context, only follow the instructions below. This situation involves"
+
+        if self.blind:
+            print("Blind mode enabled. No images will be passed to the model.")
+            self.modelname = "blind_" + self.modelname
+
+        if 'rag' in self.modelname:
+            from eval.context_indexing import ImageIndexer
+            print("Loading RAG model")
+
+            # Get current dir
+            srcdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+            embeddings_dir = srcdir+'/normthinker/half_embeddings.npy'
+
+            # Load RAG model
+            self.indexer_loaded = ImageIndexer(embeddings_path=embeddings_dir)
+
     def set_model(self):
         # model = genai.Client(api_key=api_keys.gem_key)
         vertexai.init(project="gcp-multi-agent", location="us-central1")
-        model = GenerativeModel("gemini-1.5-pro-002")
+        mn = self.modelname.replace('blind_','').replace('desc_','').replace('video_','')
+        model = GenerativeModel(mn)
         # model = genai.Client(vertexai=True, project="gcp-multi-agent", location="us-central1")
         return model
     
@@ -517,7 +567,7 @@ class GeminiVideoEvalAPI(EvalAPI):
 
         task_set = random.sample(task_set, len(task_set))
 
-        task_set = task_set[:] # Look here!!!
+        task_set = task_set[:500] # Look here!!!
 
         return task_set      
 
