@@ -1,1 +1,1 @@
-python evaluate.py --modelname video_gemini-1.5-flash-002 --jsonfile final_data.json
+python evaluate.py --modelname new_gpt-4o --jsonfile final_data.json

@@ -1,0 +1,1 @@
+gsutil -m cp -r ./frames/* gs://physical-social-norm/sampled_frames_new_new

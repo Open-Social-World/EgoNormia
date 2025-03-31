@@ -32,6 +32,10 @@ if description and blind:
 # Define which model you're using
 if 'video' in model_type:
     model = eval_api.GeminiVideoEvalAPI(model=model_type, blind=blind, jsonfile=jsonfile, num_workers=1, desc=description)
+elif 'frames' in model_type and 'gpt' in model_type:
+    model = eval_api.OpenAIFramesEvalAPI(model=model_type, blind=blind, jsonfile=jsonfile, num_workers=1, desc=description)
+elif 'frames' in model_type:
+    model = eval_api.GeminiFramesEvalAPI(model=model_type, blind=blind, jsonfile=jsonfile, num_workers=1, desc=description)
 elif 'o3' in model_type:
     model = eval_api.OpenAIO3EvalAPI(model=model_type, blind=blind, jsonfile=jsonfile, num_workers=1, desc=description)
 elif 'gemini' in model_type:

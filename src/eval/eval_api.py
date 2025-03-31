@@ -20,10 +20,25 @@ import re
 import ast
 import vertexai
 from vertexai.generative_models import GenerativeModel, Part
+from google.cloud import storage
+
+client = storage.Client()
+bucket_name = 'physical-social-norm'
+bucket = client.get_bucket(bucket_name)
+
+# Get list of already uploaded videos
+blobs = bucket.list_blobs()
+uploaded_videos1 = {i.name.split('/')[-1].split('_')[0] + '_' + i.name.split('/')[-1].split('_')[1] for i in blobs if i.name.startswith('sampled_snippets_new_new/') and len(i.name.split('/')[-1]) > 1}
+print(f"{len(uploaded_videos1)} videos already uploaded to GCP1")
+blobs = bucket.list_blobs()
+uploaded_videos2 = {i.name.split('/')[-1].split('_')[0] + '_' + i.name.split('/')[-1].split('_')[1] for i in blobs if i.name.startswith('sampled_snippets_v2/') and len(i.name.split('/')[-1]) > 1}
+print(f"{len(uploaded_videos2)} videos already uploaded to GCP1")
+blobs = bucket.list_blobs()
 
 # # OpenAI imports
 import openai
 import concurrent.futures
+from openai import AzureOpenAI
 
 class EvalAPI:
     def __init__(self, model, blind, jsonfile, num_workers, desc):
@@ -154,7 +169,7 @@ class EvalAPI:
 
         task_set = random.sample(task_set, len(task_set))
 
-        task_set = task_set[:] # Look here!!!
+        task_set = task_set[:500] # Look here!!!
 
         return task_set      
     
@@ -590,15 +605,283 @@ class GeminiVideoEvalAPI(EvalAPI):
         response = self.model.generate_content(full_input)
 
         return response.text
+
+class GeminiFramesEvalAPI(EvalAPI):
+
+
+    def set_model(self):
+        # model = genai.Client(api_key=api_keys.gem_key)
+        vertexai.init(project="gcp-multi-agent", location="us-central1")
+        mn = self.modelname.replace('blind_','').replace('desc_','').replace('frames_','')
+        model = GenerativeModel(mn)
+        # model = genai.Client(vertexai=True, project="gcp-multi-agent", location="us-central1")
+        return model
+    
+    def load_data_final(self):
+
+        ds = load_dataset("open-social-world/EgoNormia")
+        # vid_url = "https://huggingface.co/datasets/open-social-world/EgoNormia/resolve/main/video/{vid_id}/video_prev.mp4?download=true"
+
+        # Get target_vid_ids as ids of ds['train']
+        target_vid_ids = ds['train']['id']
+
+        # Check already-evaled rows
+        eval = self.savefile
+        print(f"Loading data from {eval}")
+
+        with open(eval, 'r') as f:
+            eval_results = json.load(f)
         
+        task_set = []
+
+        # Directly index columns of ds['train']
+        behaviors_col = ds['train']['behaviors']
+        justifications_col = ds['train']['justifications']
+        correct_col = ds['train']['correct_idx']
+        sensible_col = ds['train']['sensible_idx']
+        desc_col = ds['train']['description']
+
+        # For each id in target_vid_ids (recall id is in form uuid_timestamp)
+        for cnt, vid_id in tqdm.tqdm(enumerate(target_vid_ids), desc="Loading data"):
+            # _vid = vid_id.split('_')[0]
+            evl_res = eval_results[vid_id]
+
+            # If data['answers'] has a key equal to self.modelname, skip
+            if self.modelname in evl_res.keys():
+                print(f"Skipping {vid_id}, already tested on {self.modelname}.")
+                continue
+
+            behaviors = behaviors_col[cnt]
+            justifications = justifications_col[cnt]
+
+            index_of_corr = correct_col[cnt]
+            sensible = sensible_col[cnt] # These are indices
+
+            n = len(behaviors)
+            random_indices_behaviors = random.sample(range(n), n)
+            random_indices_justifications = random.sample(range(n), n)
+
+            #random_indices_behaviors = [i for i in range(n)]
+            #random_indices_justifications = [i for i in range(n)]
+
+            behaviors = [behaviors[i] for i in random_indices_behaviors]
+            justifications = [justifications[i] for i in random_indices_justifications]
+            sensible = [random_indices_behaviors[i] for i in sensible]
+
+
+            correct_behavior = random_indices_behaviors[index_of_corr]
+            correct_justification = random_indices_justifications[index_of_corr]
+            # prev_videos_paths = vid_url.format(vid_id=vid_id) # Single image
+            if vid_id in uploaded_videos1:
+                prev_videos_paths = [f"gs://physical-social-norm/sampled_frames_new_new/{vid_id}/frame_{i}_prev.jpg" for i in range(5)]
+            elif vid_id in uploaded_videos2:
+                prev_videos_paths = [f"gs://physical-social-norm/sampled_frames_v2/{vid_id}/frame_{i}_prev.jpg" for i in range(5)]
+
+
+            # Build random mappings as current index:original index
+            b_mappings = {random_indices_behaviors[i]: i for i in range(n)}
+            j_mappings = {random_indices_justifications[i]: i for i in range(n)}
+
+            desc = desc_col[cnt]
+            # Construct datapoint
+            datapoint = {'id': vid_id,
+                        'behaviors': behaviors,
+                        'justifications': justifications,
+                        'correct': [correct_behavior, correct_justification],
+                        'sensible': sensible,
+                        '_prev': prev_videos_paths,
+                        'behavior_shuffle': b_mappings,
+                        'justification_shuffle': j_mappings,
+                        'description': desc}
+            
+            task_set.append(datapoint)
+
+        print(f"Task set size: {len(task_set)}")
+
+        task_set = random.sample(task_set, len(task_set))
+
+        task_set = task_set[:500] # Look here!!!
+
+        return task_set      
+
+    @backoff(max_retries=5, base_delay=3)
+    def inference(self, prompt, images):
+
+        full_input = [prompt]
+
+        if self.blind:
+            pass
+        else:
+            # image_bytes = base64.b64encode(requests.get(image).content).decode('utf-8')
+
+            # image_file = types.Part.from_bytes(data=image_bytes,mime_type="image/jpeg")
+            # for image in images:
+            #     img_file = Part.from_uri(image, "image/jpeg")
+            #     full_input.append(img_file)
+            for image in images:
+                try:
+                    img_file = Part.from_uri(image, "image/jpeg")
+                    full_input.append(img_file)
+                except Exception as e:
+                    print(f"Warning: Could not load image {image}: {str(e)}")
+                    continue
+
+
+        # response = self.model.models.generate_content(model = mn,
+        #                                               contents = full_input)
+        response = self.model.generate_content(full_input)
+        return response.text
+
+class OpenAIFramesEvalAPI(EvalAPI):
+
+    def set_model(self):
+
+        endpoint = "https://diyi-nairr.openai.azure.com/"
+
+        subscription_key = "openai_api_key"
+        api_version = "2024-12-01-preview"
+
+        client = AzureOpenAI(
+            api_version=api_version,
+            azure_endpoint=endpoint,
+            api_key=subscription_key,
+        )
+
+        return client
+
+    
+    def load_data_final(self):
+
+        ds = load_dataset("open-social-world/EgoNormia")
+        # vid_url = "https://huggingface.co/datasets/open-social-world/EgoNormia/resolve/main/video/{vid_id}/video_prev.mp4?download=true"
+
+        # Get target_vid_ids as ids of ds['train']
+        target_vid_ids = ds['train']['id']
+
+        # Check already-evaled rows
+        eval = self.savefile
+        print(f"Loading data from {eval}")
+
+        with open(eval, 'r') as f:
+            eval_results = json.load(f)
+        
+        task_set = []
+
+        # Directly index columns of ds['train']
+        behaviors_col = ds['train']['behaviors']
+        justifications_col = ds['train']['justifications']
+        correct_col = ds['train']['correct_idx']
+        sensible_col = ds['train']['sensible_idx']
+        desc_col = ds['train']['description']
+
+        # For each id in target_vid_ids (recall id is in form uuid_timestamp)
+        for cnt, vid_id in tqdm.tqdm(enumerate(target_vid_ids), desc="Loading data"):
+            # _vid = vid_id.split('_')[0]
+            evl_res = eval_results[vid_id]
+
+            # If data['answers'] has a key equal to self.modelname, skip
+            if self.modelname in evl_res.keys():
+                print(f"Skipping {vid_id}, already tested on {self.modelname}.")
+                continue
+
+            behaviors = behaviors_col[cnt]
+            justifications = justifications_col[cnt]
+
+            index_of_corr = correct_col[cnt]
+            sensible = sensible_col[cnt] # These are indices
+
+            n = len(behaviors)
+            random_indices_behaviors = random.sample(range(n), n)
+            random_indices_justifications = random.sample(range(n), n)
+
+            #random_indices_behaviors = [i for i in range(n)]
+            #random_indices_justifications = [i for i in range(n)]
+
+            behaviors = [behaviors[i] for i in random_indices_behaviors]
+            justifications = [justifications[i] for i in random_indices_justifications]
+            sensible = [random_indices_behaviors[i] for i in sensible]
+
+
+            correct_behavior = random_indices_behaviors[index_of_corr]
+            correct_justification = random_indices_justifications[index_of_corr]
+            # prev_videos_paths = vid_url.format(vid_id=vid_id) # Single image
+            if vid_id in uploaded_videos1:
+                prev_videos_paths = [f"https://storage.googleapis.com/physical-social-norm/sampled_frames_new_new/{vid_id}/frame_{i}_prev.jpg" for i in range(5)]
+                if vid_id == '6322a6f2-f271-4335-bf46-d428a5a58298_0-02':
+                    prev_videos_paths = [f"https://storage.googleapis.com/physical-social-norm/sampled_frames_new_new/{vid_id}/frame_{i}_prev.jpg" for i in range(4)]
+            elif vid_id in uploaded_videos2:
+                prev_videos_paths = [f"https://storage.googleapis.com/physical-social-norm/sampled_frames_v2/{vid_id}/frame_{i}_prev.jpg" for i in range(5)]
+
+
+            # Build random mappings as current index:original index
+            b_mappings = {random_indices_behaviors[i]: i for i in range(n)}
+            j_mappings = {random_indices_justifications[i]: i for i in range(n)}
+
+            desc = desc_col[cnt]
+            # Construct datapoint
+            datapoint = {'id': vid_id,
+                        'behaviors': behaviors,
+                        'justifications': justifications,
+                        'correct': [correct_behavior, correct_justification],
+                        'sensible': sensible,
+                        '_prev': prev_videos_paths,
+                        'behavior_shuffle': b_mappings,
+                        'justification_shuffle': j_mappings,
+                        'description': desc}
+            
+            task_set.append(datapoint)
+
+        print(f"Task set size: {len(task_set)}")
+
+        task_set = random.sample(task_set, len(task_set))
+
+        task_set = task_set[:500] # Look here!!!
+
+        return task_set 
+    
+    @backoff(max_retries=5, base_delay=3)
+    def inference(self, prompt, images):
+
+        contents = []
+        if not self.blind:
+            for image in images:
+                contents.append({"type": "image_url", "image_url": {"url":image}})
+        contents.append({"type": "text", "text": prompt})
+
+        response = self.model.chat.completions.create(
+            model = "gpt-4o-240513-72635",
+            messages=[
+                {
+                    "role": "user",
+                    "content": contents
+                }
+            ],
+            max_tokens=2000,
+            temperature=0.0
+        )
+
+        response = response.choices[0].message.content
+        return response
 
 class OpenAIEvalAPI(EvalAPI):
 
     def set_model(self):
 
-        model = openai.Client()
+        # model = openai.Client()
 
-        return model
+        # return model
+        endpoint = "https://diyi-nairr.openai.azure.com/"
+
+        subscription_key = "openai_api_key"
+        api_version = "2024-12-01-preview"
+
+        client = AzureOpenAI(
+            api_version=api_version,
+            azure_endpoint=endpoint,
+            api_key=subscription_key,
+        )
+
+        return client
     
     @backoff(max_retries=5, base_delay=3)
     def inference(self, prompt, image):
@@ -611,7 +894,7 @@ class OpenAIEvalAPI(EvalAPI):
         mn = self.modelname.replace('blind_','').replace('desc_','')
 
         response = self.model.chat.completions.create(
-            model = mn,
+            model = "gpt-4o-240513-72635",
             messages=[
                 {
                     "role": "user",
