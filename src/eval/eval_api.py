@@ -9,6 +9,8 @@ import base64
 from anthropic import AnthropicVertex
 import PIL.Image
 import io
+import pickle
+
 
 import api_keys
 from eval.utils import backoff
@@ -23,6 +25,7 @@ from vertexai.generative_models import GenerativeModel, Part
 from google.cloud import storage
 
 client = storage.Client()
+#TODO: Obfuscate this
 bucket_name = 'physical-social-norm'
 bucket = client.get_bucket(bucket_name)
 
@@ -135,9 +138,6 @@ class EvalAPI:
             random_indices_behaviors = random.sample(range(n), n)
             random_indices_justifications = random.sample(range(n), n)
 
-            #random_indices_behaviors = [i for i in range(n)]
-            #random_indices_justifications = [i for i in range(n)]
-
             behaviors = [behaviors[i] for i in random_indices_behaviors]
             justifications = [justifications[i] for i in random_indices_justifications]
             sensible = [random_indices_behaviors[i] for i in sensible]
@@ -169,7 +169,19 @@ class EvalAPI:
 
         task_set = random.sample(task_set, len(task_set))
 
-        task_set = task_set[:500] # Look here!!!
+        task_set = task_set[:] # Look here!!!
+
+        # Cache task set as pickle for postmortem
+        ts = time.time()
+
+        removed_slash = self.modelname.split('/')[-1]
+
+        # Make results directory if it doesn't exist
+        if not os.path.exists('../results'):
+            os.makedirs('../results')
+
+        with open(f'../results/{removed_slash}_{ts}_data.pkl', 'wb') as f:
+            pickle.dump(task_set, f)
 
         return task_set      
     
@@ -273,11 +285,15 @@ Response example:
 
             results = [a_results, j_results]
 
-            if results[0] < 4 and results[0] > -1:
-                results[0] = datapoint['behavior_shuffle'][results[0]]
+            # Get unshuffler as inverse of datapoint['behavior_shuffle'] and datapoint['justification_shuffle']
+            unshuffler_a = {v: k for k, v in datapoint['behavior_shuffle'].items()}
+            unshuffler_j = {v: k for k, v in datapoint['justification_shuffle'].items()}
 
-            if results[1] < 4 and results[1] > -1:
-                results[1] = datapoint['justification_shuffle'][results[1]]
+            if results[0] <= 4 and results[0] > -1:
+                results[0] = unshuffler_a[results[0]]
+
+            if results[1] <= 4 and results[1] > -1:
+                results[1] = unshuffler_j[results[1]]
 
             return [{'results': results, 'correct': correct}, datapoint['id']]
         except Exception as e:
@@ -332,8 +348,10 @@ Response example:
             results = ast.literal_eval(sensible_response)
             results = [r - 1 for r in results]
 
+            unshuffler_a = {v: k for k, v in datapoint['behavior_shuffle'].items()}
+
             if len(results) == len([r for r in results if r <= 4 and r > -1]):
-                results = [datapoint['behavior_shuffle'][r] for r in results]
+                results = [unshuffler_a[r] for r in results]
             else:
                 results = [] # Model outputs malform, but rest of the code is fine, counts as model error
             sensible = [datapoint['behavior_shuffle'][s] for s in sensible]
@@ -359,7 +377,6 @@ Response example:
                 sensible_futures = list(tqdm.tqdm(executor.map(self.pick_sensible, test_set), total=len(test_set)))
 
         # Cache data as pickle to not be lost
-        import pickle
         ts = time.time()
 
         removed_slash = self.modelname.split('/')[-1]
@@ -543,9 +560,6 @@ class GeminiVideoEvalAPI(EvalAPI):
             random_indices_behaviors = random.sample(range(n), n)
             random_indices_justifications = random.sample(range(n), n)
 
-            #random_indices_behaviors = [i for i in range(n)]
-            #random_indices_justifications = [i for i in range(n)]
-
             behaviors = [behaviors[i] for i in random_indices_behaviors]
             justifications = [justifications[i] for i in random_indices_justifications]
             sensible = [random_indices_behaviors[i] for i in sensible]
@@ -554,6 +568,8 @@ class GeminiVideoEvalAPI(EvalAPI):
             correct_behavior = random_indices_behaviors[index_of_corr]
             correct_justification = random_indices_justifications[index_of_corr]
             prev_videos_paths = vid_url.format(vid_id=vid_id) # Single image
+
+            #TODO: Obfuscate this
             # if vid_id in uploaded_videos1:
             #     prev_videos_paths = f"gs://physical-social-norm/sampled_snippets_new_new/{_vid}/{vid_id}_prev.mp4"
             # elif vid_id in uploaded_videos2:
@@ -578,11 +594,24 @@ class GeminiVideoEvalAPI(EvalAPI):
             
             task_set.append(datapoint)
 
+
+        # Cache task set as pickle for postmortem
+        ts = time.time()
+
+        removed_slash = self.modelname.split('/')[-1]
+
+        # Make results directory if it doesn't exist
+        if not os.path.exists('../results'):
+            os.makedirs('../results')
+
+        with open(f'../results/{removed_slash}_{ts}_data.pkl', 'wb') as f:
+            pickle.dump(task_set, f)
+
         print(f"Task set size: {len(task_set)}")
 
         task_set = random.sample(task_set, len(task_set))
 
-        task_set = task_set[:500] # Look here!!!
+        task_set = task_set[:] # Look here!!!
 
         return task_set      
 
@@ -661,9 +690,6 @@ class GeminiFramesEvalAPI(EvalAPI):
             random_indices_behaviors = random.sample(range(n), n)
             random_indices_justifications = random.sample(range(n), n)
 
-            #random_indices_behaviors = [i for i in range(n)]
-            #random_indices_justifications = [i for i in range(n)]
-
             behaviors = [behaviors[i] for i in random_indices_behaviors]
             justifications = [justifications[i] for i in random_indices_justifications]
             sensible = [random_indices_behaviors[i] for i in sensible]
@@ -672,6 +698,7 @@ class GeminiFramesEvalAPI(EvalAPI):
             correct_behavior = random_indices_behaviors[index_of_corr]
             correct_justification = random_indices_justifications[index_of_corr]
             # prev_videos_paths = vid_url.format(vid_id=vid_id) # Single image
+            #TODO: Obfuscate this
             if vid_id in uploaded_videos1:
                 prev_videos_paths = [f"gs://physical-social-norm/sampled_frames_new_new/{vid_id}/frame_{i}_prev.jpg" for i in range(5)]
             elif vid_id in uploaded_videos2:
@@ -694,13 +721,27 @@ class GeminiFramesEvalAPI(EvalAPI):
                         'justification_shuffle': j_mappings,
                         'description': desc}
             
+            
             task_set.append(datapoint)
+
+
+        # Cache task set as pickle for postmortem
+        ts = time.time()
+
+        removed_slash = self.modelname.split('/')[-1]
+
+        # Make results directory if it doesn't exist
+        if not os.path.exists('../results'):
+            os.makedirs('../results')
+
+        with open(f'../results/{removed_slash}_{ts}_data.pkl', 'wb') as f:
+            pickle.dump(task_set, f)
 
         print(f"Task set size: {len(task_set)}")
 
         task_set = random.sample(task_set, len(task_set))
 
-        task_set = task_set[:500] # Look here!!!
+        task_set = task_set[:] # Look here!!!
 
         return task_set      
 
@@ -736,9 +777,9 @@ class OpenAIFramesEvalAPI(EvalAPI):
 
     def set_model(self):
 
-        endpoint = "https://diyi-nairr.openai.azure.com/"
+        endpoint = api_keys.azure_endpoint
 
-        subscription_key = "openai_api_key"
+        subscription_key = api_keys.azure_key
         api_version = "2024-12-01-preview"
 
         client = AzureOpenAI(
@@ -794,9 +835,6 @@ class OpenAIFramesEvalAPI(EvalAPI):
             random_indices_behaviors = random.sample(range(n), n)
             random_indices_justifications = random.sample(range(n), n)
 
-            #random_indices_behaviors = [i for i in range(n)]
-            #random_indices_justifications = [i for i in range(n)]
-
             behaviors = [behaviors[i] for i in random_indices_behaviors]
             justifications = [justifications[i] for i in random_indices_justifications]
             sensible = [random_indices_behaviors[i] for i in sensible]
@@ -805,6 +843,7 @@ class OpenAIFramesEvalAPI(EvalAPI):
             correct_behavior = random_indices_behaviors[index_of_corr]
             correct_justification = random_indices_justifications[index_of_corr]
             # prev_videos_paths = vid_url.format(vid_id=vid_id) # Single image
+            #TODO: Obfuscate this
             if vid_id in uploaded_videos1:
                 prev_videos_paths = [f"https://storage.googleapis.com/physical-social-norm/sampled_frames_new_new/{vid_id}/frame_{i}_prev.jpg" for i in range(5)]
                 if vid_id == '6322a6f2-f271-4335-bf46-d428a5a58298_0-02':
@@ -831,11 +870,24 @@ class OpenAIFramesEvalAPI(EvalAPI):
             
             task_set.append(datapoint)
 
+        
+        # Cache task set as pickle for postmortem
+        ts = time.time()
+
+        removed_slash = self.modelname.split('/')[-1]
+
+        # Make results directory if it doesn't exist
+        if not os.path.exists('../results'):
+            os.makedirs('../results')
+
+        with open(f'../results/{removed_slash}_{ts}_data.pkl', 'wb') as f:
+            pickle.dump(task_set, f)
+
         print(f"Task set size: {len(task_set)}")
 
         task_set = random.sample(task_set, len(task_set))
 
-        task_set = task_set[:500] # Look here!!!
+        task_set = task_set[:] # Look here!!!
 
         return task_set 
     
@@ -870,9 +922,9 @@ class OpenAIEvalAPI(EvalAPI):
         # model = openai.Client()
 
         # return model
-        endpoint = "https://diyi-nairr.openai.azure.com/"
+        endpoint = api_keys.azure_endpoint
 
-        subscription_key = "openai_api_key"
+        subscription_key = api_keys.azure_key
         api_version = "2024-12-01-preview"
 
         client = AzureOpenAI(

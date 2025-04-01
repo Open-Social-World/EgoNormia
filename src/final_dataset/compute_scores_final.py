@@ -92,7 +92,8 @@ print("#"*50)
 for model in sorted(scores):
     if model and 'blind' not in model and 'desc' not in model:
         total = modeltotals[model]
-        print("Total: ", total)
         print(f"Model: {model}")
+        print("Total: ", total)
         print(f"Best: {scores[model]['best']['a'] / total * 100}, {scores[model]['best']['j'] / total * 100}, {scores[model]['best']['both'] / total * 100}")
         print(f"Sensible: {scores[model]['sensible'] / total * 100}")
+        print("-"*25)
