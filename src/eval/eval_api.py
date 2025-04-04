@@ -23,9 +23,11 @@ import ast
 import vertexai
 from vertexai.generative_models import GenerativeModel, Part
 from google.cloud import storage
+import openai
+import concurrent.futures
+from openai import AzureOpenAI
 
 client = storage.Client()
-#TODO: Obfuscate this
 bucket_name = 'physical-social-norm'
 bucket = client.get_bucket(bucket_name)
 
@@ -38,13 +40,8 @@ uploaded_videos2 = {i.name.split('/')[-1].split('_')[0] + '_' + i.name.split('/'
 print(f"{len(uploaded_videos2)} videos already uploaded to GCP1")
 blobs = bucket.list_blobs()
 
-# # OpenAI imports
-import openai
-import concurrent.futures
-from openai import AzureOpenAI
-
 class EvalAPI:
-    def __init__(self, model, blind, jsonfile, num_workers, desc):
+    def __init__(self, model, blind, jsonfile, num_workers, desc, num_datapoints):
 
         self.modelname = model
         self.model = self.set_model()
@@ -58,10 +55,13 @@ class EvalAPI:
         self.only_best = False
 
         self.num_workers = num_workers
+        self.num_datapoints = num_datapoints
 
         self.custom = False
 
         self.desc = desc
+
+        self.ablation = False
 
         print(f"Testing Conditions \n Model: {self.modelname} \n Blind: {self.blind} \n JSON File: {self.jsonfile}")
         print(f"Desc: {self.desc}")
@@ -135,8 +135,8 @@ class EvalAPI:
             sensible = sensible_col[cnt] # These are indices
 
             n = len(behaviors)
-            random_indices_behaviors = random.sample(range(n), n)
-            random_indices_justifications = random.sample(range(n), n)
+            random_indices_behaviors = [i for i in range(n)]
+            random_indices_justifications = [i for i in range(n)]
 
             behaviors = [behaviors[i] for i in random_indices_behaviors]
             justifications = [justifications[i] for i in random_indices_justifications]
@@ -145,7 +145,17 @@ class EvalAPI:
 
             correct_behavior = random_indices_behaviors[index_of_corr]
             correct_justification = random_indices_justifications[index_of_corr]
-            prev_images_paths = img_url.format(img_id=vid_id) # Single image
+
+            if self.ablation != 'video' and self.ablation != 'discrete_frames':
+                prev_images_paths = img_url.format(img_id=vid_id) # Single image
+            elif self.ablation == 'discrete_frames':
+                if vid_id in uploaded_videos1:
+                    prev_images_paths = [f"https://storage.googleapis.com/physical-social-norm/sampled_frames_new_new/{vid_id}/frame_{i}_prev.jpg" for i in range(5)]
+                elif vid_id in uploaded_videos2:
+                    prev_images_paths = [f"https://storage.googleapis.com/physical-social-norm/sampled_frames_v2/{vid_id}/frame_{i}_prev.jpg" for i in range(5)]
+            elif self.ablation == 'video':
+                vid_url = "https://huggingface.co/datasets/open-social-world/EgoNormia/resolve/main/video/{vid_id}/video_prev.mp4?download=true"
+                prev_images_paths = vid_url.format(vid_id=vid_id)
 
             # Build random mappings as current index:original index
             b_mappings = {random_indices_behaviors[i]: i for i in range(n)}
@@ -167,9 +177,14 @@ class EvalAPI:
 
         print(f"Task set size: {len(task_set)}")
 
-        task_set = random.sample(task_set, len(task_set))
+        #task_set = random.sample(task_set, len(task_set))
 
-        task_set = task_set[:] # Look here!!!
+        if self.num_datapoints != -1:
+            if self.num_datapoints > len(task_set):
+                print(f"Requested {self.num_datapoints} datapoints, but only {len(task_set)} available. Using all available datapoints.")
+            else:
+                print(f"Requested {self.num_datapoints} datapoints. Using only the first {self.num_datapoints} datapoints.")
+                task_set = task_set[:self.num_datapoints]
 
         # Cache task set as pickle for postmortem
         ts = time.time()
@@ -244,7 +259,8 @@ Response example:
 <reasoning goes here>
 1
 """
-        try:
+        #try:
+        if True:
             if 'rag' in self.modelname:
                 cr = self.indexer_loaded.query_image(_prev, top_k=5)
                 if self.blind:
@@ -296,9 +312,9 @@ Response example:
                 results[1] = unshuffler_j[results[1]]
 
             return [{'results': results, 'correct': correct}, datapoint['id']]
-        except Exception as e:
-            print(f"Error: {e}, skipping.")
-            return [{'results': [4, 4], 'correct': correct}, datapoint['id']]
+        # except Exception as e:
+        #     print(f"Error: {e}, skipping.")
+        #     return [{'results': [4, 4], 'correct': correct}, datapoint['id']]
 
 
     def pick_sensible(self, datapoint):
@@ -432,23 +448,48 @@ Response example:
 
 class GeminiEvalAPI(EvalAPI):
 
+    def __init__(self, model, blind, jsonfile, num_workers, desc, num_datapoints, ablation):
+        # Super initialization
+        super().__init__(model, blind, jsonfile, num_workers, desc, num_datapoints)
+
+        # Initialize the ablation variable
+        self.ablation = ablation
+
+        if self.ablation != '':
+            print(f"Running ablation study of input types: {self.ablation}")
+
     def set_model(self):
         model = genai.Client(api_key=api_keys.gem_key)
 
         return model
 
-    @backoff(max_retries=5, base_delay=3)
     def inference(self, prompt, image):
 
         if self.blind:
             full_input = [prompt]
         else:
-            image_bytes = base64.b64encode(requests.get(image).content).decode('utf-8')
+            if self.ablation != 'video' and self.ablation != 'discrete_frames':
+                image_bytes = base64.b64encode(requests.get(image).content).decode('utf-8')
 
-            image_file = types.Part.from_bytes(data=image_bytes,mime_type="image/jpeg")
-            full_input = [prompt, image_file]
+                image_file = types.Part.from_bytes(data=image_bytes,mime_type="image/jpeg")
+                full_input = [prompt, image_file]
+                mn = self.modelname.replace('blind_','').replace('desc_','')
 
-        mn = self.modelname.replace('blind_','').replace('desc_','')
+            elif self.ablation == 'video':
+                video_bytes = base64.b64encode(requests.get(image).content).decode('utf-8')
+                video_file = types.Part.from_bytes(data=video_bytes, mime_type="video/mp4")
+                full_input = [prompt, video_file]
+                mn = self.modelname.replace('video_','')
+
+            elif self.ablation == 'discrete_frames':
+                full_input = [prompt]
+                for img in image:
+                    image_bytes = base64.b64encode(requests.get(img).content).decode('utf-8')
+
+                    img_file = types.Part.from_bytes(data=image_bytes, mime_type="image/jpeg")
+                    full_input.append(img_file)
+
+                mn = self.modelname.replace('frames_','')
 
         response = self.model.models.generate_content(model = mn,
                                                       contents = full_input
@@ -456,465 +497,7 @@ class GeminiEvalAPI(EvalAPI):
         )
 
         return response.text
-
-class GeminiVideoEvalAPI(EvalAPI):
-
-    def __init__(self, model, blind, jsonfile, num_workers, desc):
-
-        self.modelname = model
-        self.model = self.set_model()
-
-        self.blind = blind
-        srcdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        self.jsonfile = srcdir+'/final_dataset/'+jsonfile
-        savefile = self.jsonfile.replace('.json','_eval.json')
-        self.savefile = os.path.join(srcdir, '/final_dataset', savefile)
-
-        self.only_best = False
-
-        self.num_workers = num_workers
-
-        self.custom = False
-
-        self.desc = desc
-
-        print(f"Testing Conditions \n Model: {self.modelname} \n Blind: {self.blind} \n JSON File: {self.jsonfile}")
-        print(f"Desc: {self.desc}")
-        print(f"Only best: {self.only_best}")
-
-        if self.only_best:
-            print("Only best mode enabled. Sensible and follow_norm tasks will not be evaluated.")
-            time.sleep(1)
-
-        if self.desc:
-            self.prefix = "The following descrption: {desc} describes a first-person perspective video of a person in a given situation"
-        elif not self.blind:
-            self.prefix = "The following first-person perspective video depicts"
-        else:
-            self.prefix = "You are blind, so do not request context, only follow the instructions below. This situation involves"
-
-        if self.blind:
-            print("Blind mode enabled. No images will be passed to the model.")
-            self.modelname = "blind_" + self.modelname
-
-        if 'rag' in self.modelname:
-            from eval.context_indexing import ImageIndexer
-            print("Loading RAG model")
-
-            # Get current dir
-            srcdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-            embeddings_dir = srcdir+'/normthinker/half_embeddings.npy'
-
-            # Load RAG model
-            self.indexer_loaded = ImageIndexer(embeddings_path=embeddings_dir)
-
-    def set_model(self):
-        # model = genai.Client(api_key=api_keys.gem_key)
-        vertexai.init(project="gcp-multi-agent", location="us-central1")
-        mn = self.modelname.replace('blind_','').replace('desc_','').replace('video_','')
-        model = GenerativeModel(mn)
-        # model = genai.Client(vertexai=True, project="gcp-multi-agent", location="us-central1")
-        return model
     
-    def load_data_final(self):
-
-        ds = load_dataset("open-social-world/EgoNormia")
-        vid_url = "https://huggingface.co/datasets/open-social-world/EgoNormia/resolve/main/video/{vid_id}/video_prev.mp4?download=true"
-
-        # Get target_vid_ids as ids of ds['train']
-        target_vid_ids = ds['train']['id']
-
-        # Check already-evaled rows
-        eval = self.savefile
-        print(f"Loading data from {eval}")
-
-        with open(eval, 'r') as f:
-            eval_results = json.load(f)
-        
-        task_set = []
-
-        # Directly index columns of ds['train']
-        behaviors_col = ds['train']['behaviors']
-        justifications_col = ds['train']['justifications']
-        correct_col = ds['train']['correct_idx']
-        sensible_col = ds['train']['sensible_idx']
-        desc_col = ds['train']['description']
-
-        # For each id in target_vid_ids (recall id is in form uuid_timestamp)
-        for cnt, vid_id in tqdm.tqdm(enumerate(target_vid_ids), desc="Loading data"):
-            # _vid = vid_id.split('_')[0]
-            evl_res = eval_results[vid_id]
-
-            # If data['answers'] has a key equal to self.modelname, skip
-            if self.modelname in evl_res.keys():
-                print(f"Skipping {vid_id}, already tested on {self.modelname}.")
-                continue
-
-            behaviors = behaviors_col[cnt]
-            justifications = justifications_col[cnt]
-
-            index_of_corr = correct_col[cnt]
-            sensible = sensible_col[cnt] # These are indices
-
-            n = len(behaviors)
-            random_indices_behaviors = random.sample(range(n), n)
-            random_indices_justifications = random.sample(range(n), n)
-
-            behaviors = [behaviors[i] for i in random_indices_behaviors]
-            justifications = [justifications[i] for i in random_indices_justifications]
-            sensible = [random_indices_behaviors[i] for i in sensible]
-
-
-            correct_behavior = random_indices_behaviors[index_of_corr]
-            correct_justification = random_indices_justifications[index_of_corr]
-            prev_videos_paths = vid_url.format(vid_id=vid_id) # Single image
-
-            #TODO: Obfuscate this
-            # if vid_id in uploaded_videos1:
-            #     prev_videos_paths = f"gs://physical-social-norm/sampled_snippets_new_new/{_vid}/{vid_id}_prev.mp4"
-            # elif vid_id in uploaded_videos2:
-            #     prev_videos_paths = f"gs://physical-social-norm/sampled_snippets_v2/{_vid}/{vid_id}_prev.mp4"
-
-
-            # Build random mappings as current index:original index
-            b_mappings = {random_indices_behaviors[i]: i for i in range(n)}
-            j_mappings = {random_indices_justifications[i]: i for i in range(n)}
-
-            desc = desc_col[cnt]
-            # Construct datapoint
-            datapoint = {'id': vid_id,
-                        'behaviors': behaviors,
-                        'justifications': justifications,
-                        'correct': [correct_behavior, correct_justification],
-                        'sensible': sensible,
-                        '_prev': prev_videos_paths,
-                        'behavior_shuffle': b_mappings,
-                        'justification_shuffle': j_mappings,
-                        'description': desc}
-            
-            task_set.append(datapoint)
-
-
-        # Cache task set as pickle for postmortem
-        ts = time.time()
-
-        removed_slash = self.modelname.split('/')[-1]
-
-        # Make results directory if it doesn't exist
-        if not os.path.exists('../results'):
-            os.makedirs('../results')
-
-        with open(f'../results/{removed_slash}_{ts}_data.pkl', 'wb') as f:
-            pickle.dump(task_set, f)
-
-        print(f"Task set size: {len(task_set)}")
-
-        task_set = random.sample(task_set, len(task_set))
-
-        task_set = task_set[:] # Look here!!!
-
-        return task_set      
-
-    @backoff(max_retries=5, base_delay=3)
-    def inference(self, prompt, video):
-
-        if self.blind:
-            full_input = [prompt]
-        else:
-            # image_bytes = base64.b64encode(requests.get(image).content).decode('utf-8')
-
-            # image_file = types.Part.from_bytes(data=image_bytes,mime_type="image/jpeg")
-            video_file = Part.from_uri(video, "video/mp4")
-            full_input = [prompt, video_file]
-
-        mn = self.modelname.replace('blind_','').replace('desc_','').replace('video_','')
-
-        # response = self.model.models.generate_content(model = mn,
-        #                                               contents = full_input)
-        response = self.model.generate_content(full_input)
-
-        return response.text
-
-class GeminiFramesEvalAPI(EvalAPI):
-
-
-    def set_model(self):
-        # model = genai.Client(api_key=api_keys.gem_key)
-        vertexai.init(project="gcp-multi-agent", location="us-central1")
-        mn = self.modelname.replace('blind_','').replace('desc_','').replace('frames_','')
-        model = GenerativeModel(mn)
-        # model = genai.Client(vertexai=True, project="gcp-multi-agent", location="us-central1")
-        return model
-    
-    def load_data_final(self):
-
-        ds = load_dataset("open-social-world/EgoNormia")
-        # vid_url = "https://huggingface.co/datasets/open-social-world/EgoNormia/resolve/main/video/{vid_id}/video_prev.mp4?download=true"
-
-        # Get target_vid_ids as ids of ds['train']
-        target_vid_ids = ds['train']['id']
-
-        # Check already-evaled rows
-        eval = self.savefile
-        print(f"Loading data from {eval}")
-
-        with open(eval, 'r') as f:
-            eval_results = json.load(f)
-        
-        task_set = []
-
-        # Directly index columns of ds['train']
-        behaviors_col = ds['train']['behaviors']
-        justifications_col = ds['train']['justifications']
-        correct_col = ds['train']['correct_idx']
-        sensible_col = ds['train']['sensible_idx']
-        desc_col = ds['train']['description']
-
-        # For each id in target_vid_ids (recall id is in form uuid_timestamp)
-        for cnt, vid_id in tqdm.tqdm(enumerate(target_vid_ids), desc="Loading data"):
-            # _vid = vid_id.split('_')[0]
-            evl_res = eval_results[vid_id]
-
-            # If data['answers'] has a key equal to self.modelname, skip
-            if self.modelname in evl_res.keys():
-                print(f"Skipping {vid_id}, already tested on {self.modelname}.")
-                continue
-
-            behaviors = behaviors_col[cnt]
-            justifications = justifications_col[cnt]
-
-            index_of_corr = correct_col[cnt]
-            sensible = sensible_col[cnt] # These are indices
-
-            n = len(behaviors)
-            random_indices_behaviors = random.sample(range(n), n)
-            random_indices_justifications = random.sample(range(n), n)
-
-            behaviors = [behaviors[i] for i in random_indices_behaviors]
-            justifications = [justifications[i] for i in random_indices_justifications]
-            sensible = [random_indices_behaviors[i] for i in sensible]
-
-
-            correct_behavior = random_indices_behaviors[index_of_corr]
-            correct_justification = random_indices_justifications[index_of_corr]
-            # prev_videos_paths = vid_url.format(vid_id=vid_id) # Single image
-            #TODO: Obfuscate this
-            if vid_id in uploaded_videos1:
-                prev_videos_paths = [f"gs://physical-social-norm/sampled_frames_new_new/{vid_id}/frame_{i}_prev.jpg" for i in range(5)]
-            elif vid_id in uploaded_videos2:
-                prev_videos_paths = [f"gs://physical-social-norm/sampled_frames_v2/{vid_id}/frame_{i}_prev.jpg" for i in range(5)]
-
-
-            # Build random mappings as current index:original index
-            b_mappings = {random_indices_behaviors[i]: i for i in range(n)}
-            j_mappings = {random_indices_justifications[i]: i for i in range(n)}
-
-            desc = desc_col[cnt]
-            # Construct datapoint
-            datapoint = {'id': vid_id,
-                        'behaviors': behaviors,
-                        'justifications': justifications,
-                        'correct': [correct_behavior, correct_justification],
-                        'sensible': sensible,
-                        '_prev': prev_videos_paths,
-                        'behavior_shuffle': b_mappings,
-                        'justification_shuffle': j_mappings,
-                        'description': desc}
-            
-            
-            task_set.append(datapoint)
-
-
-        # Cache task set as pickle for postmortem
-        ts = time.time()
-
-        removed_slash = self.modelname.split('/')[-1]
-
-        # Make results directory if it doesn't exist
-        if not os.path.exists('../results'):
-            os.makedirs('../results')
-
-        with open(f'../results/{removed_slash}_{ts}_data.pkl', 'wb') as f:
-            pickle.dump(task_set, f)
-
-        print(f"Task set size: {len(task_set)}")
-
-        task_set = random.sample(task_set, len(task_set))
-
-        task_set = task_set[:] # Look here!!!
-
-        return task_set      
-
-    @backoff(max_retries=5, base_delay=3)
-    def inference(self, prompt, images):
-
-        full_input = [prompt]
-
-        if self.blind:
-            pass
-        else:
-            # image_bytes = base64.b64encode(requests.get(image).content).decode('utf-8')
-
-            # image_file = types.Part.from_bytes(data=image_bytes,mime_type="image/jpeg")
-            # for image in images:
-            #     img_file = Part.from_uri(image, "image/jpeg")
-            #     full_input.append(img_file)
-            for image in images:
-                try:
-                    img_file = Part.from_uri(image, "image/jpeg")
-                    full_input.append(img_file)
-                except Exception as e:
-                    print(f"Warning: Could not load image {image}: {str(e)}")
-                    continue
-
-
-        # response = self.model.models.generate_content(model = mn,
-        #                                               contents = full_input)
-        response = self.model.generate_content(full_input)
-        return response.text
-
-class OpenAIFramesEvalAPI(EvalAPI):
-
-    def set_model(self):
-
-        endpoint = api_keys.azure_endpoint
-
-        subscription_key = api_keys.azure_key
-        api_version = "2024-12-01-preview"
-
-        client = AzureOpenAI(
-            api_version=api_version,
-            azure_endpoint=endpoint,
-            api_key=subscription_key,
-        )
-
-        return client
-
-    
-    def load_data_final(self):
-
-        ds = load_dataset("open-social-world/EgoNormia")
-        # vid_url = "https://huggingface.co/datasets/open-social-world/EgoNormia/resolve/main/video/{vid_id}/video_prev.mp4?download=true"
-
-        # Get target_vid_ids as ids of ds['train']
-        target_vid_ids = ds['train']['id']
-
-        # Check already-evaled rows
-        eval = self.savefile
-        print(f"Loading data from {eval}")
-
-        with open(eval, 'r') as f:
-            eval_results = json.load(f)
-        
-        task_set = []
-
-        # Directly index columns of ds['train']
-        behaviors_col = ds['train']['behaviors']
-        justifications_col = ds['train']['justifications']
-        correct_col = ds['train']['correct_idx']
-        sensible_col = ds['train']['sensible_idx']
-        desc_col = ds['train']['description']
-
-        # For each id in target_vid_ids (recall id is in form uuid_timestamp)
-        for cnt, vid_id in tqdm.tqdm(enumerate(target_vid_ids), desc="Loading data"):
-            # _vid = vid_id.split('_')[0]
-            evl_res = eval_results[vid_id]
-
-            # If data['answers'] has a key equal to self.modelname, skip
-            if self.modelname in evl_res.keys():
-                print(f"Skipping {vid_id}, already tested on {self.modelname}.")
-                continue
-
-            behaviors = behaviors_col[cnt]
-            justifications = justifications_col[cnt]
-
-            index_of_corr = correct_col[cnt]
-            sensible = sensible_col[cnt] # These are indices
-
-            n = len(behaviors)
-            random_indices_behaviors = random.sample(range(n), n)
-            random_indices_justifications = random.sample(range(n), n)
-
-            behaviors = [behaviors[i] for i in random_indices_behaviors]
-            justifications = [justifications[i] for i in random_indices_justifications]
-            sensible = [random_indices_behaviors[i] for i in sensible]
-
-
-            correct_behavior = random_indices_behaviors[index_of_corr]
-            correct_justification = random_indices_justifications[index_of_corr]
-            # prev_videos_paths = vid_url.format(vid_id=vid_id) # Single image
-            #TODO: Obfuscate this
-            if vid_id in uploaded_videos1:
-                prev_videos_paths = [f"https://storage.googleapis.com/physical-social-norm/sampled_frames_new_new/{vid_id}/frame_{i}_prev.jpg" for i in range(5)]
-                if vid_id == '6322a6f2-f271-4335-bf46-d428a5a58298_0-02':
-                    prev_videos_paths = [f"https://storage.googleapis.com/physical-social-norm/sampled_frames_new_new/{vid_id}/frame_{i}_prev.jpg" for i in range(4)]
-            elif vid_id in uploaded_videos2:
-                prev_videos_paths = [f"https://storage.googleapis.com/physical-social-norm/sampled_frames_v2/{vid_id}/frame_{i}_prev.jpg" for i in range(5)]
-
-
-            # Build random mappings as current index:original index
-            b_mappings = {random_indices_behaviors[i]: i for i in range(n)}
-            j_mappings = {random_indices_justifications[i]: i for i in range(n)}
-
-            desc = desc_col[cnt]
-            # Construct datapoint
-            datapoint = {'id': vid_id,
-                        'behaviors': behaviors,
-                        'justifications': justifications,
-                        'correct': [correct_behavior, correct_justification],
-                        'sensible': sensible,
-                        '_prev': prev_videos_paths,
-                        'behavior_shuffle': b_mappings,
-                        'justification_shuffle': j_mappings,
-                        'description': desc}
-            
-            task_set.append(datapoint)
-
-        
-        # Cache task set as pickle for postmortem
-        ts = time.time()
-
-        removed_slash = self.modelname.split('/')[-1]
-
-        # Make results directory if it doesn't exist
-        if not os.path.exists('../results'):
-            os.makedirs('../results')
-
-        with open(f'../results/{removed_slash}_{ts}_data.pkl', 'wb') as f:
-            pickle.dump(task_set, f)
-
-        print(f"Task set size: {len(task_set)}")
-
-        task_set = random.sample(task_set, len(task_set))
-
-        task_set = task_set[:] # Look here!!!
-
-        return task_set 
-    
-    @backoff(max_retries=5, base_delay=3)
-    def inference(self, prompt, images):
-
-        contents = []
-        if not self.blind:
-            for image in images:
-                contents.append({"type": "image_url", "image_url": {"url":image}})
-        contents.append({"type": "text", "text": prompt})
-
-        response = self.model.chat.completions.create(
-            model = "gpt-4o-240513-72635",
-            messages=[
-                {
-                    "role": "user",
-                    "content": contents
-                }
-            ],
-            max_tokens=2000,
-            temperature=0.0
-        )
-
-        response = response.choices[0].message.content
-        return response
-
 class OpenAIEvalAPI(EvalAPI):
 
     def set_model(self):
