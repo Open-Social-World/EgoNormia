@@ -25,10 +25,6 @@ import openai
 import concurrent.futures
 from openai import AzureOpenAI
 
-client = storage.Client()
-bucket_name = 'physical-social-norm'
-bucket = client.get_bucket(bucket_name)
-
 class EvalAPI:
     def __init__(self, model, blind, jsonfile, num_workers, desc, num_datapoints):
 
@@ -129,8 +125,10 @@ class EvalAPI:
             sensible = sensible_col[cnt] # These are indices
 
             n = len(behaviors)
-            random_indices_behaviors = random.sample(random_indices_behaviors, n)
-            random_indices_justifications = random.sample(random_indices_justifications, n)
+            #random_indices_behaviors = random.sample(range(n), n)
+            #random_indices_justifications = random.sample(range(n), n)
+            random_indices_behaviors = [i for i in range(n)]
+            random_indices_justifications = [i for i in range(n)]
 
             behaviors = [behaviors[i] for i in random_indices_behaviors]
             justifications = [justifications[i] for i in random_indices_justifications]
@@ -404,7 +402,7 @@ Response example:
             follow = {}
 
             # Don't add point if malform i.e. skipped
-            if best != [] and sensible != []:
+            if best['results'] != [] and sensible['results'] != []:
                 eval_results[task_id] = {'best': best, 'sensible': sensible, 'followed': follow}
 
         # Once all samples are evaluated, compile results separately
@@ -446,6 +444,10 @@ class GeminiEvalAPI(EvalAPI):
             self.logger.info(f"Running ablation study of input types: {self.ablation}")
 
         if self.ablation == 'video' or self.ablation == 'discrete_frames':
+
+            client = storage.Client()
+            bucket_name = 'physical-social-norm'
+            bucket = client.get_bucket(bucket_name)
             # Get list of already uploaded videos
             blobs = bucket.list_blobs()
             self.uploaded_videos1 = {i.name.split('/')[-1].split('_')[0] + '_' + i.name.split('/')[-1].split('_')[1] for i in blobs if i.name.startswith('sampled_snippets_new_new/') and len(i.name.split('/')[-1]) > 1}
@@ -495,13 +497,10 @@ class GeminiEvalAPI(EvalAPI):
 
         return response.text
     
-class OpenAIEvalAPI(EvalAPI):
+class AzureOpenAIEvalAPI(EvalAPI):
 
     def set_model(self):
 
-        # model = openai.Client()
-
-        # return model
         endpoint = api_keys.azure_endpoint
 
         subscription_key = api_keys.azure_key
@@ -526,7 +525,7 @@ class OpenAIEvalAPI(EvalAPI):
         mn = self.modelname.replace('blind_','').replace('desc_','')
 
         response = self.model.chat.completions.create(
-            model = "gpt-4o-240513-72635",
+            model = mn,
             messages=[
                 {
                     "role": "user",
@@ -543,7 +542,7 @@ class OpenAIEvalAPI(EvalAPI):
 
         return response
     
-class OpenAIO3EvalAPI(EvalAPI):
+class OpenAIEvalAPI(EvalAPI):
 
     def set_model(self):
 
@@ -555,6 +554,8 @@ class OpenAIO3EvalAPI(EvalAPI):
     def inference(self, prompt, image):
 
         contents = []
+        if not self.blind:
+            contents.append({"type": "image_url", "image_url": {"url":image}})
         contents.append({"type": "text", "text": prompt})
 
         mn = self.modelname.replace('blind_','').replace('desc_','')

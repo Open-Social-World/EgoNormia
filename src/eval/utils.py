@@ -20,6 +20,16 @@ def backoff(max_retries=5, base_delay=1):
                         print(f"Max retries reached for {func.__name__}. Operation failed.")
                         raise e
                     
+                    content_error = False
+                    
+                    # Handle filtering errors (hate, harm, etc.)
+                    # OpenAI / Azure OpenAI style
+                    if "content_filter" in str(e):
+                        content_error = True
+
+                    if content_error:
+                        print("Content filtering error for sample. Skipping retries.")
+                        raise e
                     # Calculate the delay time using exponential backoff with randomization
                     delay = base_delay * (2 ** retries)
                     print(f"Retryable error during {func.__name__}: {e}. Retry {retries}/{max_retries}")

@@ -11,6 +11,7 @@ parser.add_argument('--modelname', type=str, default='', help="Name of the model
 parser.add_argument('--workers', type=int, default=1, help="Number of workers")
 parser.add_argument('--number', type=int, default=-1, help="Number of datapoints to evaluate")
 parser.add_argument('--ablation', type=str, default='', help="Ablation study of input types, can be 'video', 'discrete_frames' ")
+parser.add_argument('--azure', action='store_true', help="Use Azure OpenAI API")
 
 args = parser.parse_args()
 
@@ -21,6 +22,7 @@ model_type = args.modelname
 num_workers = args.workers
 num_datapoints = args.number
 ablation = args.ablation
+use_azure = args.azure
 
 if model_type == '':
     print("Please specify a model type")
@@ -45,11 +47,14 @@ if ablation != '' and blind:
 
 # Define which model you're using
 if 'o3' in model_type:
-    model = eval_api.OpenAIO3EvalAPI(model=model_type, blind=blind, jsonfile=jsonfile, num_workers=num_workers, desc=description, num_datapoints=num_datapoints)
+    model = eval_api.OpenAIEvalAPI(model=model_type, blind=blind, jsonfile=jsonfile, num_workers=num_workers, desc=description, num_datapoints=num_datapoints)
 elif 'gemini' in model_type:
     model = eval_api.GeminiEvalAPI(model=model_type, blind=blind, jsonfile=jsonfile, num_workers=num_workers, desc=description, num_datapoints=num_datapoints, ablation=ablation)
 elif 'gpt' in model_type:
-    model = eval_api.OpenAIEvalAPI(model=model_type, blind=blind, jsonfile=jsonfile, num_workers=num_workers, desc=description, num_datapoints=num_datapoints)
+    if use_azure:
+        model = eval_api.AzureOpenAIEvalAPI(model=model_type, blind=blind, jsonfile=jsonfile, num_workers=num_workers, desc=description, num_datapoints=num_datapoints)
+    else:
+        model = eval_api.OpenAIEvalAPI(model=model_type, blind=blind, jsonfile=jsonfile, num_workers=num_workers, desc=description, num_datapoints=num_datapoints)
 elif 'rag' in model_type.lower():
     model = eval_api.RagEval(model=model_type, blind=blind, jsonfile=jsonfile, num_workers=num_workers, desc=description, num_datapoints=num_datapoints)
 elif 'claude' in model_type:

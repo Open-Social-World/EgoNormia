@@ -2103,6 +2103,31 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "40b33c95-3689-4ec8-8765-7e926f623b75_1593-37": {
@@ -3627,6 +3652,30 @@
                 "results": [
                     4,
                     4
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2,
+                    3
+                ],
+                "correct": [
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    3
                 ],
                 "correct": [
                     1,
@@ -27162,6 +27211,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    0,
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "9155f5b9-6235-484f-990d-fbd3010a791e_1650-00": {
@@ -33584,6 +33656,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2
+                ],
+                "correct": [
+                    3,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "3091004e-8606-417e-8bc2-7922f951845f_73-46": {
@@ -37201,6 +37296,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "85b87948-4578-4912-95cb-addd19cfd31a_1580-85": {
@@ -38932,6 +39049,27 @@
                 "results": [
                     0,
                     3
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
                 ],
                 "correct": [
                     0
@@ -41552,6 +41690,30 @@
             "sensible": {
                 "results": [
                     3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
                 ],
                 "correct": [
                     0,
@@ -47173,6 +47335,28 @@
             "followed": {}
         },
         "claude-3-5-sonnet-v2@20241022": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
             "best": {
                 "results": [
                     0,
@@ -52826,6 +53010,32 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "5f2d9e8b-6e0b-4e36-9f5b-d26bbe0a7c7c_1129-51": {
@@ -55024,6 +55234,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "10a848ed-f258-4930-abdd-1fd60b788abc_294-40": {
@@ -55428,6 +55660,28 @@
             },
             "sensible": {
                 "results": [],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
                 "correct": [
                     3
                 ]
@@ -56477,6 +56731,30 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2,
+                    3
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "09690df3-0715-4875-8745-7e8830c761d0_341-62": {
@@ -56908,6 +57186,28 @@
             "sensible": {
                 "results": [
                     4,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
                     3
                 ],
                 "correct": [
@@ -64608,6 +64908,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "eb81442c-a322-49ea-b243-a39d2e288b9b_414-51": {
@@ -66864,6 +67185,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "dd82f801-fc96-4ced-b066-ad559da3faab_284-37": {
@@ -67681,6 +68024,30 @@
             },
             "sensible": {
                 "results": [],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
                 "correct": [
                     0,
                     1,
@@ -72045,6 +72412,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "ab6f68a2-e5ba-48ce-ac24-7fb3df0584f2_326-63": {
@@ -73849,6 +74238,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "134a4c63-583a-4e64-8cf9-002b6d26cdf1_464-01": {
@@ -74411,6 +74821,29 @@
                     4,
                     3,
                     1
+                ],
+                "correct": [
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    0
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2
                 ],
                 "correct": [
                     1,
@@ -76052,6 +76485,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    0,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "fb92d350-9bf9-4b16-8a1f-7858de276226_2190-65": {
@@ -77422,6 +77877,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    0,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "1b4b9493-2f3b-48e2-ba96-4feb9b9e98a1_408-70": {
@@ -77886,6 +78364,30 @@
             "sensible": {
                 "results": [
                     0
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
                 ],
                 "correct": [
                     0,
@@ -80101,6 +80603,31 @@
             },
             "sensible": {
                 "results": [
+                    1,
+                    2
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    2
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
                     1,
                     2
                 ],
@@ -87464,6 +87991,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "3e418323-3ff7-4d03-9b60-275f1e20f5dc_589-19": {
@@ -89598,6 +90146,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "072623e8-1889-4580-8175-ddc05a3dceb3_89-78": {
@@ -90060,6 +90629,27 @@
             "sensible": {
                 "results": [
                     2,
+                    1
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    2
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
                     1
                 ],
                 "correct": [
@@ -92645,6 +93235,28 @@
             },
             "sensible": {
                 "results": [],
+                "correct": [
+                    0,
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
                 "correct": [
                     0,
                     1
@@ -95245,6 +95857,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2,
+                    3
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "3c9ce1b1-9eaa-4e3d-9ebb-91f9d904178e_1420-03": {
@@ -97046,6 +97681,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    0,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "d64fb34a-08fd-416c-ac6f-86a0813869a8_466-80": {
@@ -98317,6 +98975,29 @@
                     4,
                     1,
                     2
+                ],
+                "correct": [
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
                 ],
                 "correct": [
                     1,
@@ -100585,6 +101266,29 @@
             "sensible": {
                 "results": [
                     3,
+                    1
+                ],
+                "correct": [
+                    0,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
                     1
                 ],
                 "correct": [
@@ -103122,6 +103826,29 @@
             "sensible": {
                 "results": [
                     4
+                ],
+                "correct": [
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
                 ],
                 "correct": [
                     1,
@@ -105885,6 +106612,29 @@
             },
             "sensible": {
                 "results": [],
+                "correct": [
+                    0,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    4,
+                    2
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
                 "correct": [
                     0,
                     2,
@@ -109124,6 +109874,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "ed792c47-5cb3-427c-a0e9-5dac33456e6a_3373-63": {
@@ -110356,6 +111128,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "99f41d39-cc65-4aad-b186-23b66e282f19_141-65": {
@@ -111126,6 +111921,27 @@
             "followed": {}
         },
         "frames_gpt-4o": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
             "best": {
                 "results": [
                     4,
@@ -115546,6 +116362,28 @@
                 "results": [
                     4,
                     4
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
                 ],
                 "correct": [
                     0,
@@ -120637,6 +121475,29 @@
                     4,
                     2,
                     0
+                ],
+                "correct": [
+                    0,
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
                 ],
                 "correct": [
                     0,
@@ -134423,6 +135284,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    3,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "6b7fc6db-e979-43a0-b61f-7dced89d423d_168-56": {
@@ -138946,6 +139829,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0,
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "38a66acf-33c8-4ed5-b814-7322087b2e21_835-53": {
@@ -140503,6 +141409,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "b0a30641-ad93-4d6a-92a9-f277c78f1aa5_295-10": {
@@ -141426,6 +142353,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    0
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "9155f5b9-6235-484f-990d-fbd3010a791e_2163-97": {
@@ -142220,6 +143170,27 @@
                 "results": [
                     0,
                     2
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
                 ],
                 "correct": [
                     1
@@ -143566,6 +144537,31 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "5ab334f2-ecc8-4a05-96f8-4320225379b2_905-78": {
@@ -144335,6 +145331,27 @@
                 "results": [
                     4,
                     2
+                ],
+                "correct": [
+                    4,
+                    4
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
+                "correct": [
+                    4
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    4,
+                    3
                 ],
                 "correct": [
                     4,
@@ -148707,6 +149724,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "8ea5ddc3-ae53-4cff-b457-ba425c6bec97_5750-66": {
@@ -149993,6 +151031,30 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "ba28e9d5-5a78-44c0-b985-2249dcc05956_212-90": {
@@ -150824,6 +151886,28 @@
             },
             "sensible": {
                 "results": [],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
                 "correct": [
                     3
                 ]
@@ -153554,6 +154638,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "e95dbd21-3017-48f5-8f36-46531f053ab1_547-92": {
@@ -156122,6 +157228,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "e21a6f09-3df0-4bfb-a23b-47a1866aadf1_540-06": {
@@ -158232,6 +159361,26 @@
                     2,
                     3
                 ],
+                "correct": [
+                    0,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [],
                 "correct": [
                     0,
                     2
@@ -162857,6 +164006,31 @@
                 "results": [
                     0,
                     1
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2
                 ],
                 "correct": [
                     0,
@@ -168402,6 +169576,27 @@
             "sensible": {
                 "results": [
                     0
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
                 ],
                 "correct": [
                     3
@@ -175140,6 +176335,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "878666b9-5f3d-476a-960f-3a5d02da7619_19280-23": {
@@ -176363,6 +177579,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "d70be6cb-867f-4657-9a87-5d44ab30527a_887-35": {
@@ -177104,6 +178341,27 @@
             },
             "sensible": {
                 "results": [],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
                 "correct": [
                     2
                 ]
@@ -178306,6 +179564,28 @@
                 "results": [
                     4,
                     1
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
                 ],
                 "correct": [
                     2,
@@ -179647,6 +180927,27 @@
             "followed": {}
         },
         "video_gemini-1.5-flash-002": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
             "best": {
                 "results": [
                     2,
@@ -184664,6 +185965,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "c25111f0-0c78-4bf8-a16d-57a6c25c2169_3852-71": {
@@ -189014,6 +190336,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "bf9354ab-541d-4c1c-aa3e-8a3bfd8fb51b_443-31": {
@@ -190682,6 +192027,27 @@
             "sensible": {
                 "results": [
                     3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
                 ],
                 "correct": [
                     3
@@ -201286,6 +202652,30 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "3fffb452-1c17-43fa-b473-c9e19ac21433_2774-23": {
@@ -204760,6 +206150,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "b79c342b-db1e-407e-958a-e1585c6c3ddd_3-67": {
@@ -205620,6 +207033,29 @@
                 "results": [
                     3,
                     3
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    0,
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
                 ],
                 "correct": [
                     0,
@@ -208136,6 +209572,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "3761fbb4-3e0e-4b15-a277-fec95edacf04_4702-37": {
@@ -209409,6 +210867,28 @@
                 "results": [
                     0,
                     1,
+                    4
+                ],
+                "correct": [
+                    4
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    4,
+                    3
+                ],
+                "correct": [
+                    4,
+                    4
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
                     4
                 ],
                 "correct": [
@@ -211617,6 +213097,30 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "3761fbb4-3e0e-4b15-a277-fec95edacf04_1783-59": {
@@ -213648,6 +215152,27 @@
             "followed": {}
         },
         "video_gemini-1.5-flash-002": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
             "best": {
                 "results": [
                     2,
@@ -217444,6 +218969,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "35d92405-7ebf-4e54-8b9a-7cce8af30a79_63-09": {
@@ -218322,6 +219868,29 @@
                 "results": [
                     2,
                     2
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    0,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    3
                 ],
                 "correct": [
                     0,
@@ -230710,6 +232279,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    0,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "828ef13f-f52a-4a16-b206-4ec7e471f025_274-71": {
@@ -231494,6 +233085,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    4
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "214b62df-2fb1-4b0e-af9d-42b0dd37defb_1599-71": {
@@ -231921,6 +233533,28 @@
                 "results": [
                     3,
                     2
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    4
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
                 ],
                 "correct": [
                     2,
@@ -246538,6 +248172,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "db35b386-4c65-4c5e-a488-51b2aa5eb1fb_1982-83": {
@@ -248821,6 +250476,27 @@
             "sensible": {
                 "results": [
                     4
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
                 ],
                 "correct": [
                     1
@@ -251806,6 +253482,32 @@
             "sensible": {
                 "results": [
                     4
+                ],
+                "correct": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2,
+                    3
                 ],
                 "correct": [
                     1,
@@ -256693,6 +258395,27 @@
             "sensible": {
                 "results": [
                     4
+                ],
+                "correct": [
+                    4
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    4,
+                    4
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
                 ],
                 "correct": [
                     4
@@ -264328,6 +266051,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "e7eead9a-5f4e-47af-8f54-2dd3fd453a2d_55-37": {
@@ -267754,6 +269499,31 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "27f9cd4e-8b61-477c-9b63-ca3d437a0dff_250-50": {
@@ -268251,6 +270021,30 @@
             },
             "sensible": {
                 "results": [
+                    2
+                ],
+                "correct": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
                     2
                 ],
                 "correct": [
@@ -269142,6 +270936,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    0,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "a7448853-2414-42b1-998c-0f56594e437a_155-55": {
@@ -269933,6 +271750,27 @@
             "sensible": {
                 "results": [
                     4
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
                 ],
                 "correct": [
                     1
@@ -271224,6 +273062,28 @@
             "followed": {}
         },
         "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
             "best": {
                 "results": [
                     1,
@@ -273948,6 +275808,29 @@
             "followed": {}
         },
         "video_gemini-1.5-pro-002": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
             "best": {
                 "results": [
                     2,
@@ -282944,6 +284827,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "cf3956a7-8cc6-4a99-8770-71a15c7e69c7_4824-79": {
@@ -286536,6 +288440,30 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    4
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3,
+                    4
+                ],
+                "correct": [
+                    0,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "9fb1ce25-8a99-45ed-a28c-1492192d4964_1100-54": {
@@ -289147,6 +291075,30 @@
                 "results": [
                     2,
                     4
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
                 ],
                 "correct": [
                     0,
@@ -292994,6 +294946,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "d8936caf-0142-4ceb-bacc-70313a19f169_142-89": {
@@ -295424,6 +297397,32 @@
                 "results": [
                     1,
                     3
+                ],
+                "correct": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2,
+                    3,
+                    4
                 ],
                 "correct": [
                     1,
@@ -299406,6 +301405,27 @@
             "followed": {}
         },
         "frames_gemini-1.5-flash-002": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
             "best": {
                 "results": [
                     3,
@@ -303602,6 +305622,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "972f2966-c368-4344-a9ca-5bd8a277f177_1110-10": {
@@ -305053,6 +307094,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "ada73c3a-765f-46de-afb5-d152d058d7e2_7766-82": {
@@ -306297,6 +308359,29 @@
                 "results": [
                     2,
                     3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
                 ],
                 "correct": [
                     0,
@@ -311529,6 +313614,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "cdfd99eb-88c6-4bc7-8f66-e0318216feab_820-48": {
@@ -314110,6 +316217,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "6989df0e-b8da-48a4-bc69-b01f6f8aef1a_378-59": {
@@ -316181,6 +318309,27 @@
             "followed": {}
         },
         "frames_gemini-1.5-flash-002": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
             "best": {
                 "results": [
                     2,
@@ -319447,6 +321596,27 @@
                     1,
                     2,
                     3
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
                 ],
                 "correct": [
                     1
@@ -326021,6 +328191,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "5b0225e8-b81b-42fe-aa08-b0732b46c8bd_1082-56": {
@@ -327258,6 +329451,28 @@
                     1,
                     2,
                     3
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
                 ],
                 "correct": [
                     0
@@ -332242,6 +334457,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    4
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "95f2caf6-c6f5-4471-9763-2957e248eb58_503-77": {
@@ -336379,6 +338616,29 @@
                 "results": [
                     1,
                     3,
+                    2
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
                     2
                 ],
                 "correct": [
@@ -343162,6 +345422,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "0d5f2917-e0bd-47cb-b887-1c14c69568f9_848-84": {
@@ -343575,6 +345858,27 @@
             "sensible": {
                 "results": [
                     3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    4,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
                 ],
                 "correct": [
                     3
@@ -350705,6 +353009,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "ea5bb387-a22a-4b49-8aa5-35cbf0d3563d_32-89": {
@@ -354065,6 +356391,31 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "bc215572-bd4c-4457-bbc1-58cdd6398cc7_2751-16": {
@@ -354958,6 +357309,30 @@
             },
             "sensible": {
                 "results": [],
+                "correct": [
+                    0,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
+                ],
                 "correct": [
                     0,
                     2,
@@ -359724,6 +362099,30 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "6f93978d-a3d0-467d-b401-e23b3c92f3bf_5298-67": {
@@ -360484,6 +362883,27 @@
             "followed": {}
         },
         "frames_gemini-1.5-flash-002": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
             "best": {
                 "results": [
                     0,
@@ -361400,6 +363820,29 @@
             "sensible": {
                 "results": [
                     1
+                ],
+                "correct": [
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
                 ],
                 "correct": [
                     1,
@@ -363059,6 +365502,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "bd31c2eb-4faa-467d-8c71-89a55b0a4be5_275-56": {
@@ -364257,6 +366723,28 @@
             },
             "sensible": {
                 "results": [
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
                     3
                 ],
                 "correct": [
@@ -373521,6 +376009,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    0,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "ede3176b-2e12-4d2d-b9e2-40a2c4e93916_78-06": {
@@ -375314,6 +377825,31 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "406f3614-0b99-4b3f-b3cb-a4590bad9e27_288-93": {
@@ -376890,6 +379426,27 @@
                 "results": [
                     0,
                     2
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    4
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
                 ],
                 "correct": [
                     0
@@ -383318,6 +385875,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "cb987dd4-f0ec-46ed-8bf0-3fee8c84fc90_2701-67": {
@@ -384645,6 +387225,31 @@
             "sensible": {
                 "results": [
                     1
+                ],
+                "correct": [
+                    0,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2
                 ],
                 "correct": [
                     0,
@@ -386205,6 +388810,30 @@
             },
             "sensible": {
                 "results": [
+                    1,
+                    2
+                ],
+                "correct": [
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
                     1,
                     2
                 ],
@@ -388642,6 +391271,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "4de25e28-5a34-4fbe-bc83-200d513b4d9a_1123-59": {
@@ -389486,6 +392137,27 @@
             "sensible": {
                 "results": [
                     3,
+                    0
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
                     0
                 ],
                 "correct": [
@@ -391715,6 +394387,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
+                "correct": [
+                    0,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "9d0c46d6-ea9a-43e6-8b8a-4b2972eb6ef4_551-12": {
@@ -393853,6 +396547,31 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3,
+                    4
+                ],
+                "correct": [
+                    0,
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "d3279f4f-eea5-448f-a930-aafac6b668ac_1962-11": {
@@ -395113,6 +397832,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "ae59dda2-8aa0-40e1-bd48-af368ea8e149_1550-40": {
@@ -396366,6 +399106,31 @@
             "sensible": {
                 "results": [
                     1
+                ],
+                "correct": [
+                    0,
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    3
                 ],
                 "correct": [
                     0,
@@ -402246,6 +405011,30 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2,
+                    3
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "1b1acfa6-ee3b-483c-9c0a-245d70d7125f_3443-49": {
@@ -402706,6 +405495,30 @@
             },
             "sensible": {
                 "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    0,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
                     2,
                     3
                 ],
@@ -404931,6 +407744,29 @@
             "sensible": {
                 "results": [
                     1
+                ],
+                "correct": [
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
                 ],
                 "correct": [
                     1,
@@ -413109,6 +415945,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "792d0000-7dcd-4e6c-a486-7befe397233d_917-53": {
@@ -413905,6 +416763,30 @@
                     1,
                     2,
                     3
+                ],
+                "correct": [
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2
                 ],
                 "correct": [
                     1,
@@ -418331,6 +421213,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    0,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "072623e8-1889-4580-8175-ddc05a3dceb3_11-40": {
@@ -418726,6 +421631,30 @@
             },
             "sensible": {
                 "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
                     2,
                     3
                 ],
@@ -419533,6 +422462,28 @@
                 "results": [
                     0,
                     1
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
                 ],
                 "correct": [
                     2
@@ -421291,6 +424242,32 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2,
+                    3
+                ],
+                "correct": [
+                    0,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "087e11d0-5984-4365-989d-7365294ddaec_1764-07": {
@@ -421715,6 +424692,30 @@
                 "results": [
                     1,
                     2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2,
+                    3
                 ],
                 "correct": [
                     2
@@ -422960,6 +425961,27 @@
             },
             "sensible": {
                 "results": [],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
                 "correct": [
                     1
                 ]
@@ -425958,6 +428980,28 @@
             "sensible": {
                 "results": [
                     2
+                ],
+                "correct": [
+                    0,
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
                 ],
                 "correct": [
                     0,
@@ -429565,6 +432609,28 @@
             "sensible": {
                 "results": [
                     1
+                ],
+                "correct": [
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    1
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
                 ],
                 "correct": [
                     1,
@@ -434178,6 +437244,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "254029e5-fed4-40a7-bef1-12b9faff3202_1017-93": {
@@ -434533,6 +437621,27 @@
             "best": {
                 "results": [
                     3,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
                     2
                 ],
                 "correct": [
@@ -435006,6 +438115,27 @@
             "followed": {}
         },
         "video_gemini-1.5-flash-002": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
             "best": {
                 "results": [
                     0,
@@ -436306,6 +439436,30 @@
                 "results": [
                     3,
                     2
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2,
+                    3
                 ],
                 "correct": [
                     1
@@ -442910,6 +446064,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "110f9870-6b6c-4a20-a3c8-8c2e29c53bb7_1388-88": {
@@ -443335,6 +446511,28 @@
                     0,
                     2,
                     3
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
                 ],
                 "correct": [
                     0
@@ -452137,6 +455335,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "01f9f9d6-2871-4913-99ea-8ffb7780fc8d_1491-41": {
@@ -452540,6 +455761,25 @@
                 "results": [
                     4,
                     4
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
                 ],
                 "correct": [
                     1,
@@ -454736,6 +457976,28 @@
                 "results": [
                     1,
                     0
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
                 ],
                 "correct": [
                     1
@@ -459043,6 +462305,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "668962c9-ecae-4b8f-bdc1-a6aeab093d88_811-44": {
@@ -460212,6 +463495,29 @@
                 "results": [
                     0,
                     1
+                ],
+                "correct": [
+                    0,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
                 ],
                 "correct": [
                     0,
@@ -461914,6 +465220,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "25ade38d-3e6b-4aa1-851d-7fbf791201c0_887-41": {
@@ -462318,6 +465645,27 @@
                 "results": [
                     2,
                     4
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
                 ],
                 "correct": [
                     2,
@@ -465096,6 +468444,28 @@
             "sensible": {
                 "results": [
                     4
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
                 ],
                 "correct": [
                     3
@@ -467984,6 +471354,31 @@
             },
             "sensible": {
                 "results": [
+                    2
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
                     2
                 ],
                 "correct": [
@@ -480001,6 +483396,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    3,
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "3b342c9c-eb30-4cc6-8ced-53c4fb7b3a8d_783-98": {
@@ -489644,6 +493062,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    0,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "1309c412-1d3b-449a-95d7-853616686f89_980-21": {
@@ -490142,6 +493583,28 @@
                 "results": [
                     2,
                     4
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    0,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
                 ],
                 "correct": [
                     3,
@@ -492626,6 +496089,28 @@
             "followed": {}
         },
         "claude-3-5-sonnet-v2@20241022": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
             "best": {
                 "results": [
                     0,
@@ -497297,6 +500782,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "54a421d2-763e-4751-a6b4-54e3d6c46cc1_692-41": {
@@ -498175,6 +501683,29 @@
             },
             "sensible": {
                 "results": [
+                    3
+                ],
+                "correct": [
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
                     3
                 ],
                 "correct": [
@@ -499899,6 +503430,29 @@
             },
             "sensible": {
                 "results": [
+                    1
+                ],
+                "correct": [
+                    0,
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
                     1
                 ],
                 "correct": [
@@ -503498,6 +507052,30 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "bae603bd-dc3d-46a4-90b7-9c1e2bcd3970_966-87": {
@@ -506348,6 +509926,30 @@
             "followed": {}
         },
         "claude-3-5-sonnet-v2@20241022": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    3
+                ],
+                "correct": [
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
             "best": {
                 "results": [
                     1,
@@ -511155,6 +514757,30 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    3
+                ],
+                "correct": [
+                    0,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "ac8dba37-ce09-4dc5-b478-8194e41353c3_748-30": {
@@ -514688,6 +518314,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "235b49d2-b59c-4079-81cc-ad9c01dbd2df_22-56": {
@@ -515086,6 +518734,29 @@
             },
             "sensible": {
                 "results": [
+                    1,
+                    2
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
                     1,
                     2
                 ],
@@ -516453,6 +520124,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    4,
+                    4
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    4
+                ]
+            },
+            "followed": {}
         }
     },
     "f1f8d17c-3d2a-4a2a-9482-0a8e385e77ae_365-24": {
@@ -517311,6 +521004,30 @@
             "sensible": {
                 "results": [
                     1,
+                    3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
                     3
                 ],
                 "correct": [
@@ -519816,6 +523533,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "cab3c095-8054-4794-81c5-ef9dce1d1373_376-97": {
@@ -521148,6 +524886,27 @@
                     3,
                     4,
                     2
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
                 ],
                 "correct": [
                     1
@@ -527778,6 +531537,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    0,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "95c0a226-5cb1-4380-af73-db2fcdbdbb76_174-41": {
@@ -530977,6 +534759,31 @@
                 "results": [
                     0,
                     2
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
                 ],
                 "correct": [
                     0,
@@ -546202,6 +550009,32 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2,
+                    3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "aa19d5c0-35b6-4ec2-9865-07f556c341de_34-98": {
@@ -549508,6 +553341,28 @@
             "sensible": {
                 "results": [
                     1
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    0
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
                 ],
                 "correct": [
                     3
@@ -552840,6 +556695,27 @@
                 "results": [
                     3,
                     1
+                ],
+                "correct": [
+                    4
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    4,
+                    4
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
                 ],
                 "correct": [
                     4
@@ -558437,6 +562313,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    4,
+                    4
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    4
+                ],
+                "correct": [
+                    0,
+                    4
+                ]
+            },
+            "followed": {}
         }
     },
     "c4333895-ed19-42fe-9323-271a41bdfe4c_8-13": {
@@ -562635,6 +566534,31 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2,
+                    3
+                ],
+                "correct": [
+                    0,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "9520f703-8904-4123-bd7f-873b0b42074b_239-07": {
@@ -563845,6 +567769,28 @@
             },
             "sensible": {
                 "results": [],
+                "correct": [
+                    0,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    4
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
                 "correct": [
                     0,
                     2
@@ -567418,6 +571364,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    3
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "55ef5db5-af7c-4ccd-9c7d-a4d415e195b7_753-73": {
@@ -568289,6 +572258,28 @@
                 "results": [
                     0,
                     4
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
                 ],
                 "correct": [
                     0
@@ -570754,6 +574745,28 @@
             },
             "sensible": {
                 "results": [
+                    1
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
                     1
                 ],
                 "correct": [
@@ -577095,6 +581108,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "695cefe9-04c0-42fb-80fc-d308b314b788_437-09": {
@@ -578753,6 +582788,29 @@
             },
             "sensible": {
                 "results": [],
+                "correct": [
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
+                ],
                 "correct": [
                     1,
                     2
@@ -581162,6 +585220,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "63e9e643-25c5-435d-b6f0-0aab1af76e68_28-98": {
@@ -581935,6 +586014,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "262fd2ec-8eba-44d9-8082-4d0574f7a515_1440-24": {
@@ -582356,6 +586457,28 @@
             },
             "sensible": {
                 "results": [
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
                     3
                 ],
                 "correct": [
@@ -590065,6 +594188,31 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2,
+                    3
+                ],
+                "correct": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "36baa5a9-16bf-4ad6-b011-4d7daae6b8f9_423-57": {
@@ -596654,6 +600802,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2
+                ],
+                "correct": [
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "83f18213-f8f8-44fa-b9ce-104c6ddbcd57_1657-94": {
@@ -598231,6 +602402,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "4651e5c2-4371-4af2-8f05-cb8b0b1ec7fd_233-33": {
@@ -599113,6 +603306,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "046855d7-41d7-4f41-a6a7-fce921ea8133_335-77": {
@@ -599577,6 +603792,27 @@
                 "results": [
                     3,
                     3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
                 ],
                 "correct": [
                     3,
@@ -605415,6 +609651,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "54a421d2-763e-4751-a6b4-54e3d6c46cc1_242-12": {
@@ -610252,6 +614510,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    0,
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "d0aedb4e-82cc-406a-a395-3573049a49ee_4319-84": {
@@ -611913,6 +616194,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    3,
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "25beabfc-48c0-4f81-b419-c47297aecf6f_203-09": {
@@ -612354,6 +616658,28 @@
                 "results": [
                     3,
                     2
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
                 ],
                 "correct": [
                     3
@@ -614329,6 +618655,29 @@
             "sensible": {
                 "results": [
                     3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2
                 ],
                 "correct": [
                     3
@@ -616797,6 +621146,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "daf5384b-ea5c-4cce-bb8a-540a360075bf_1127-92": {
@@ -618830,6 +623200,32 @@
             "sensible": {
                 "results": [
                     1,
+                    3
+                ],
+                "correct": [
+                    0,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2,
                     3
                 ],
                 "correct": [
@@ -620965,6 +625361,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "13488a91-cef6-46f4-8007-9453d5d49925_44-43": {
@@ -621385,6 +625803,28 @@
                 "results": [
                     0,
                     1
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
                 ],
                 "correct": [
                     0
@@ -621825,6 +626265,27 @@
             },
             "sensible": {
                 "results": [],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
                 "correct": [
                     1
                 ]
@@ -623977,6 +628438,30 @@
                 "results": [
                     0,
                     3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    4
                 ],
                 "correct": [
                     0,
@@ -626332,6 +630817,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "77e28690-2ab1-414e-86ed-285ec1d15bd1_705-46": {
@@ -627556,6 +632062,32 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "1acd2d5c-b0d4-4ec5-a54c-6a9c84cb11f6_773-39": {
@@ -628018,6 +632550,28 @@
                 "results": [
                     1,
                     0
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
                 ],
                 "correct": [
                     0
@@ -628807,6 +633361,31 @@
             "followed": {}
         },
         "claude-3-5-sonnet-v2@20241022": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
             "best": {
                 "results": [
                     0,
@@ -630086,6 +634665,32 @@
             "sensible": {
                 "results": [
                     0
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    3
                 ],
                 "correct": [
                     0,
@@ -633776,6 +638381,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "ed792c47-5cb3-427c-a0e9-5dac33456e6a_968-42": {
@@ -635679,6 +640305,27 @@
             "sensible": {
                 "results": [
                     3
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
                 ],
                 "correct": [
                     0
@@ -643336,6 +647983,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "1bfe3bec-79fd-4b1b-8738-4d313f3f79b9_355-45": {
@@ -643867,6 +648537,31 @@
                 "results": [
                     0,
                     1,
+                    3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
                     3
                 ],
                 "correct": [
@@ -650899,6 +655594,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "e65cdb37-b00c-44b1-909f-068022d804cb_868-94": {
@@ -652610,6 +657326,32 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "3decc0f8-9806-40dd-83d5-26c495dd7830_2268-25": {
@@ -653485,6 +658227,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "1f5ca4f1-6200-4a9a-86af-150824b51f67_717-00": {
@@ -653882,6 +658645,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2,
+                    3
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "24e24f1f-af43-4ee5-86be-2a4d5cf772c5_40-56": {
@@ -654251,6 +659037,28 @@
             "sensible": {
                 "results": [
                     3,
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
                     1
                 ],
                 "correct": [
@@ -656491,6 +661299,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "bac30fe6-c597-4f1a-add1-d8d989205d98_1087-36": {
@@ -658658,6 +663487,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "bebfd0fa-93bc-41a3-886d-e04a3675fc6d_293-94": {
@@ -659931,6 +664781,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "2ec3c123-0a04-46d7-97d5-8b85b5e6d06f_271-92": {
@@ -660743,6 +665615,27 @@
             "sensible": {
                 "results": [
                     1,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
                     3
                 ],
                 "correct": [
@@ -665766,6 +670659,31 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    0
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "6d14a0fe-6fd1-4c6b-aaec-a7c38dcd7294_661-60": {
@@ -666966,6 +671884,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "21438820-16d7-4fcd-b0d0-5def201fc65e_1321-22": {
@@ -667377,6 +672317,30 @@
             },
             "sensible": {
                 "results": [
+                    3
+                ],
+                "correct": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
                     3
                 ],
                 "correct": [
@@ -671878,6 +676842,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "ea417823-8ca0-417c-8901-114fa4f2d47f_258-70": {
@@ -673479,6 +678464,31 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2,
+                    3
+                ],
+                "correct": [
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "39af7641-e376-4a99-977f-4d7f746e14ba_79-79": {
@@ -675002,6 +680012,31 @@
             "sensible": {
                 "results": [
                     1,
+                    3
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2,
                     3
                 ],
                 "correct": [
@@ -679635,6 +684670,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    0,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "6a847d75-e20f-409d-8b91-77ada97d8fb9_168-24": {
@@ -683048,6 +688105,28 @@
                 "results": [
                     0,
                     1,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
                     3
                 ],
                 "correct": [
@@ -691004,6 +696083,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "a448297b-ae62-4712-bc4f-849b39176558_2443-39": {
@@ -692728,6 +697830,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "102dc7b7-a8fb-419e-9a18-b679e7157d99_517-02": {
@@ -693111,6 +698235,27 @@
             },
             "sensible": {
                 "results": [],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
                 "correct": [
                     2
                 ]
@@ -696540,6 +701685,30 @@
                     1,
                     2,
                     3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
                 ],
                 "correct": [
                     0,
@@ -700600,6 +705769,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "f58900c3-5747-447c-9fa2-04c608e7f40a_18-05": {
@@ -701433,6 +706624,28 @@
             },
             "sensible": {
                 "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
                     2
                 ],
                 "correct": [
@@ -706485,6 +711698,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "99a89af1-a535-477c-88a8-c0830ba33486_1246-37": {
@@ -709279,6 +714514,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "1a50cd38-dda2-41d0-8a6f-294f17373d97_2829-22": {
@@ -709754,6 +715010,28 @@
             },
             "sensible": {
                 "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
                     2
                 ],
                 "correct": [
@@ -712182,6 +717460,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "ec85a806-d47f-4555-8c4c-20f59927e580_3835-48": {
@@ -713933,6 +719234,30 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    0,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "949b2e8a-83f9-4b89-b29b-9e8d81600dd8_2242-73": {
@@ -714781,6 +720106,30 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2,
+                    3
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "cbc5c4fe-ed66-4525-a3d8-d691064db66b_262-02": {
@@ -715616,6 +720965,28 @@
                 "results": [
                     3,
                     1
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
                 ],
                 "correct": [
                     3
@@ -721043,6 +726414,30 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    2
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "f5ac654b-8f39-427b-856f-4a9a2d4a3020_9-20": {
@@ -723482,6 +728877,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "d0925317-dc23-4cb4-a375-a7baddc06b27_901-57": {
@@ -724413,6 +729829,30 @@
             "sensible": {
                 "results": [
                     2
+                ],
+                "correct": [
+                    0,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
                 ],
                 "correct": [
                     0,
@@ -725732,6 +731172,27 @@
                 "results": [
                     4,
                     1
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
                 ],
                 "correct": [
                     3
@@ -731362,6 +736823,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "10a848ed-f258-4930-abdd-1fd60b788abc_475-65": {
@@ -731789,6 +737272,30 @@
                 "results": [
                     2,
                     1
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2
                 ],
                 "correct": [
                     0,
@@ -733980,6 +739487,29 @@
             },
             "sensible": {
                 "results": [],
+                "correct": [
+                    0,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    0
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
+                ],
                 "correct": [
                     0,
                     2
