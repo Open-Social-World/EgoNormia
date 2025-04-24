@@ -259,6 +259,8 @@ Response example:
             correct[1] = datapoint['justification_shuffle'][correct[1]]
 
             a_results_text = self.inference(prompt, _prev) # Expect output in form of [2, 3]
+            if a_results_text == None:
+                raise ValueError("Model returned None for inference.")
 
             # Find last integer in response and cast to int
             a_results = int(re.findall(r'\d+', a_results_text)[-1])
@@ -274,6 +276,8 @@ Response example:
 
             just_p = self.prefix+justification_prompt.format(behavior = bb, justifications = justifications)
             j_results_text = self.inference(just_p, _prev)
+            if j_results_text == None:
+                raise ValueError("Model returned None for inference.")
 
             # Find last integer in response and cast to int
             j_results = int(re.findall(r'\d+', j_results_text)[-1])
@@ -347,6 +351,8 @@ Response example:
                 _prev = None
 
             text_results = self.inference(prompt, _prev)
+            if text_results == None:
+                raise ValueError("Model returned None for inference.")
             sensible_response = re.findall(r'\[.*\]', text_results)[-1]
             results = ast.literal_eval(sensible_response)
             results = [r - 1 for r in results]

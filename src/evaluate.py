@@ -28,10 +28,9 @@ if model_type == '':
     print("Please specify a model type")
     exit()
 
-if 'o3' in model_type:
-    if not description:
-        print("o3 models require description to be set to True")
-        exit()
+if 'o3' in model_type or 'o4' in model_type and not description:
+    print("o3/o4 models require description to be set to True")
+    exit()
 
 if description and blind:
     print("Description and blind are mutually exclusive")
