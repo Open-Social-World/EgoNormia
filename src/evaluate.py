@@ -28,8 +28,8 @@ if model_type == '':
     print("Please specify a model type")
     exit()
 
-if 'o3' in model_type or 'o4' in model_type and not description:
-    print("o3/o4 models require description to be set to True")
+if 'o3' in model_type and not description:
+    print("o3 models require description to be set to True")
     exit()
 
 if description and blind:
@@ -45,11 +45,9 @@ if ablation != '' and blind:
     exit()
 
 # Define which model you're using
-if 'o3' in model_type:
-    model = eval_api.OpenAIEvalAPI(model=model_type, blind=blind, jsonfile=jsonfile, num_workers=num_workers, desc=description, num_datapoints=num_datapoints)
-elif 'gemini' in model_type:
+if 'gemini' in model_type:
     model = eval_api.GeminiEvalAPI(model=model_type, blind=blind, jsonfile=jsonfile, num_workers=num_workers, desc=description, num_datapoints=num_datapoints, ablation=ablation)
-elif 'gpt' in model_type:
+elif 'gpt' in model_type or 'o4' in model_type or 'o3' in model_type:
     if use_azure:
         model = eval_api.AzureOpenAIEvalAPI(model=model_type, blind=blind, jsonfile=jsonfile, num_workers=num_workers, desc=description, num_datapoints=num_datapoints)
     else:

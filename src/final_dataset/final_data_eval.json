@@ -3742,6 +3742,28 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "89d8c9c5-fa11-4674-b08f-007f81958555_240-15": {
@@ -33794,6 +33816,29 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2
+                ],
+                "correct": [
+                    3,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "3091004e-8606-417e-8bc2-7922f951845f_73-46": {
@@ -41907,6 +41952,30 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    3,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "963c1ecc-d25e-4c0a-b447-9b26f3778efc_207-31": {
@@ -47577,6 +47646,28 @@
                 "results": [
                     0,
                     3
+                ],
+                "correct": [
+                    0,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
                 ],
                 "correct": [
                     0,
@@ -55940,6 +56031,27 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "bb2297d3-91b7-4ec4-b39b-cc64694929db_0-03": {
@@ -57031,6 +57143,29 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2,
+                    3
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "09690df3-0715-4875-8745-7e8830c761d0_341-62": {
@@ -57493,6 +57628,28 @@
             "followed": {}
         },
         "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
             "best": {
                 "results": [
                     3,
@@ -78335,6 +78492,28 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    0,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "1b4b9493-2f3b-48e2-ba96-4feb9b9e98a1_408-70": {
@@ -81111,6 +81290,30 @@
             },
             "sensible": {
                 "results": [
+                    2
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
                     2
                 ],
                 "correct": [
@@ -88515,6 +88718,27 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "3e418323-3ff7-4d03-9b60-275f1e20f5dc_589-19": {
@@ -91199,6 +91423,27 @@
                     1,
                     2,
                     3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    1,
+                    2
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
                 ],
                 "correct": [
                     3
@@ -104471,6 +104716,26 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [],
+                "correct": [
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "e1b0b312-ce2d-41a0-be5a-70c807fcc5ef_2287-10": {
@@ -107272,6 +107537,29 @@
             "sensible": {
                 "results": [
                     4
+                ],
+                "correct": [
+                    0,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
                 ],
                 "correct": [
                     0,
@@ -110555,6 +110843,28 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "ed792c47-5cb3-427c-a0e9-5dac33456e6a_3373-63": {
@@ -111826,6 +112136,28 @@
                 "results": [
                     0,
                     1,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
                     3
                 ],
                 "correct": [
@@ -122210,6 +122542,29 @@
             "followed": {}
         },
         "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    0,
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
             "best": {
                 "results": [
                     0,
@@ -136075,6 +136430,28 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
+                "correct": [
+                    3,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "6b7fc6db-e979-43a0-b61f-7dced89d423d_168-56": {
@@ -144032,6 +144409,27 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "cb8df5e7-af5c-4211-b779-0568f94c7ded_3449-61": {
@@ -146243,6 +146641,27 @@
                 "results": [
                     0,
                     2
+                ],
+                "correct": [
+                    4
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    4,
+                    0
+                ],
+                "correct": [
+                    4,
+                    4
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
                 ],
                 "correct": [
                     4
@@ -151960,6 +152379,30 @@
             "followed": {}
         },
         "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
             "best": {
                 "results": [
                     1,
@@ -160354,6 +160797,29 @@
                     2,
                     3,
                     4
+                ],
+                "correct": [
+                    0,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
                 ],
                 "correct": [
                     0,
@@ -180687,6 +181153,28 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "dd508a2a-1ea7-43d2-805a-8080eeae9985_1035-99": {
@@ -182069,6 +182557,27 @@
                     0,
                     2,
                     4
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
                 ],
                 "correct": [
                     2
@@ -193168,6 +193677,28 @@
                 "results": [
                     4,
                     3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
                 ],
                 "correct": [
                     3,
@@ -208249,6 +208780,29 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    0,
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "2dbdd409-0be0-447c-8ae8-3f107fe9af80_1872-88": {
@@ -210772,6 +211326,27 @@
             "followed": {}
         },
         "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
             "best": {
                 "results": [
                     2,
@@ -221144,6 +221719,29 @@
             "sensible": {
                 "results": [
                     0,
+                    2
+                ],
+                "correct": [
+                    0,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
                     2
                 ],
                 "correct": [
@@ -233569,6 +234167,30 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2,
+                    3
+                ],
+                "correct": [
+                    0,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "828ef13f-f52a-4a16-b206-4ec7e471f025_274-71": {
@@ -234376,6 +234998,27 @@
             "followed": {}
         },
         "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
             "best": {
                 "results": [
                     1,
@@ -267451,6 +268094,28 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "e7eead9a-5f4e-47af-8f54-2dd3fd453a2d_55-37": {
@@ -272360,6 +273025,29 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    0,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "a7448853-2414-42b1-998c-0f56594e437a_155-55": {
@@ -273180,6 +273868,27 @@
             "followed": {}
         },
         "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
             "best": {
                 "results": [
                     1,
@@ -274528,6 +275237,28 @@
             "followed": {}
         },
         "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
             "best": {
                 "results": [
                     1,
@@ -277312,6 +278043,28 @@
                 "results": [
                     2,
                     3
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
                 ],
                 "correct": [
                     2,
@@ -286317,6 +287070,27 @@
             "followed": {}
         },
         "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
             "best": {
                 "results": [
                     2,
@@ -315257,6 +316031,28 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "cdfd99eb-88c6-4bc7-8f66-e0318216feab_820-48": {
@@ -317861,6 +318657,27 @@
             "followed": {}
         },
         "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
             "best": {
                 "results": [
                     2,
@@ -331202,6 +332019,29 @@
             "sensible": {
                 "results": [
                     0,
+                    2
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
                     2
                 ],
                 "correct": [
@@ -347223,6 +348063,27 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "0d5f2917-e0bd-47cb-b887-1c14c69568f9_848-84": {
@@ -347678,6 +348539,27 @@
             "sensible": {
                 "results": [
                     0,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    3,
+                    2
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
                     3
                 ],
                 "correct": [
@@ -368689,6 +369571,28 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "f5bdefb3-f57c-4270-bf31-7939ecd45c86_1289-58": {
@@ -379834,6 +380738,30 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "406f3614-0b99-4b3f-b3cb-a4590bad9e27_288-93": {
@@ -390876,6 +391804,29 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2
+                ],
+                "correct": [
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "258a7d18-4e66-4e3a-9fa0-f8daf7315a6d_1387-30": {
@@ -393326,6 +394277,27 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "4de25e28-5a34-4fbe-bc83-200d513b4d9a_1123-59": {
@@ -394200,6 +395172,27 @@
             "followed": {}
         },
         "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
             "best": {
                 "results": [
                     0,
@@ -396481,6 +397474,26 @@
                     3,
                     4
                 ],
+                "correct": [
+                    0,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [],
                 "correct": [
                     0,
                     3
@@ -399952,6 +400965,27 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "ae59dda2-8aa0-40e1-bd48-af368ea8e149_1550-40": {
@@ -401255,6 +402289,29 @@
                     0,
                     1,
                     3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
                 ],
                 "correct": [
                     0,
@@ -418161,6 +419218,29 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "792d0000-7dcd-4e6c-a486-7befe397233d_917-53": {
@@ -423924,6 +425004,28 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    2,
+                    4
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "6ef5aab3-db5f-4fdb-9c39-b37bd497e7d8_638-66": {
@@ -427037,6 +428139,29 @@
                 "results": [
                     2,
                     2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2,
+                    3
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
                 ],
                 "correct": [
                     2,
@@ -435036,6 +436161,28 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    2,
+                    1
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "750c5383-58f6-4063-8cc8-50691a68994d_870-14": {
@@ -439686,6 +440833,27 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "254029e5-fed4-40a7-bef1-12b9faff3202_1017-93": {
@@ -440591,6 +441759,27 @@
                 "results": [
                     0,
                     3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
                 ],
                 "correct": [
                     3
@@ -449040,6 +450229,27 @@
                 "results": [
                     0,
                     2,
+                    3
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
                     3
                 ],
                 "correct": [
@@ -458345,6 +459555,25 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "cfa58f86-6a63-46fc-8510-6a8d517f933b_689-38": {
@@ -464920,6 +466149,27 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "668962c9-ecae-4b8f-bdc1-a6aeab093d88_811-44": {
@@ -467872,6 +469122,27 @@
             "sensible": {
                 "results": [
                     0,
+                    1
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
                     1
                 ],
                 "correct": [
@@ -471126,6 +472397,27 @@
                 "results": [
                     0,
                     1
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
                 ],
                 "correct": [
                     3
@@ -486102,6 +487394,29 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    3,
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "3b342c9c-eb30-4cc6-8ced-53c4fb7b3a8d_783-98": {
@@ -492981,6 +494296,27 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    4,
+                    1
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "a3f1b2f3-0735-4c65-b66e-5c397f3126c7_276-64": {
@@ -498902,6 +500238,28 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "786877d8-e353-4fae-b488-8d7443646882_1021-24": {
@@ -503598,6 +504956,28 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "54a421d2-763e-4751-a6b4-54e3d6c46cc1_692-41": {
@@ -506283,6 +507663,29 @@
                 "results": [
                     1,
                     3
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    0,
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
                 ],
                 "correct": [
                     1,
@@ -509932,6 +511335,29 @@
                     0,
                     3,
                     4
+                ],
+                "correct": [
+                    0,
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
                 ],
                 "correct": [
                     0,
@@ -521261,6 +522687,28 @@
                 "results": [
                     0,
                     2
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
                 ],
                 "correct": [
                     2,
@@ -534560,6 +536008,28 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    0,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "95c0a226-5cb1-4380-af73-db2fcdbdbb76_174-41": {
@@ -537819,6 +539289,30 @@
                 "results": [
                     0,
                     3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
                 ],
                 "correct": [
                     0,
@@ -586023,6 +587517,28 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "516ba1f4-5cfd-4dd7-b4b6-a4c0605d1281_1838-55": {
@@ -597465,6 +598981,31 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2,
+                    3
+                ],
+                "correct": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "36baa5a9-16bf-4ad6-b011-4d7daae6b8f9_423-57": {
@@ -604099,6 +605640,28 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "83f18213-f8f8-44fa-b9ce-104c6ddbcd57_1657-94": {
@@ -605719,6 +607282,28 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "4651e5c2-4371-4af2-8f05-cb8b0b1ec7fd_233-33": {
@@ -607129,6 +608714,27 @@
                 "results": [
                     3,
                     3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
                 ],
                 "correct": [
                     3,
@@ -628791,6 +630397,28 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "13488a91-cef6-46f4-8007-9453d5d49925_44-43": {
@@ -631926,6 +633554,30 @@
                 "results": [
                     0,
                     0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    0,
+                    3
                 ],
                 "correct": [
                     0,
@@ -659300,6 +660952,27 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "e65cdb37-b00c-44b1-909f-068022d804cb_868-94": {
@@ -675725,6 +677398,28 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "21438820-16d7-4fcd-b0d0-5def201fc65e_1321-22": {
@@ -680688,6 +682383,28 @@
                 "results": [
                     1,
                     1
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
                 ],
                 "correct": [
                     2,
@@ -688596,6 +690313,28 @@
             "sensible": {
                 "results": [
                     0,
+                    2
+                ],
+                "correct": [
+                    0,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
                     2
                 ],
                 "correct": [
@@ -700065,6 +701804,29 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "a448297b-ae62-4712-bc4f-849b39176558_2443-39": {
@@ -705744,6 +707506,30 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "c85251fa-eb44-4903-b27f-9cdee26e0ed5_1618-20": {
@@ -709840,6 +711626,28 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "f58900c3-5747-447c-9fa2-04c608e7f40a_18-05": {
@@ -710704,6 +712512,27 @@
             "followed": {}
         },
         "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    1
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
             "best": {
                 "results": [
                     2,
@@ -724311,6 +726140,28 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "cbc5c4fe-ed66-4525-a3d8-d691064db66b_262-02": {
@@ -730643,6 +732494,30 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    3,
+                    2
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "f5ac654b-8f39-427b-856f-4a9a2d4a3020_9-20": {
@@ -735442,6 +737317,28 @@
             },
             "sensible": {
                 "results": [
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
                     3
                 ],
                 "correct": [
@@ -741116,6 +743013,27 @@
                 ]
             },
             "followed": {}
+        },
+        "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "10a848ed-f258-4930-abdd-1fd60b788abc_475-65": {
@@ -741577,6 +743495,29 @@
             "followed": {}
         },
         "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "o4-mini-250416-48293": {
             "best": {
                 "results": [
                     2,
