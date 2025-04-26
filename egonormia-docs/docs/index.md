@@ -61,6 +61,9 @@ export GEMINI_API_KEY=<KEY>
 export GOOGLE_APPLICATION_CREDENTIALS=<PATH_TO_GCP_CREDENTIALS>
 export LOCATION=<GCP_PROJECT_LOCATION>
 export PROJECT_ID=<GCP_PROJECT_ID>
+export AZURE_KEY=<AZURE_KEY>
+export AZURE_ENDPOINT=<AZURE_ENDPOINT>
+export OPENAI_API_BASE=<OPENAI_API_BASE>
 ```
 
 Or you can modify the `SECRETS.env` file, adding your api keys.
@@ -68,11 +71,13 @@ Or you can modify the `SECRETS.env` file, adding your api keys.
 You can then run the evaluation from the `egonormia/src` directory with the following command:
 
 ```bash
-python3 evaluate.py --modelname [modelname] --jsonfile [jsonfile].json (--blind) (--description)
+python3 evaluate.py --modelname [modelname] --jsonfile [jsonfile].json (--blind) (--description) (--azure) (--workers) (--number)
 
 ```
 Include the `--blind` flag to run the evaluation without the ground truth, and the `--description` flag to include the description in the evaluation.
-`--blind` and `--description` flags are mutually exclusive.
+`--blind` and `--description` flags are mutually exclusive. The `--azure` flag should be set when you want to use the Azure OpenAI API.
+
+The `--workers` flag specifies the number of workers to use for the evaluation. The `--number` flag specifies the number of samples to evaluate.
 
 ## License
 

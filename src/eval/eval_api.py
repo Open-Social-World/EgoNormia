@@ -10,25 +10,27 @@ from anthropic import AnthropicVertex
 import PIL.Image
 import io
 from transformers import AutoModelForImageTextToText, AutoTokenizer
+import pickle
 
 import api_keys
+from eval.utils import backoff, setup_logger, ReasoningCache
 
 # Gemini imports
 from google import genai
 from google.genai import types
 import re
 import ast
-
-# # OpenAI imports
+from vertexai.generative_models import GenerativeModel, Part
+from google.cloud import storage
 import openai
 import concurrent.futures
+from openai import AzureOpenAI
 
 class EvalAPI:
-    def __init__(self, model, rl, blind, jsonfile, num_workers, desc):
+    def __init__(self, model, blind, jsonfile, num_workers, desc, num_datapoints):
 
-        self.rl = rl
         self.modelname = model
-        self.model, self.rate_limit = self.set_model()
+        self.model = self.set_model()
 
         self.blind = blind
         srcdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -39,33 +41,41 @@ class EvalAPI:
         self.only_best = False
 
         self.num_workers = num_workers
+        self.num_datapoints = num_datapoints
 
         self.custom = False
 
         self.desc = desc
 
-        print(f"Testing Conditions \n Model: {self.modelname} \n Blind: {self.blind} \n JSON File: {self.jsonfile}")
-        print(f"Desc: {self.desc}")
-        print(f"Only best: {self.only_best}")
+        self.ablation = False
+
+        self.logdir = f"{self.modelname}_{time.strftime('%Y%m%d_%H%M%S')}"
+
+        self.logger = setup_logger(log_name=self.logdir)
+        self.rc = ReasoningCache(dir_name=self.logdir)
+
+        self.logger.info(f"Testing Conditions \n Model: {self.modelname} \n Blind: {self.blind} \n JSON File: {self.jsonfile}")
+        self.logger.info(f"Desc: {self.desc}")
+        self.logger.info(f"Only best: {self.only_best}")
 
         if self.only_best:
-            print("Only best mode enabled. Sensible and follow_norm tasks will not be evaluated.")
+            self.logger.info("Only best mode enabled. Sensible and follow_norm tasks will not be evaluated.")
             time.sleep(1)
 
         if self.desc:
-            self.prefix = "The following descrption: {desc} describes a first-person perspective video of a person in a given situation"
+            self.prefix = "The following description: ''' {desc} ''' describes a situation involving"
         elif not self.blind:
             self.prefix = "The following images from a first-person perspective video depict"
         else:
             self.prefix = "You are blind, so do not request context, only follow the instructions below. This situation involves"
 
         if self.blind:
-            print("Blind mode enabled. No images will be passed to the model.")
+            self.logger.info("Blind mode enabled. No images will be passed to the model.")
             self.modelname = "blind_" + self.modelname
 
         if 'rag' in self.modelname:
             from eval.context_indexing import ImageIndexer
-            print("Loading RAG model")
+            self.logger.info("Loading RAG model")
 
             # Get current dir
             srcdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -106,7 +116,7 @@ class EvalAPI:
 
             # If data['answers'] has a key equal to self.modelname, skip
             if self.modelname in evl_res.keys():
-                print(f"Skipping {vid_id}, already tested on {self.modelname}.")
+                self.logger.info(f"Skipping {vid_id}, already tested on {self.modelname}.")
                 continue
 
             behaviors = behaviors_col[cnt]
@@ -116,11 +126,10 @@ class EvalAPI:
             sensible = sensible_col[cnt] # These are indices
 
             n = len(behaviors)
-            random_indices_behaviors = random.sample(range(n), n)
-            random_indices_justifications = random.sample(range(n), n)
-
-            # random_indices_behaviors = [i for i in range(n)]
-            # random_indices_justifications = [i for i in range(n)]
+            #random_indices_behaviors = random.sample(range(n), n)
+            #random_indices_justifications = random.sample(range(n), n)
+            random_indices_behaviors = [i for i in range(n)]
+            random_indices_justifications = [i for i in range(n)]
 
             behaviors = [behaviors[i] for i in random_indices_behaviors]
             justifications = [justifications[i] for i in random_indices_justifications]
@@ -129,7 +138,17 @@ class EvalAPI:
 
             correct_behavior = random_indices_behaviors[index_of_corr]
             correct_justification = random_indices_justifications[index_of_corr]
-            prev_images_paths = img_url.format(img_id=vid_id) # Single image
+
+            if self.ablation != 'video' and self.ablation != 'discrete_frames':
+                prev_images_paths = img_url.format(img_id=vid_id) # Single image
+            elif self.ablation == 'discrete_frames':
+                if vid_id in self.uploaded_videos1:
+                    prev_images_paths = [f"https://storage.googleapis.com/physical-social-norm/sampled_frames_new_new/{vid_id}/frame_{i}_prev.jpg" for i in range(5)]
+                elif vid_id in self.uploaded_videos2:
+                    prev_images_paths = [f"https://storage.googleapis.com/physical-social-norm/sampled_frames_v2/{vid_id}/frame_{i}_prev.jpg" for i in range(5)]
+            elif self.ablation == 'video':
+                vid_url = "https://huggingface.co/datasets/open-social-world/EgoNormia/resolve/main/video/{vid_id}/video_prev.mp4?download=true"
+                prev_images_paths = vid_url.format(vid_id=vid_id)
 
             # Build random mappings as current index:original index
             b_mappings = {random_indices_behaviors[i]: i for i in range(n)}
@@ -149,18 +168,25 @@ class EvalAPI:
             
             task_set.append(datapoint)
 
-        print(f"Task set size: {len(task_set)}")
+        self.logger.info(f"Task set size: {len(task_set)}")
 
-        task_set = random.sample(task_set, len(task_set))
+        if self.num_datapoints != -1:
+            if self.num_datapoints > len(task_set):
+                self.logger.info(f"Requested {self.num_datapoints} datapoints, but only {len(task_set)} available. Using all available datapoints.")
+            else:
+                self.logger.info(f"Requested {self.num_datapoints} datapoints. Using only the first {self.num_datapoints} datapoints.")
+                task_set = task_set[:self.num_datapoints]
 
-        task_set = task_set[:] # Look here!!!
+        # Make results directory if it doesn't exist
+        if not os.path.exists(f'../results/{self.logdir}'):
+            os.makedirs(f'../results/{self.logdir}')
+
+        with open(f'../results/{self.logdir}/data.pkl', 'wb') as f:
+            pickle.dump(task_set, f)
 
         return task_set      
     
     def pick_best(self, datapoint):
-
-        self.rate_limit.rc()
-        self.rate_limit.rc()
 
         behaviors = datapoint['behaviors']
         justifications = datapoint['justifications']
@@ -171,7 +197,6 @@ class EvalAPI:
             prefix = self.prefix.format(desc=datapoint['description'])
         else:
             prefix = self.prefix
-
         prompt = prefix+f""" a person in a given situation.
 
 Given the below list of behaviors, choose the single most normatively relevant or appropriate action to perform next.
@@ -196,7 +221,7 @@ Response example:
 <reasoning goes here>
 1
 """
-        justification_prompt = """ a person in a given situation.
+        justification_prompt = self.prefix+""" a person in a given situation.
 
 "{behavior}" is selected as the most normatively relevant or appropriate action for the person to perform in the given situation.
 However, this behavior might not be the most normatively correct action to perform in the given situation. Be open to the possibility that the behavior might be incorrect.
@@ -234,7 +259,9 @@ Response example:
             correct[0] = datapoint['behavior_shuffle'][correct[0]]
             correct[1] = datapoint['justification_shuffle'][correct[1]]
 
-            a_results_text = self.inference(prompt, _prev) # Expect output in form of [0, 1]
+            a_results_text = self.inference(prompt, _prev) # Expect output in form of [2, 3]
+            if a_results_text == None:
+                raise ValueError("Model returned None for inference.")
 
             # Find last integer in response and cast to int
             a_results = int(re.findall(r'\d+', a_results_text)[-1])
@@ -248,8 +275,10 @@ Response example:
             else:
                 bb = "None"
 
-            just_p = self.prefix+justification_prompt.format(behavior = bb, justifications = justifications)
+            just_p = justification_prompt.format(behavior = bb, justifications = justifications)
             j_results_text = self.inference(just_p, _prev)
+            if j_results_text == None:
+                raise ValueError("Model returned None for inference.")
 
             # Find last integer in response and cast to int
             j_results = int(re.findall(r'\d+', j_results_text)[-1])
@@ -261,22 +290,26 @@ Response example:
 
             results = [a_results, j_results]
 
-            if results[0] < 4 and results[0] > -1:
-                results[0] = datapoint['behavior_shuffle'][results[0]]
+            # Get unshuffler as inverse of datapoint['behavior_shuffle'] and datapoint['justification_shuffle']
+            unshuffler_a = {v: k for k, v in datapoint['behavior_shuffle'].items()}
+            unshuffler_j = {v: k for k, v in datapoint['justification_shuffle'].items()}
 
-            if results[1] < 4 and results[1] > -1:
-                results[1] = datapoint['justification_shuffle'][results[1]]
+            if results[0] <= 4 and results[0] > -1:
+                results[0] = unshuffler_a[results[0]]
 
-            return [{'results': results, 'correct': correct}, datapoint['id']]
+            if results[1] <= 4 and results[1] > -1:
+                results[1] = unshuffler_j[results[1]]
+
+            full_results = [{'results': results, 'correct': correct}, datapoint['id']]
+
+            self.logger.debug(f"{full_results}")
+
+            return full_results
         except Exception as e:
-            print(f"Error: {e}, skipping.")
-            return [{'results': [4, 4], 'correct': correct}, datapoint['id']]
-
+            self.logger.warning(f"Error: {e}, skipping.")
+            return [{'results': [-1, -1], 'correct': correct}, datapoint['id']]
 
     def pick_sensible(self, datapoint):
-
-        # Only one call, so one rate limit call
-        self.rate_limit.rc()
 
         behaviors = datapoint['behaviors']
         sensible = datapoint['sensible']
@@ -319,23 +352,28 @@ Response example:
                 _prev = None
 
             text_results = self.inference(prompt, _prev)
+            if text_results == None:
+                raise ValueError("Model returned None for inference.")
             sensible_response = re.findall(r'\[.*\]', text_results)[-1]
             results = ast.literal_eval(sensible_response)
             results = [r - 1 for r in results]
 
+            unshuffler_a = {v: k for k, v in datapoint['behavior_shuffle'].items()}
+
             if len(results) == len([r for r in results if r <= 4 and r > -1]):
-                results = [datapoint['behavior_shuffle'][r] for r in results]
+                results = [unshuffler_a[r] for r in results]
             else:
                 results = [] # Model outputs malform, but rest of the code is fine, counts as model error
             sensible = [datapoint['behavior_shuffle'][s] for s in sensible]
 
+            full_results = [{'results': results, 'correct': sensible}, datapoint['id']]
+            self.logger.debug(f"{full_results}")
 
-            return [{'results': results, 'correct': sensible}, datapoint['id']]
-    
+            return full_results
 
         except Exception as e:
-            print(f"Error: {e}, skipping.")
-            return [{'results': [], 'correct': sensible}, datapoint['id']]
+            self.logger.warning(f"Error: {e}, skipping.")
+            return [{'results': [-1, -1], 'correct': sensible}, datapoint['id']]
 
     def evaluate(self):
 
@@ -349,17 +387,11 @@ Response example:
             with concurrent.futures.ThreadPoolExecutor(max_workers=self.num_workers) as executor:
                 sensible_futures = list(tqdm.tqdm(executor.map(self.pick_sensible, test_set), total=len(test_set)))
 
-        # Cache data as pickle to not be lost
-        import pickle
-        ts = time.time()
-
-        removed_slash = self.modelname.split('/')[-1]
-
         # Make results directory if it doesn't exist
-        if not os.path.exists('../results'):
-            os.makedirs('../results')
+        if not os.path.exists(f'../results/{self.logdir}'):
+            os.makedirs(f'../results/{self.logdir}')
 
-        with open(f'../results/{removed_slash}_{ts}_results.pkl', 'wb') as f:
+        with open(f'../results/{self.logdir}/results.pkl', 'wb') as f:
             pickle.dump(best_futures, f)
             pickle.dump(sensible_futures, f)
 
@@ -376,12 +408,14 @@ Response example:
             sensible = sensible_temp[task_id]
             follow = {}
 
-            eval_results[task_id] = {'best': best, 'sensible': sensible, 'followed': follow}
+            # Don't add point if malform i.e. skipped
+            if best['results'] != [-1, -1] and sensible['results'] != [-1, -1]:
+                eval_results[task_id] = {'best': best, 'sensible': sensible, 'followed': follow}
 
         # Once all samples are evaluated, compile results separately
         self.save_results(eval_results)
 
-        print("Evaluation complete.")
+        self.logger.info("Evaluation complete.")
 
     def save_results(self, eval_results):
 
@@ -404,66 +438,143 @@ Response example:
         with open(self.savefile, 'w') as f:
             json.dump(data, f, indent=4)
 
-class RateLimiterObject:
-    def __init__(self, rate_limit):
-        self.rate_limit = rate_limit
-        self.hard_limit = rate_limit
-        self.last_call = time.time()
-        self.start_time = time.time()
-        self.num_of_calls = 0
-        # Always assuming per minute rate limit
-        current_avg = (self.num_of_calls) / (time.time() - self.start_time)
-        print(f"Rate limit: {self.hard_limit/60}, Current average: {current_avg}")
-
-    def rc(self):
-
-        current_avg = (self.num_of_calls) / (time.time() - self.start_time)
-
-        while current_avg > self.hard_limit/60:
-            current_avg = (self.num_of_calls) / (time.time() - self.start_time)
-        self.num_of_calls += 1
-
 class GeminiEvalAPI(EvalAPI):
 
-    def set_model(self):
-        ratelimiter = RateLimiterObject(self.rl)
+    def __init__(self, model, blind, jsonfile, num_workers, desc, num_datapoints, ablation):
+        # Super initialization
+        super().__init__(model, blind, jsonfile, num_workers, desc, num_datapoints)
 
+        # Initialize the ablation variable
+        self.ablation = ablation
+
+        if self.ablation != '':
+            self.logger.info(f"Running ablation study of input types: {self.ablation}")
+
+        if self.ablation == 'video' or self.ablation == 'discrete_frames':
+
+            client = storage.Client()
+            bucket_name = 'physical-social-norm'
+            bucket = client.get_bucket(bucket_name)
+            # Get list of already uploaded videos
+            blobs = bucket.list_blobs()
+            self.uploaded_videos1 = {i.name.split('/')[-1].split('_')[0] + '_' + i.name.split('/')[-1].split('_')[1] for i in blobs if i.name.startswith('sampled_snippets_new_new/') and len(i.name.split('/')[-1]) > 1}
+            blobs = bucket.list_blobs()
+            self.uploaded_videos2 = {i.name.split('/')[-1].split('_')[0] + '_' + i.name.split('/')[-1].split('_')[1] for i in blobs if i.name.startswith('sampled_snippets_v2/') and len(i.name.split('/')[-1]) > 1}
+            blobs = bucket.list_blobs()
+
+    def set_model(self):
         model = genai.Client(api_key=api_keys.gem_key)
 
-        return model, ratelimiter
+        return model
 
     def inference(self, prompt, image):
 
-        if self.blind:
+        if self.blind or self.desc:
             full_input = [prompt]
         else:
-            image_bytes = base64.b64encode(requests.get(image).content).decode('utf-8')
+            if self.ablation != 'video' and self.ablation != 'discrete_frames':
+                image_bytes = base64.b64encode(requests.get(image).content).decode('utf-8')
 
-            image_file = types.Part.from_bytes(data=image_bytes,mime_type="image/jpeg")
-            full_input = [prompt, image_file]
+                image_file = types.Part.from_bytes(data=image_bytes,mime_type="image/jpeg")
+                full_input = [prompt, image_file]
+                mn = self.modelname.replace('blind_','').replace('desc_','')
 
-        mn = self.modelname.replace('blind_','').replace('desc_','')
+            elif self.ablation == 'video':
+                video_bytes = base64.b64encode(requests.get(image).content).decode('utf-8')
+                video_file = types.Part.from_bytes(data=video_bytes, mime_type="video/mp4")
+                full_input = [prompt, video_file]
+                mn = self.modelname.replace('video_','')
+
+            elif self.ablation == 'discrete_frames':
+                full_input = [prompt]
+                for img in image:
+                    image_bytes = base64.b64encode(requests.get(img).content).decode('utf-8')
+
+                    img_file = types.Part.from_bytes(data=image_bytes, mime_type="image/jpeg")
+                    full_input.append(img_file)
+
+                mn = self.modelname.replace('frames_','')
 
         response = self.model.models.generate_content(model = mn,
                                                       contents = full_input
                                                                            
         )
 
+        self.rc.add_and_write(self.modelname, prompt, response.text)
+
         return response.text
-        
-class OpenAIEvalAPI(EvalAPI):
+    
+class AzureOpenAIEvalAPI(EvalAPI):
 
     def set_model(self):
-        ratelimiter = RateLimiterObject(self.rl)
 
-        model = openai.Client()
+        endpoint = api_keys.azure_endpoint
 
-        return model, ratelimiter
+        subscription_key = api_keys.azure_key
+        api_version = "2024-12-01-preview"
+
+        client = AzureOpenAI(
+            api_version=api_version,
+            azure_endpoint=endpoint,
+            api_key=subscription_key,
+        )
+
+        return client
     
+    @backoff(max_retries=5, base_delay=3)
     def inference(self, prompt, image):
 
         contents = []
-        if not self.blind:
+        if not self.blind and not self.desc:
+            contents.append({"type": "image_url", "image_url": {"url":image}})
+        contents.append({"type": "text", "text": prompt})
+
+        mn = self.modelname.replace('blind_','').replace('desc_','')
+
+        if 'o4' in mn or 'o3' in mn:
+            response = self.model.chat.completions.create(
+                model = mn,
+                reasoning_effort="medium",
+                messages=[
+                    {
+                        "role": "user",
+                        "content": contents
+                    }
+                ]
+            )
+        else:
+
+            response = self.model.chat.completions.create(
+                model = mn,
+                messages=[
+                    {
+                        "role": "user",
+                        "content": contents
+                    }
+                ],
+                max_tokens=2000,
+                temperature=0.0
+            )
+
+        response = response.choices[0].message.content
+
+        self.rc.add_and_write(self.modelname, prompt, response)
+
+        return response
+    
+class OpenAIEvalAPI(EvalAPI):
+
+    def set_model(self):
+
+        model = openai.Client()
+
+        return model
+    
+    @backoff(max_retries=5, base_delay=3)
+    def inference(self, prompt, image):
+
+        contents = []
+        if not self.blind and not self.desc:
             contents.append({"type": "image_url", "image_url": {"url":image}})
         contents.append({"type": "text", "text": prompt})
 
@@ -483,53 +594,23 @@ class OpenAIEvalAPI(EvalAPI):
 
         response = response.choices[0].message.content
 
-        return response
-    
-class OpenAIO3EvalAPI(EvalAPI):
-
-    def set_model(self):
-        ratelimiter = RateLimiterObject(self.rl)
-
-        model = openai.Client()
-
-        return model, ratelimiter
-    
-    def inference(self, prompt, image):
-
-        contents = []
-        contents.append({"type": "text", "text": prompt})
-
-        mn = self.modelname.replace('blind_','').replace('desc_','')
-
-        response = self.model.chat.completions.create(
-            model = mn,
-            messages=[
-                {
-                    "role": "user",
-                    "content": contents
-                }
-            ],
-            max_tokens=2000,
-            temperature=0.0
-        )
-
-        response = response.choices[0].message.content
+        self.rc.add_and_write(self.modelname, prompt, response)
 
         return response
 
 class RagEval(EvalAPI):
 
     def set_model(self):
-        ratelimiter = RateLimiterObject(self.rl)
 
         self.oaiclient = openai.OpenAI()
 
-        return None, ratelimiter # Model not used here as implicitly defined
+        return None # Model not used here as implicitly defined
 
+    @backoff(max_retries=5, base_delay=3)
     def inference(self, prompt, image):
 
         contents = []
-        if not self.blind:
+        if not self.blind and not self.desc:
             contents.append({"type": "image_url", "image_url": {"url":image}})
 
         contents.append({"type": "text", "text": prompt})
@@ -547,6 +628,8 @@ class RagEval(EvalAPI):
 
         response = response.choices[0].message.content
 
+        self.rc.add_and_write(self.modelname, prompt, response)
+
         return response
 
 class ClaudeEvalAPI(EvalAPI):
@@ -555,8 +638,9 @@ class ClaudeEvalAPI(EvalAPI):
 
         client = AnthropicVertex(region=api_keys.LOCATION, project_id=api_keys.PROJECT_ID)
 
-        return client, RateLimiterObject(self.rl)
+        return client
 
+    @backoff(max_retries=5, base_delay=3)
     def inference(self, prompt, image):
             contents = []
 
@@ -573,14 +657,15 @@ class ClaudeEvalAPI(EvalAPI):
             # Encode image to base64 after resizing
             image_b64 = base64.b64encode(byte_data).decode('utf-8')
 
-            contents.append({
-                "type": "image",
-                "source": {
-                    "type": "base64",
-                    "media_type": "image/jpeg",
-                    "data": image_b64,
-                }
-            })
+            if not self.blind and not self.desc:
+                contents.append({
+                    "type": "image",
+                    "source": {
+                        "type": "base64",
+                        "media_type": "image/jpeg",
+                        "data": image_b64,
+                    }
+                })
             contents.append({"type": "text", "text": prompt})
 
             temp_modelname = self.modelname.strip('blind_').strip('desc_')
@@ -601,50 +686,50 @@ class ClaudeEvalAPI(EvalAPI):
             )
 
             list_response = response.content[0].text
+
+            self.rc.add_and_write(self.modelname, prompt, list_response)
         
             return list_response
 
 
-class HuggingfaceEvalAPI(EvalAPI):
+# class HuggingfaceEvalAPI(EvalAPI):
 
-    def set_model(self):
+#     def set_model(self):
 
-        mn = self.modelname.replace('blind_','').replace('desc_','')
+#         mn = self.modelname.replace('blind_','').replace('desc_','')
         
-        model = AutoModelForImageTextToText.from_pretrained(
-            mn,
-            torch_dtype="auto",
-            device_map="auto"
-        )
-        self.tokenizer = AutoTokenizer.from_pretrained(self.model_name)
+#         model = AutoModelForImageTextToText.from_pretrained(
+#             mn,
+#             torch_dtype="auto",
+#             device_map="auto"
+#         )
+#         self.tokenizer = AutoTokenizer.from_pretrained(self.model_name)
 
-        ratelimiter = RateLimiterObject(self.rl)
-
-        return model, ratelimiter
+#         return model
     
-    def inference(self, prompt, image):
+#     def inference(self, prompt, image):
 
-        contents = []
+#         contents = []
 
-        contents.append({"type": "text", "text": prompt})
+#         contents.append({"type": "text", "text": prompt})
 
-        if not self.blind:
-            img = PIL.Image.open(io.BytesIO(requests.get(image).content))
-            contents.append({"type": "image", "image": img})
+#         if not self.blind:
+#             img = PIL.Image.open(io.BytesIO(requests.get(image).content))
+#             contents.append({"type": "image", "image": img})
 
-        tokenized_content = self.tokenizer.apply_chat_template(contents,
-                                                               tokenize=False
-        )
+#         tokenized_content = self.tokenizer.apply_chat_template(contents,
+#                                                                tokenize=False
+#         )
 
-        inputs = self.tokenizer(tokenized_content, return_tensors="pt").to(self.model.device)
+#         inputs = self.tokenizer(tokenized_content, return_tensors="pt").to(self.model.device)
 
-        response = self.model.generate(**inputs)
+#         response = self.model.generate(**inputs)
 
-        response = self.tokenizer.decode(response[0], skip_special_tokens=True)[0]
+#         response = self.tokenizer.decode(response[0], skip_special_tokens=True)[0]
 
-        return response
+#         return response
 
-class VLLMAPI(EvalAPI):
+class VLLMEvalAPI(EvalAPI):
 
     def set_model(self):
         client = openai.OpenAI(
@@ -652,10 +737,9 @@ class VLLMAPI(EvalAPI):
             base_url=api_keys.openai_api_base,
         )
 
-        ratelimiter = RateLimiterObject(self.rl)
-
-        return client, ratelimiter
+        return client
     
+    @backoff(max_retries=5, base_delay=3)
     def inference(self, prompt, image):
 
         contents = []
