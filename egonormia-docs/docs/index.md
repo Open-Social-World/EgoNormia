@@ -37,7 +37,7 @@ To run using vLLM, first specify the endpoint of your vLLM server as OPENAI_API_
 To tunnel a connection from a remote server to your own machine, use the following command on the vLLM host machine, replacing relevant fields as needed:
 `bash ssh -i /path/to/private_key -L 8000:localhost:8000 user@remote_machine `
 
-Then, specify the `-vl` flag when calling the evaluation API, and give the modelname as
+Then, specify the `-v` flag when calling the evaluation API, and give the modelname as
 `--modelname [org/modelname]`, where org/modelname is the organization and name of the model as specified in HuggingFace.
 
 ## Evaluate using custom VLM (if openai API compatible)

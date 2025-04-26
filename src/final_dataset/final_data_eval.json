@@ -41976,6 +41976,30 @@
                 ]
             },
             "followed": {}
+        },
+        "Qwen/QwQ-32B": {
+            "best": {
+                "results": [
+                    4,
+                    3
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "963c1ecc-d25e-4c0a-b447-9b26f3778efc_207-31": {
@@ -57663,6 +57687,27 @@
             "sensible": {
                 "results": [
                     0,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "Qwen/QwQ-32B": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
                     3
                 ],
                 "correct": [
@@ -88739,6 +88784,25 @@
                 ]
             },
             "followed": {}
+        },
+        "Qwen/QwQ-32B": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "3e418323-3ff7-4d03-9b60-275f1e20f5dc_589-19": {
@@ -91444,6 +91508,27 @@
             "sensible": {
                 "results": [
                     1
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "Qwen/QwQ-32B": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
                 ],
                 "correct": [
                     3
@@ -107560,6 +107645,30 @@
             "sensible": {
                 "results": [
                     2
+                ],
+                "correct": [
+                    0,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "Qwen/QwQ-32B": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
                 ],
                 "correct": [
                     0,
@@ -146668,6 +146777,27 @@
                 ]
             },
             "followed": {}
+        },
+        "Qwen/QwQ-32B": {
+            "best": {
+                "results": [
+                    4,
+                    3
+                ],
+                "correct": [
+                    4,
+                    4
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
+                "correct": [
+                    4
+                ]
+            },
+            "followed": {}
         }
     },
     "6e68d2f9-6d37-4317-a3eb-9541321d558e_977-72": {
@@ -152416,6 +152546,30 @@
             "sensible": {
                 "results": [
                     1
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "Qwen/QwQ-32B": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
                 ],
                 "correct": [
                     0,
@@ -160810,6 +160964,29 @@
                 "results": [
                     0,
                     0
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    0,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "Qwen/QwQ-32B": {
+            "best": {
+                "results": [
+                    2,
+                    2
                 ],
                 "correct": [
                     2,
@@ -181175,6 +181352,28 @@
                 ]
             },
             "followed": {}
+        },
+        "Qwen/QwQ-32B": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "dd508a2a-1ea7-43d2-805a-8080eeae9985_1035-99": {
@@ -182565,6 +182764,27 @@
             "followed": {}
         },
         "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "Qwen/QwQ-32B": {
             "best": {
                 "results": [
                     2,
@@ -206190,6 +206410,28 @@
                 ]
             },
             "followed": {}
+        },
+        "Qwen/QwQ-32B": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    0,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "d0396c77-6ecc-4d9f-bda1-af051699d0cf_4546-97": {
@@ -208803,6 +209045,28 @@
                 ]
             },
             "followed": {}
+        },
+        "Qwen/QwQ-32B": {
+            "best": {
+                "results": [
+                    4,
+                    3
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0,
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "2dbdd409-0be0-447c-8ae8-3f107fe9af80_1872-88": {
@@ -211347,6 +211611,27 @@
             "followed": {}
         },
         "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "Qwen/QwQ-32B": {
             "best": {
                 "results": [
                     2,
@@ -221730,6 +222015,29 @@
             "followed": {}
         },
         "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    0,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "Qwen/QwQ-32B": {
             "best": {
                 "results": [
                     2,
@@ -234191,6 +234499,28 @@
                 ]
             },
             "followed": {}
+        },
+        "Qwen/QwQ-32B": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    0,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "828ef13f-f52a-4a16-b206-4ec7e471f025_274-71": {
@@ -235023,6 +235353,27 @@
                 "results": [
                     1,
                     1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "Qwen/QwQ-32B": {
+            "best": {
+                "results": [
+                    4,
+                    4
                 ],
                 "correct": [
                     1,
@@ -273908,6 +274259,27 @@
                 ]
             },
             "followed": {}
+        },
+        "Qwen/QwQ-32B": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "aabc5114-a6a1-459d-81ed-99370385a7e4_2460-69": {
@@ -278065,6 +278437,28 @@
             "sensible": {
                 "results": [
                     2
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "Qwen/QwQ-32B": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
                 ],
                 "correct": [
                     2,
@@ -316053,6 +316447,29 @@
                 ]
             },
             "followed": {}
+        },
+        "Qwen/QwQ-32B": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "cdfd99eb-88c6-4bc7-8f66-e0318216feab_820-48": {
@@ -318678,6 +319095,27 @@
             "followed": {}
         },
         "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "Qwen/QwQ-32B": {
             "best": {
                 "results": [
                     2,
@@ -332041,6 +332479,28 @@
             "sensible": {
                 "results": [
                     0,
+                    1,
+                    2
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
+        },
+        "Qwen/QwQ-32B": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
                     1,
                     2
                 ],
@@ -348065,6 +348525,27 @@
             "followed": {}
         },
         "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "Qwen/QwQ-32B": {
             "best": {
                 "results": [
                     2,
@@ -380762,6 +381243,30 @@
                 ]
             },
             "followed": {}
+        },
+        "Qwen/QwQ-32B": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "406f3614-0b99-4b3f-b3cb-a4590bad9e27_288-93": {
@@ -391827,6 +392332,28 @@
                 ]
             },
             "followed": {}
+        },
+        "Qwen/QwQ-32B": {
+            "best": {
+                "results": [
+                    4,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "258a7d18-4e66-4e3a-9fa0-f8daf7315a6d_1387-30": {
@@ -394291,6 +394818,28 @@
             },
             "sensible": {
                 "results": [
+                    2
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "Qwen/QwQ-32B": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
                     2
                 ],
                 "correct": [
@@ -397494,6 +398043,28 @@
             },
             "sensible": {
                 "results": [],
+                "correct": [
+                    0,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "Qwen/QwQ-32B": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
                 "correct": [
                     0,
                     3
@@ -400967,6 +401538,27 @@
             "followed": {}
         },
         "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "Qwen/QwQ-32B": {
             "best": {
                 "results": [
                     3,
@@ -419241,6 +419833,27 @@
                 ]
             },
             "followed": {}
+        },
+        "Qwen/QwQ-32B": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "792d0000-7dcd-4e6c-a486-7befe397233d_917-53": {
@@ -425026,6 +425639,27 @@
                 ]
             },
             "followed": {}
+        },
+        "Qwen/QwQ-32B": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "6ef5aab3-db5f-4fdb-9c39-b37bd497e7d8_638-66": {
@@ -428172,6 +428806,27 @@
                 "results": [
                     0,
                     2,
+                    3
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "Qwen/QwQ-32B": {
+            "best": {
+                "results": [
+                    3,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
                     3
                 ],
                 "correct": [
@@ -459574,6 +460229,27 @@
                 ]
             },
             "followed": {}
+        },
+        "Qwen/QwQ-32B": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "cfa58f86-6a63-46fc-8510-6a8d517f933b_689-38": {
@@ -466155,6 +466831,27 @@
                 "results": [
                     0,
                     2
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
+        },
+        "Qwen/QwQ-32B": {
+            "best": {
+                "results": [
+                    0,
+                    4
                 ],
                 "correct": [
                     0,
@@ -504978,6 +505675,27 @@
                 ]
             },
             "followed": {}
+        },
+        "Qwen/QwQ-32B": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "54a421d2-763e-4751-a6b4-54e3d6c46cc1_692-41": {
@@ -507696,6 +508414,30 @@
                 "results": [
                     0,
                     1
+                ],
+                "correct": [
+                    0,
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "Qwen/QwQ-32B": {
+            "best": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3,
+                    4
                 ],
                 "correct": [
                     0,
@@ -511358,6 +512100,31 @@
             "sensible": {
                 "results": [
                     3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "Qwen/QwQ-32B": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3,
+                    4
                 ],
                 "correct": [
                     0,
@@ -539313,6 +540080,31 @@
             "sensible": {
                 "results": [
                     0
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "Qwen/QwQ-32B": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
                 ],
                 "correct": [
                     0,
@@ -599006,6 +599798,30 @@
                 ]
             },
             "followed": {}
+        },
+        "Qwen/QwQ-32B": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "36baa5a9-16bf-4ad6-b011-4d7daae6b8f9_423-57": {
@@ -607304,6 +608120,28 @@
                 ]
             },
             "followed": {}
+        },
+        "Qwen/QwQ-32B": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "4651e5c2-4371-4af2-8f05-cb8b0b1ec7fd_233-33": {
@@ -608744,6 +609582,27 @@
             "sensible": {
                 "results": [
                     3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "Qwen/QwQ-32B": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
                 ],
                 "correct": [
                     3
@@ -633588,6 +634447,29 @@
                 "results": [
                     0,
                     3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "Qwen/QwQ-32B": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
                 ],
                 "correct": [
                     0,
@@ -682421,6 +683303,27 @@
                 ]
             },
             "followed": {}
+        },
+        "Qwen/QwQ-32B": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "ea417823-8ca0-417c-8901-114fa4f2d47f_258-70": {
@@ -701827,6 +702730,29 @@
                 ]
             },
             "followed": {}
+        },
+        "Qwen/QwQ-32B": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "a448297b-ae62-4712-bc4f-849b39176558_2443-39": {
@@ -711628,6 +712554,28 @@
             "followed": {}
         },
         "o4-mini-250416-48293": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "Qwen/QwQ-32B": {
             "best": {
                 "results": [
                     0,
@@ -726162,6 +727110,27 @@
                 ]
             },
             "followed": {}
+        },
+        "Qwen/QwQ-32B": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "cbc5c4fe-ed66-4525-a3d8-d691064db66b_262-02": {
@@ -732509,6 +733478,29 @@
             "sensible": {
                 "results": [
                     1,
+                    3
+                ],
+                "correct": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "Qwen/QwQ-32B": {
+            "best": {
+                "results": [
+                    3,
+                    2
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
                     3
                 ],
                 "correct": [

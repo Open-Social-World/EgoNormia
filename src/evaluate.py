@@ -54,7 +54,7 @@ if args.huggingface:
     #print("Using Huggingface pipeline API to run model locally.")
     #model = eval_api.HuggingfaceEvalAPI(model=model_type, blind=blind, jsonfile=jsonfile, num_workers=num_workers, desc=description, num_datapoints=num_datapoints, ablation=ablation)
 elif args.vllm:
-    model = eval_api.VLLMEvalAPI(model=model_type, blind=blind, jsonfile=jsonfile, num_workers=num_workers, desc=description, num_datapoints=num_datapoints, ablation=ablation)
+    model = eval_api.VLLMEvalAPI(model=model_type, blind=blind, jsonfile=jsonfile, num_workers=num_workers, desc=description, num_datapoints=num_datapoints)
 elif 'gemini' in model_type:
     model = eval_api.GeminiEvalAPI(model=model_type, blind=blind, jsonfile=jsonfile, num_workers=num_workers, desc=description, num_datapoints=num_datapoints, ablation=ablation)
 elif 'gpt' in model_type or 'o4' in model_type or 'o3' in model_type:

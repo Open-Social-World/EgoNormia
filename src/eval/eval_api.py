@@ -221,7 +221,7 @@ Response example:
 <reasoning goes here>
 1
 """
-        justification_prompt = self.prefix+""" a person in a given situation.
+        justification_prompt = """ a person in a given situation.
 
 "{behavior}" is selected as the most normatively relevant or appropriate action for the person to perform in the given situation.
 However, this behavior might not be the most normatively correct action to perform in the given situation. Be open to the possibility that the behavior might be incorrect.
@@ -275,7 +275,7 @@ Response example:
             else:
                 bb = "None"
 
-            just_p = justification_prompt.format(behavior = bb, justifications = justifications)
+            just_p = self.prefix+justification_prompt.format(behavior = bb, justifications = justifications)
             j_results_text = self.inference(just_p, _prev)
             if j_results_text == None:
                 raise ValueError("Model returned None for inference.")
@@ -306,8 +306,8 @@ Response example:
 
             return full_results
         except Exception as e:
-            self.logger.warning(f"Error: {e}, skipping.")
-            return [{'results': [-1, -1], 'correct': correct}, datapoint['id']]
+           self.logger.warning(f"Error: {e}, skipping.")
+           return [{'results': [-1, -1], 'correct': correct}, datapoint['id']]
 
     def pick_sensible(self, datapoint):
 
