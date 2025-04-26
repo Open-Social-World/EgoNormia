@@ -9,6 +9,7 @@ import base64
 from anthropic import AnthropicVertex
 import PIL.Image
 import io
+from transformers import AutoModelForImageTextToText, AutoTokenizer
 import pickle
 
 import api_keys
@@ -249,9 +250,9 @@ Response example:
                 cr = self.indexer_loaded.query_image(_prev, top_k=5)
                 if self.blind:
                     cr = "None"
-                prompt = prompt + f"\n IMPORTANT: The correct responses under the most similar contexts were '{cr}' However, these are only guidance, and mustbe interpreted generally in terms of meaning, you must be very careful as the context might still vary in some critical way."
+                prompt = prompt + f"\n IMPORTANT: The correct responses under the most similar contexts were '{cr}' However, these are only guidance, and must be interpreted generally in terms of meaning, you must be very careful as the context might still vary in some critical way."
 
-            if self.blind:
+            if self.blind or self.desc:
                 _prev = None
 
 
@@ -689,3 +690,77 @@ class ClaudeEvalAPI(EvalAPI):
             self.rc.add_and_write(self.modelname, prompt, list_response)
         
             return list_response
+
+
+# class HuggingfaceEvalAPI(EvalAPI):
+
+#     def set_model(self):
+
+#         mn = self.modelname.replace('blind_','').replace('desc_','')
+        
+#         model = AutoModelForImageTextToText.from_pretrained(
+#             mn,
+#             torch_dtype="auto",
+#             device_map="auto"
+#         )
+#         self.tokenizer = AutoTokenizer.from_pretrained(self.model_name)
+
+#         return model
+    
+#     def inference(self, prompt, image):
+
+#         contents = []
+
+#         contents.append({"type": "text", "text": prompt})
+
+#         if not self.blind:
+#             img = PIL.Image.open(io.BytesIO(requests.get(image).content))
+#             contents.append({"type": "image", "image": img})
+
+#         tokenized_content = self.tokenizer.apply_chat_template(contents,
+#                                                                tokenize=False
+#         )
+
+#         inputs = self.tokenizer(tokenized_content, return_tensors="pt").to(self.model.device)
+
+#         response = self.model.generate(**inputs)
+
+#         response = self.tokenizer.decode(response[0], skip_special_tokens=True)[0]
+
+#         return response
+
+class VLLMEvalAPI(EvalAPI):
+
+    def set_model(self):
+        client = openai.OpenAI(
+            api_key=api_keys.oai_key,
+            base_url=api_keys.openai_api_base,
+        )
+
+        return client
+    
+    @backoff(max_retries=5, base_delay=3)
+    def inference(self, prompt, image):
+
+        contents = []
+        if not self.blind and not self.desc:
+            contents.append({"type": "image_url", "image_url": {"url":image}})
+        contents.append({"type": "text", "text": prompt})
+
+        mn = self.modelname.replace('blind_','').replace('desc_','')
+
+        response = self.model.chat.completions.create(
+            model = mn,
+            messages=[
+                {
+                    "role": "user",
+                    "content": contents
+                }
+            ],
+            max_tokens=2000,
+            temperature=0.0
+        )
+
+        response = response.choices[0].message.content
+
+        return response

@@ -30,6 +30,7 @@ dependencies = [
   "faiss-cpu",
   "torch",
   "mkdocs",
+  "transformers"
 ]
 
 [project.urls]
