@@ -9,6 +9,7 @@ parser.add_argument('--description', action='store_true', help="Show description
 parser.add_argument('--jsonfile', type=str, default='src/final_dataset/final_data.json', help="Path to the JSON file")
 parser.add_argument('--modelname', type=str, default='', help="Name of the model")
 parser.add_argument('--huggingface', '-hf', action='store_true', help="Use Huggingface API")
+parser.add_argument('--vllm', '-v', action='store_true', help="Use VLLM API")
 
 args = parser.parse_args()
 
@@ -38,6 +39,8 @@ if args.huggingface:
 # Define which model you're using - make sure you select the right rate limit in calls/min
 if args.huggingface:
     model = eval_api.HuggingfaceEvalAPI(model=model_type, rl=60, blind=blind, jsonfile=jsonfile, num_workers=1, desc=description)
+elif args.vllm:
+    model = eval_api.VLLMAPI(model=model_type, rl=60, blind=blind, jsonfile=jsonfile, num_workers=1, desc=description)
 elif 'o3' in model_type:
     model = eval_api.OpenAIO3EvalAPI(model=model_type, rl=60, blind=blind, jsonfile=jsonfile, num_workers=1, desc=description)
 elif 'gemini' in model_type:

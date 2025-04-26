@@ -225,9 +225,9 @@ Response example:
                 cr = self.indexer_loaded.query_image(_prev, top_k=5)
                 if self.blind:
                     cr = "None"
-                prompt = prompt + f"\n IMPORTANT: The correct responses under the most similar contexts were '{cr}' However, these are only guidance, and mustbe interpreted generally in terms of meaning, you must be very careful as the context might still vary in some critical way."
+                prompt = prompt + f"\n IMPORTANT: The correct responses under the most similar contexts were '{cr}' However, these are only guidance, and must be interpreted generally in terms of meaning, you must be very careful as the context might still vary in some critical way."
 
-            if self.blind:
+            if self.blind or self.desc:
                 _prev = None
 
 
@@ -647,11 +647,8 @@ class HuggingfaceEvalAPI(EvalAPI):
 class VLLMAPI(EvalAPI):
 
     def set_model(self):
-
-        mn = self.modelname.replace('blind_','').replace('desc_','')
-        
         client = openai.OpenAI(
-            api_key=api_keys.openai_api_key,
+            api_key=api_keys.oai_key,
             base_url=api_keys.openai_api_base,
         )
 
@@ -662,7 +659,7 @@ class VLLMAPI(EvalAPI):
     def inference(self, prompt, image):
 
         contents = []
-        if not self.blind:
+        if not self.blind and not self.desc:
             contents.append({"type": "image_url", "image_url": {"url":image}})
         contents.append({"type": "text", "text": prompt})
 
