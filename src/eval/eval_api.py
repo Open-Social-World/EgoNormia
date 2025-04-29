@@ -471,6 +471,7 @@ class GeminiEvalAPI(EvalAPI):
 
         if self.blind or self.desc:
             full_input = [prompt]
+            mn = self.modelname.replace('blind_','').replace('desc_','')
         else:
             if self.ablation != 'video' and self.ablation != 'discrete_frames':
                 image_bytes = base64.b64encode(requests.get(image).content).decode('utf-8')
