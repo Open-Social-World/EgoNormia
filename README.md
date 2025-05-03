@@ -27,10 +27,10 @@ pip install -e .
 
 ## Evaluate locally using HuggingFace VLM
 
-To run using a HuggingFace VLM, specify the `-hf` flag when calling the evaluation API, and give the modelname as
+To run using a HuggingFace VLM locally, specify the `-hf` flag when calling the evaluation API, and give the modelname as
 `--modelname [org/modelname]`, where org/modelname is the organization and name of the model as specified in HuggingFace.
 
-## Evaluate locally using vLLM
+## Evaluate using vLLM
 
 To run using vLLM, first specify the endpoint of your vLLM server as OPENAI_API_BASE in SECRETS.env.
 
