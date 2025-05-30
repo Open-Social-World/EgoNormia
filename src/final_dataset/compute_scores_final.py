@@ -4,6 +4,7 @@ import json
 parser = argparse.ArgumentParser()
 parser.add_argument('--noblind', type=str, required=False, help='Report blind')
 parser.add_argument('--file', type=str, required=True, help='Target eval file')
+parser.add_argument('--split', type=str, required=False, help='Split to use (Specify as json file path without .json extension)')
 args = parser.parse_args()
 if args.noblind:
     noblind = True
@@ -12,6 +13,14 @@ else:
 file = args.file
 with open(f'{file}_eval.json', 'r') as f:
     data = json.load(f)
+
+if args.split:
+    with open(f'{args.split}.json', 'r') as f:
+        split = json.load(f)['split']
+    data = {k: v for k, v in data.items() if k in split}
+else:
+    split = None
+
 scores = {}
 missed_ids = {}
 modeltotals = {}

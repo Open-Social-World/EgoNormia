@@ -2686,6 +2686,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    4,
+                    4
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
+                "correct": [
+                    4
+                ]
+            },
+            "followed": {}
         }
     },
     "cbc5c4fe-ed66-4525-a3d8-d691064db66b_729-17": {
@@ -7243,6 +7264,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
+                "correct": [
+                    0,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "54a421d2-763e-4751-a6b4-54e3d6c46cc1_1143-22": {
@@ -9149,6 +9193,28 @@
             "sensible": {
                 "results": [
                     0
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
                 ],
                 "correct": [
                     0
@@ -11959,6 +12025,28 @@
             },
             "sensible": {
                 "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
                     2
                 ],
                 "correct": [
@@ -20621,6 +20709,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "860be163-394f-48bb-9068-37e1c383ff73_736-68": {
@@ -21552,6 +21661,27 @@
             "followed": {}
         },
         "frames_gemini-1.5-pro-002": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
             "best": {
                 "results": [
                     0,
@@ -25908,6 +26038,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    0,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "af215e0f-56c7-4356-9aad-a3a5fb7bbc4f_4362-30": {
@@ -26860,6 +27013,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "262fd2ec-8eba-44d9-8082-4d0574f7a515_3060-97": {
@@ -27382,6 +27557,30 @@
             },
             "sensible": {
                 "results": [
+                    2
+                ],
+                "correct": [
+                    0,
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
                     2
                 ],
                 "correct": [
@@ -28319,6 +28518,29 @@
             },
             "sensible": {
                 "results": [
+                    3
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
                     3
                 ],
                 "correct": [
@@ -30170,6 +30392,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "0b530687-26d8-4c9d-9771-c758ecd2ecbf_3386-79": {
@@ -31535,6 +31778,26 @@
                 "results": [
                     0
                 ],
+                "correct": [
+                    0,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [],
                 "correct": [
                     0,
                     3
@@ -33308,6 +33571,28 @@
             "sensible": {
                 "results": [
                     3
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2
                 ],
                 "correct": [
                     2
@@ -39437,6 +39722,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "70c8bd4f-bfe1-4fb5-82ad-7d763cc28935_756-65": {
@@ -40719,6 +41025,28 @@
                 "results": [
                     4,
                     3
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2
                 ],
                 "correct": [
                     1
@@ -55833,6 +56161,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "10a848ed-f258-4930-abdd-1fd60b788abc_294-40": {
@@ -59229,6 +59579,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "3ffb9247-a141-4056-a644-dd3fbab708a4_364-69": {
@@ -59640,6 +60012,28 @@
             "followed": {}
         },
         "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
             "best": {
                 "results": [
                     3,
@@ -60447,6 +60841,27 @@
             "followed": {}
         },
         "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
             "best": {
                 "results": [
                     0,
@@ -61276,6 +61691,27 @@
             "sensible": {
                 "results": [
                     1,
+                    0
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
                     0
                 ],
                 "correct": [
@@ -63895,6 +64331,25 @@
                 "results": [
                     2
                 ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [],
                 "correct": [
                     0
                 ]
@@ -69377,6 +69832,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    4
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "cc82c3dc-caf7-4d64-9c84-b4701e205344_230-08": {
@@ -73306,6 +73783,28 @@
             "followed": {}
         },
         "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
             "best": {
                 "results": [
                     3,
@@ -81262,6 +81761,26 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [],
+                "correct": [
+                    0,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "0d08f503-89df-4dd8-a238-4e1749d2fe22_5-63": {
@@ -84965,6 +85484,27 @@
             "followed": {}
         },
         "video_gemini-1.5-pro-002": {
+            "best": {
+                "results": [
+                    4,
+                    3
+                ],
+                "correct": [
+                    4,
+                    4
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
+                "correct": [
+                    4
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
             "best": {
                 "results": [
                     4,
@@ -89816,6 +90356,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "d64fb34a-08fd-416c-ac6f-86a0813869a8_494-32": {
@@ -93459,6 +94021,31 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3,
+                    4
+                ],
+                "correct": [
+                    0,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "fb9fda68-f264-465d-9208-19876f5ef90f_63-03": {
@@ -94676,6 +95263,28 @@
             "sensible": {
                 "results": [
                     0
+                ],
+                "correct": [
+                    0,
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
                 ],
                 "correct": [
                     0,
@@ -96440,6 +97049,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2
+                ],
+                "correct": [
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "f8c9dee9-a82f-46e8-9cd5-9380e197ac25_28-43": {
@@ -97852,6 +98484,28 @@
                 "results": [
                     0,
                     2
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0,
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
                 ],
                 "correct": [
                     0,
@@ -100056,6 +100710,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "24c447b6-094f-49a6-9c20-ed594ab0da65_0-04": {
@@ -100497,6 +101174,29 @@
                 "results": [
                     1,
                     1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
                 ],
                 "correct": [
                     1,
@@ -101347,6 +102047,25 @@
             }
         },
         "claude-3-7-sonnet@20250219": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
             "best": {
                 "results": [
                     4,
@@ -104095,6 +104814,25 @@
                 "results": [
                     1,
                     2
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
                 ],
                 "correct": [
                     3,
@@ -107350,6 +108088,30 @@
             "sensible": {
                 "results": [
                     0
+                ],
+                "correct": [
+                    0,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    3
                 ],
                 "correct": [
                     0,
@@ -110730,6 +111492,30 @@
             },
             "sensible": {
                 "results": [],
+                "correct": [
+                    0,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
                 "correct": [
                     0,
                     2,
@@ -114362,6 +115148,31 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    0
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "2893d559-89cb-4125-a761-3ff8e68768a9_88-42": {
@@ -114864,6 +115675,31 @@
             "sensible": {
                 "results": [
                     1
+                ],
+                "correct": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2,
+                    3
                 ],
                 "correct": [
                     1,
@@ -115710,6 +116546,27 @@
             "best": {
                 "results": [
                     4,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
                     0
                 ],
                 "correct": [
@@ -118689,6 +119546,30 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "9490a06b-3fa1-47b6-b470-facb3d61ac57_153-78": {
@@ -119558,6 +120439,25 @@
                     4,
                     2
                 ],
+                "correct": [
+                    4
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    4,
+                    4
+                ]
+            },
+            "sensible": {
+                "results": [],
                 "correct": [
                     4
                 ]
@@ -131544,6 +132444,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    0
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "d2985e7b-6dc8-4c7e-9aef-40d633895aa0_1413-23": {
@@ -135388,6 +136309,28 @@
                     2,
                     0,
                     1
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    1
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2
                 ],
                 "correct": [
                     2
@@ -141438,6 +142381,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "214b62df-2fb1-4b0e-af9d-42b0dd37defb_2040-30": {
@@ -141878,6 +142842,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0,
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "38a66acf-33c8-4ed5-b814-7322087b2e21_835-53": {
@@ -142209,6 +143196,28 @@
             },
             "sensible": {
                 "results": [],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
+                ],
                 "correct": [
                     2
                 ]
@@ -151170,6 +152179,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "356661f5-767b-495d-95c7-03dcc46f85c6_1826-46": {
@@ -151596,6 +152626,28 @@
             "sensible": {
                 "results": [
                     1
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2
                 ],
                 "correct": [
                     3
@@ -154359,6 +155411,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "8c3c68c9-eeec-4f51-881f-3cc6340679ec_0-04": {
@@ -157086,6 +158160,28 @@
             "followed": {}
         },
         "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
             "best": {
                 "results": [
                     3,
@@ -161005,6 +162101,30 @@
             },
             "sensible": {
                 "results": [],
+                "correct": [
+                    0,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
+                ],
                 "correct": [
                     0,
                     2,
@@ -168367,6 +169487,25 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "b68e46bf-2cc5-4c6b-895a-1f8c6cad959a_2324-99": {
@@ -171388,6 +172527,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "6e68d2f9-6d37-4317-a3eb-9541321d558e_2271-24": {
@@ -172782,6 +173943,30 @@
                 "results": [
                     1,
                     2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2,
+                    3
                 ],
                 "correct": [
                     2
@@ -174404,6 +175589,28 @@
                     0,
                     2,
                     3
+                ],
+                "correct": [
+                    0,
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
                 ],
                 "correct": [
                     0,
@@ -177771,6 +178978,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "4065f62a-faae-4926-aee8-1d5bf73661a3_382-42": {
@@ -178154,6 +179382,28 @@
             "sensible": {
                 "results": [
                     2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    4
                 ],
                 "correct": [
                     2
@@ -181118,6 +182368,28 @@
             "sensible": {
                 "results": [
                     4
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2
                 ],
                 "correct": [
                     2
@@ -187518,6 +188790,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "8672b38a-7682-4244-ad7a-a336c81c2d0e_1056-99": {
@@ -188897,6 +190191,27 @@
             "followed": {}
         },
         "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
             "best": {
                 "results": [
                     3,
@@ -190551,6 +191866,29 @@
             "followed": {}
         },
         "frames_gpt-4o": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0,
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
             "best": {
                 "results": [
                     0,
@@ -197621,6 +198959,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [],
+                "correct": [
+                    0,
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "a6264c7d-d42a-4708-8fc2-b35ad0c5fe42_55-09": {
@@ -198440,6 +199799,29 @@
             "sensible": {
                 "results": [
                     1
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    2
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    4
                 ],
                 "correct": [
                     0
@@ -201258,6 +202640,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "2ac65951-49b0-4629-981e-edc34b8cdb0f_1091-69": {
@@ -201687,6 +203091,27 @@
             },
             "sensible": {
                 "results": [],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
                 "correct": [
                     1
                 ]
@@ -202951,6 +204376,28 @@
             "sensible": {
                 "results": [
                     0
+                ],
+                "correct": [
+                    4
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    4,
+                    4
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
                 ],
                 "correct": [
                     4
@@ -205669,6 +207116,30 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "3fffb452-1c17-43fa-b473-c9e19ac21433_2774-23": {
@@ -206141,6 +207612,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "3efc152d-ea0e-4372-b552-7d5e1cf07259_6416-63": {
@@ -206575,6 +208068,29 @@
                 "results": [
                     3,
                     2
+                ],
+                "correct": [
+                    0,
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
                 ],
                 "correct": [
                     0,
@@ -209233,6 +210749,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "b79c342b-db1e-407e-958a-e1585c6c3ddd_3-67": {
@@ -210577,6 +212116,27 @@
             }
         },
         "claude-3-7-sonnet@20250219": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
             "best": {
                 "results": [
                     0,
@@ -213232,6 +214792,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "c0a19ccf-66ad-44b5-9b3d-2f20d49bc0a8_296-47": {
@@ -214122,6 +215704,27 @@
                 "results": [
                     0,
                     4
+                ],
+                "correct": [
+                    4
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    4,
+                    4
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
                 ],
                 "correct": [
                     4
@@ -215360,6 +216963,29 @@
                 "results": [
                     1,
                     4
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
                 ],
                 "correct": [
                     1,
@@ -216780,6 +218406,29 @@
             },
             "sensible": {
                 "results": [
+                    2
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
                     2
                 ],
                 "correct": [
@@ -218456,6 +220105,27 @@
             "followed": {}
         },
         "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
             "best": {
                 "results": [
                     2,
@@ -222725,6 +224395,30 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "01db7c39-a512-4bac-b284-dff8c7360e80_385-35": {
@@ -223686,6 +225380,27 @@
                 "results": [
                     4,
                     4
+                ],
+                "correct": [
+                    4,
+                    4
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
+                "correct": [
+                    4
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    4,
+                    2
                 ],
                 "correct": [
                     4,
@@ -225263,6 +226978,28 @@
             }
         },
         "claude-3-7-sonnet@20250219": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
             "best": {
                 "results": [
                     0,
@@ -227320,6 +229057,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "7ff0900d-1bca-4aa7-aedd-ab0fb0a12371_0-04": {
@@ -229256,6 +231015,31 @@
                     0,
                     2,
                     3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2
                 ],
                 "correct": [
                     0,
@@ -233886,6 +235670,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    4
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "4b5de875-cc82-494e-b768-8ac0ae3bb279_668-27": {
@@ -237126,6 +238932,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "9fc3678b-86e2-44ab-adbc-9aeda78ceb60_957-19": {
@@ -239585,6 +241414,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "89d8c9c5-fa11-4674-b08f-007f81958555_227-24": {
@@ -241887,6 +243737,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "cebb6331-2a18-454a-862b-3aa502267017_1587-77": {
@@ -242724,6 +244597,28 @@
             "followed": {}
         },
         "frames_gpt-4o": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
+                "correct": [
+                    0,
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
             "best": {
                 "results": [
                     0,
@@ -251801,6 +253696,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "db35b386-4c65-4c5e-a488-51b2aa5eb1fb_1982-83": {
@@ -255417,6 +257334,27 @@
             },
             "sensible": {
                 "results": [],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
                 "correct": [
                     2
                 ]
@@ -259194,6 +261132,29 @@
             "sensible": {
                 "results": [
                     1,
+                    0
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
                     0
                 ],
                 "correct": [
@@ -262996,6 +264957,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "3dd08c84-ee0a-4fa6-a859-98fd969ec720_1276-65": {
@@ -263925,6 +265909,29 @@
             }
         },
         "claude-3-7-sonnet@20250219": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
             "best": {
                 "results": [
                     0,
@@ -266776,6 +268783,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "e0d46807-4c3b-44a0-ac59-cb970c8d5a5a_6-18": {
@@ -268463,6 +270492,27 @@
             "sensible": {
                 "results": [
                     1
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
                 ],
                 "correct": [
                     2
@@ -271145,6 +273195,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0,
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "348180aa-c90b-463a-8b3f-0743469a8b59_5526-16": {
@@ -271563,6 +273636,29 @@
                 "results": [
                     1,
                     0
+                ],
+                "correct": [
+                    0,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
                 ],
                 "correct": [
                     0,
@@ -273308,6 +275404,31 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    1
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "27f9cd4e-8b61-477c-9b63-ca3d437a0dff_250-50": {
@@ -273829,6 +275950,29 @@
             "sensible": {
                 "results": [
                     1,
+                    2
+                ],
+                "correct": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
                     2
                 ],
                 "correct": [
@@ -286968,6 +289112,25 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "b2f487cb-83b2-4e60-855d-1750938d0f1a_4050-16": {
@@ -292634,6 +294797,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
+                "correct": [
+                    0,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "9fb1ce25-8a99-45ed-a28c-1492192d4964_1100-54": {
@@ -298005,6 +300190,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "7b5fafdb-136a-4722-84a4-cffb213a224a_1908-63": {
@@ -301649,6 +303856,31 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2,
+                    3
+                ],
+                "correct": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "5aa8f84b-aea8-4e40-b710-82b93875e1ae_422-21": {
@@ -302521,6 +304753,26 @@
                 "results": [
                     4
                 ],
+                "correct": [
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [],
                 "correct": [
                     1,
                     3
@@ -303629,6 +305881,27 @@
                 "results": [
                     1,
                     4
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
                 ],
                 "correct": [
                     1,
@@ -305663,6 +307936,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "42d72164-8f4a-49e4-8b95-b3ad423ba65b_138-24": {
@@ -306179,6 +308473,30 @@
             "followed": {}
         },
         "video_gemini-1.5-pro-002": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    0,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
             "best": {
                 "results": [
                     3,
@@ -307365,6 +309683,28 @@
                 "results": [
                     4,
                     4
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    0,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
                 ],
                 "correct": [
                     2,
@@ -316337,6 +318677,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "cb9de2c6-ff1a-48e8-b170-047e9471b588_931-60": {
@@ -319379,6 +321742,27 @@
             "sensible": {
                 "results": [
                     2
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
                 ],
                 "correct": [
                     0
@@ -324969,6 +327353,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    4,
+                    4
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    4
+                ],
+                "correct": [
+                    4
+                ]
+            },
+            "followed": {}
         }
     },
     "622ab8aa-21f8-4ad0-99c3-7f4876850df7_193-96": {
@@ -329067,6 +331473,27 @@
             "followed": {}
         },
         "frames_gemini-1.5-pro-002": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
             "best": {
                 "results": [
                     3,
@@ -334665,6 +337092,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2
+                ],
+                "correct": [
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "c1dc6626-34c8-4367-a80a-42a44057f47b_737-27": {
@@ -339262,6 +341712,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "95f2caf6-c6f5-4471-9763-2957e248eb58_503-77": {
@@ -340581,6 +343052,30 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "18ac02cb-20eb-4eed-b735-04aff3573422_38-16": {
@@ -341512,6 +344007,29 @@
             },
             "sensible": {
                 "results": [
+                    1
+                ],
+                "correct": [
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
                     1
                 ],
                 "correct": [
@@ -343480,6 +345998,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2,
+                    3
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "76f450c1-3542-4f8a-964c-66c857a23601_671-42": {
@@ -344951,6 +347492,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "8672b38a-7682-4244-ad7a-a336c81c2d0e_1054-38": {
@@ -346195,6 +348757,28 @@
             "sensible": {
                 "results": [
                     0
+                ],
+                "correct": [
+                    0,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
                 ],
                 "correct": [
                     0,
@@ -347739,6 +350323,28 @@
             },
             "sensible": {
                 "results": [],
+                "correct": [
+                    4
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    4,
+                    3
+                ],
+                "correct": [
+                    4,
+                    4
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    4
+                ],
                 "correct": [
                     4
                 ]
@@ -353020,6 +355626,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
+                "correct": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "aad332b0-a437-4bd9-9147-f580bb58c3f5_3472-99": {
@@ -354282,6 +356911,30 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "a6264c7d-d42a-4708-8fc2-b35ad0c5fe42_990-06": {
@@ -355518,6 +358171,28 @@
             "followed": {}
         },
         "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
             "best": {
                 "results": [
                     3,
@@ -362844,6 +365519,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "2dbdd409-0be0-447c-8ae8-3f107fe9af80_989-72": {
@@ -363281,6 +365977,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "366b71ad-3f35-4704-b6ef-e793c7e73ac6_15-36": {
@@ -363682,6 +366399,28 @@
             },
             "sensible": {
                 "results": [
+                    1
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
                     1
                 ],
                 "correct": [
@@ -368055,6 +370794,28 @@
             "sensible": {
                 "results": [
                     0
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
                 ],
                 "correct": [
                     2
@@ -373179,6 +375940,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    0
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "dd82f801-fc96-4ced-b066-ad559da3faab_601-49": {
@@ -375286,6 +378068,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "6395f964-0122-4f16-b036-337c28488504_1626-75": {
@@ -376407,6 +379211,28 @@
             },
             "sensible": {
                 "results": [
+                    2
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
                     2
                 ],
                 "correct": [
@@ -378522,6 +381348,28 @@
                 "results": [
                     4,
                     2
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    0
                 ],
                 "correct": [
                     1,
@@ -383773,6 +386621,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    0,
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "fd2ae8b4-b683-4c4b-935c-78b4dadbdbf8_966-80": {
@@ -384876,6 +387747,27 @@
             "sensible": {
                 "results": [
                     3
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
                 ],
                 "correct": [
                     0
@@ -386501,6 +389393,29 @@
             }
         },
         "claude-3-7-sonnet@20250219": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
             "best": {
                 "results": [
                     0,
@@ -388248,6 +391163,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "38788778-0822-4c9c-b51e-5bce8a765a97_83-68": {
@@ -388663,6 +391599,28 @@
                     0,
                     1,
                     3
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
                 ],
                 "correct": [
                     2
@@ -389397,6 +392355,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "2efc9b47-0a23-4247-89a6-db46dae6c998_328-94": {
@@ -389743,6 +392723,27 @@
             }
         },
         "claude-3-7-sonnet@20250219": {
+            "best": {
+                "results": [
+                    3,
+                    2
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
             "best": {
                 "results": [
                     3,
@@ -391319,6 +394320,28 @@
             "sensible": {
                 "results": [
                     0,
+                    1,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
                     1,
                     3
                 ],
@@ -393116,6 +396139,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "be1da89b-976b-4e71-a42a-7621b522db46_179-53": {
@@ -393834,6 +396879,28 @@
             "sensible": {
                 "results": [
                     3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3,
+                    4
                 ],
                 "correct": [
                     3
@@ -394797,6 +397864,27 @@
             "sensible": {
                 "results": [
                     1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
                 ],
                 "correct": [
                     1
@@ -399082,6 +402170,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
+                "correct": [
+                    0,
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "b68f87f0-29be-4516-a34a-dda69dd84a56_524-12": {
@@ -402357,6 +405467,30 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "d3279f4f-eea5-448f-a930-aafac6b668ac_1962-11": {
@@ -404538,6 +407672,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "083b7556-9dff-40e2-9fad-bef3f82dbf37_34-58": {
@@ -406292,6 +409447,30 @@
                 "results": [
                     4,
                     4
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    0,
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
                 ],
                 "correct": [
                     3,
@@ -409364,6 +412543,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "be7ede7a-c212-45ff-8601-e15dd2f7e531_928-33": {
@@ -410105,6 +413305,28 @@
             }
         },
         "claude-3-7-sonnet@20250219": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
             "best": {
                 "results": [
                     1,
@@ -413781,6 +417003,29 @@
                 "results": [
                     3,
                     3
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
                 ],
                 "correct": [
                     1,
@@ -419858,6 +423103,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "a84e378e-c9d5-4ace-8e42-e07b95784746_180-55": {
@@ -420674,6 +423941,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    4,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    4
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "324ec8a1-3bd1-46b6-9abb-a824e53c0879_1801-82": {
@@ -421160,6 +424449,27 @@
                     2,
                     3,
                     1
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
                 ],
                 "correct": [
                     2
@@ -423418,6 +426728,28 @@
             "sensible": {
                 "results": [
                     4
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
                 ],
                 "correct": [
                     2,
@@ -425866,6 +429198,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    4
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "f1b5ae1e-742c-4802-9e61-ff8aae83e12e_459-05": {
@@ -426938,6 +430292,27 @@
             }
         },
         "claude-3-7-sonnet@20250219": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
             "best": {
                 "results": [
                     0,
@@ -429772,6 +433147,30 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "f00ec54c-9ed4-4a23-9cd7-f8728cb9d6c7_1322-65": {
@@ -431592,6 +434991,28 @@
             "best": {
                 "results": [
                     3,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
                     2
                 ],
                 "correct": [
@@ -433444,6 +436865,29 @@
             },
             "sensible": {
                 "results": [
+                    2
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    0
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
                     2
                 ],
                 "correct": [
@@ -440987,6 +444431,30 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2
+                ],
+                "correct": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "92153977-6016-4863-be78-c4af25a56a0f_1117-24": {
@@ -443458,6 +446926,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "0e12d060-f93d-418a-a377-7f2467be9fed_363-39": {
@@ -444327,6 +447817,29 @@
             "sensible": {
                 "results": [
                     2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2,
+                    3
                 ],
                 "correct": [
                     2
@@ -447578,6 +451091,27 @@
             },
             "sensible": {
                 "results": [],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
                 "correct": [
                     1
                 ]
@@ -451188,6 +454722,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "60209262-ab8e-4214-a8dd-4764a9a4b26d_842-54": {
@@ -451972,6 +455528,29 @@
                 "results": [
                     0,
                     1,
+                    2
+                ],
+                "correct": [
+                    0,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
                     2
                 ],
                 "correct": [
@@ -465913,6 +469492,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "5cf98bc1-012f-482d-86ee-9337d8747dce_1374-50": {
@@ -472916,6 +476516,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "7a680a9a-dd7b-467a-a724-a597f1be9f06_2545-86": {
@@ -476990,6 +480611,25 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "ffa4f27f-4e66-4b8c-ba6a-9a94f3491eb6_1093-00": {
@@ -477862,6 +481502,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "a2f25985-0589-42ca-af57-58930079dfb9_1096-32": {
@@ -478662,6 +482323,31 @@
             "followed": {}
         },
         "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
             "best": {
                 "results": [
                     2,
@@ -479492,6 +483178,29 @@
             "sensible": {
                 "results": [
                     0
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    4
                 ],
                 "correct": [
                     0
@@ -483948,6 +487657,25 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "348180aa-c90b-463a-8b3f-0743469a8b59_3591-71": {
@@ -484337,6 +488065,27 @@
                 "results": [
                     2,
                     1
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
                 ],
                 "correct": [
                     2
@@ -486513,6 +490262,27 @@
             "followed": {}
         },
         "frames_gpt-4o": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
             "best": {
                 "results": [
                     2,
@@ -489460,6 +493230,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2
+                ],
+                "correct": [
+                    0,
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "824e7896-904a-4ff5-b7ee-e21df21918c2_2003-17": {
@@ -491157,6 +494950,29 @@
                 "results": [
                     3,
                     3
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2,
+                    3
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
                 ],
                 "correct": [
                     1,
@@ -493184,6 +497000,28 @@
             }
         },
         "claude-3-7-sonnet@20250219": {
+            "best": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
             "best": {
                 "results": [
                     0,
@@ -501596,6 +505434,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "2e04b2bb-e5d3-4f66-a16e-f7756e14e749_392-62": {
@@ -501988,6 +505847,27 @@
             "followed": {}
         },
         "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
             "best": {
                 "results": [
                     1,
@@ -502723,6 +506603,28 @@
             "sensible": {
                 "results": [
                     2
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
                 ],
                 "correct": [
                     3
@@ -504994,6 +508896,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "48d7d009-425f-4d1a-a6a9-a4742bd0d9fe_2561-43": {
@@ -506756,6 +510679,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    1
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "3f712a5b-c1cf-4f2a-b0ab-ca0e2e4f0e3c_1166-83": {
@@ -507166,6 +511111,29 @@
                 "results": [
                     1,
                     3
+                ],
+                "correct": [
+                    3,
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
                 ],
                 "correct": [
                     3,
@@ -513389,6 +517357,30 @@
             "followed": {}
         },
         "video_gemini-1.5-pro-002": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
             "best": {
                 "results": [
                     2,
@@ -525334,6 +529326,30 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "3588502f-e1c1-426c-81d6-6fac28e6c81a_531-41": {
@@ -525852,6 +529868,31 @@
                 "results": [
                     1,
                     2
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
                 ],
                 "correct": [
                     0,
@@ -526814,6 +530855,28 @@
                 "results": [
                     0,
                     1,
+                    2
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
                     2
                 ],
                 "correct": [
@@ -528196,6 +532259,27 @@
                 "results": [
                     2,
                     3
+                ],
+                "correct": [
+                    4
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    0
+                ],
+                "correct": [
+                    4,
+                    4
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
                 ],
                 "correct": [
                     4
@@ -531654,6 +535738,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "cab3c095-8054-4794-81c5-ef9dce1d1373_376-97": {
@@ -534737,6 +538842,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "fb92d350-9bf9-4b16-8a1f-7858de276226_540-00": {
@@ -535589,6 +539717,29 @@
                 "results": [
                     1,
                     0
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2,
+                    3
                 ],
                 "correct": [
                     2
@@ -537273,6 +541424,27 @@
             "sensible": {
                 "results": [
                     1,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
                     3
                 ],
                 "correct": [
@@ -541127,6 +545299,31 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "69ae6e65-a60b-46b0-b256-9d1aeaf34b0a_3951-27": {
@@ -543897,6 +548094,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "40b33c95-3689-4ec8-8765-7e926f623b75_530-94": {
@@ -544343,6 +548562,30 @@
                 "results": [
                     3,
                     2
+                ],
+                "correct": [
+                    2,
+                    3,
+                    0
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
                 ],
                 "correct": [
                     2,
@@ -545202,6 +549445,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    4,
+                    4
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    4
+                ]
+            },
+            "followed": {}
         }
     },
     "307b1878-875f-4703-bfe9-32d11d20853f_94-03": {
@@ -545605,6 +549869,29 @@
                     1,
                     0,
                     2
+                ],
+                "correct": [
+                    0,
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
                 ],
                 "correct": [
                     0,
@@ -549710,6 +553997,32 @@
             },
             "sensible": {
                 "results": [],
+                "correct": [
+                    0,
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2,
+                    3
+                ],
                 "correct": [
                     0,
                     1,
@@ -555058,6 +559371,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "eb20bebd-41e5-4a02-aa7e-73d3da5bc97e_1253-80": {
@@ -559217,6 +563553,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "bbd30b78-137a-4c75-a4e9-b51f62b3f04e_184-26": {
@@ -561231,6 +565589,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "2680068d-b3ae-42d8-971f-e842c2d4fbb4_739-57": {
@@ -561718,6 +566097,27 @@
             "sensible": {
                 "results": [
                     1,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
                     3
                 ],
                 "correct": [
@@ -565966,6 +570366,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "e14bb000-250b-4f3d-aec6-e72d4f29d123_1299-73": {
@@ -567575,6 +571997,28 @@
             },
             "sensible": {
                 "results": [],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3,
+                    4
+                ],
                 "correct": [
                     3
                 ]
@@ -575811,6 +580255,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    1,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "1626db26-0c74-43d6-a5c2-c1a8fa7b1429_730-63": {
@@ -582087,6 +586554,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "adf11624-aca0-4bad-a35f-51b9f330ee74_2900-34": {
@@ -588087,6 +592576,29 @@
                 "results": [
                     3,
                     1
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    3
                 ],
                 "correct": [
                     3
@@ -594788,6 +599300,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "262fd2ec-8eba-44d9-8082-4d0574f7a515_1440-24": {
@@ -595238,6 +599772,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "3761fbb4-3e0e-4b15-a277-fec95edacf04_2288-64": {
@@ -595620,6 +600175,27 @@
             "followed": {}
         },
         "frames_gemini-1.5-flash-002": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
             "best": {
                 "results": [
                     3,
@@ -596050,6 +600626,27 @@
                 "results": [
                     1,
                     0
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
                 ],
                 "correct": [
                     1
@@ -596994,6 +601591,28 @@
                 "results": [
                     4,
                     3,
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
                     2
                 ],
                 "correct": [
@@ -599105,6 +603724,26 @@
                 "results": [
                     2
                 ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [],
                 "correct": [
                     2,
                     3
@@ -603495,6 +608134,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "2dbdd409-0be0-447c-8ae8-3f107fe9af80_1502-69": {
@@ -603875,6 +608536,25 @@
                 "results": [
                     2
                 ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [],
                 "correct": [
                     2
                 ]
@@ -612332,6 +617012,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "046855d7-41d7-4f41-a6a7-fce921ea8133_335-77": {
@@ -614136,6 +618838,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2,
+                    3
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "9a622b20-b234-4237-a3aa-c76b350e82dd_477-13": {
@@ -615376,6 +620101,29 @@
                 "results": [
                     0,
                     1
+                ],
+                "correct": [
+                    0,
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
                 ],
                 "correct": [
                     0,
@@ -616628,6 +621376,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "fb92d350-9bf9-4b16-8a1f-7858de276226_625-71": {
@@ -617497,6 +622266,31 @@
             "sensible": {
                 "results": [
                     4,
+                    3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
                     3
                 ],
                 "correct": [
@@ -618753,6 +623547,28 @@
                 "results": [
                     0,
                     2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
                 ],
                 "correct": [
                     2
@@ -625860,6 +630676,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "7c0c0057-3bbc-40ef-a91e-4d6e1a637642_1139-91": {
@@ -632475,6 +637313,31 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    2,
+                    3
+                ],
+                "correct": [
+                    0,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "67bc312a-3b49-4847-aa79-63ad7d3e4217_537-95": {
@@ -636526,6 +641389,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "820d4b9e-6fba-472f-aa45-25b27241d4af_366-20": {
@@ -640300,6 +645184,27 @@
             "followed": {}
         },
         "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
             "best": {
                 "results": [
                     2,
@@ -644778,6 +649683,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "ec86fee5-ee10-46c5-b835-07c8a8d9651e_362-34": {
@@ -647619,6 +652546,28 @@
             "sensible": {
                 "results": [
                     1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
                 ],
                 "correct": [
                     1
@@ -652687,6 +657636,33 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2,
+                    3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "fe0d5ffc-686e-4846-bce0-1a18e513bf95_2543-03": {
@@ -654018,6 +658994,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    0,
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "34590a11-c136-4423-bdc4-c6a45221e546_565-25": {
@@ -654435,6 +659433,27 @@
             "sensible": {
                 "results": [
                     4
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
                 ],
                 "correct": [
                     1
@@ -658914,6 +663933,32 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2,
+                    3
+                ],
+                "correct": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "fec31c20-1910-4ab1-afc5-6aa3057a45f5_381-77": {
@@ -660540,6 +665585,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "9a33e9f1-a740-4810-a624-62b0c9935741_1894-42": {
@@ -661310,6 +666376,28 @@
             "followed": {}
         },
         "gemini-2.5-pro-exp-03-25": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
             "best": {
                 "results": [
                     2,
@@ -664676,6 +669764,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "ce19b572-7341-426a-8c2f-fe067344c98d_1914-35": {
@@ -667746,6 +672855,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    4
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "1c0ba820-4a30-47dd-852d-c30685c7051e_36-98": {
@@ -669088,6 +674219,28 @@
             "followed": {}
         },
         "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
             "best": {
                 "results": [
                     1,
@@ -674473,6 +679626,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
+                "correct": [
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "2876b375-e848-412c-8a6f-0664cbab6a33_574-54": {
@@ -674924,6 +680099,29 @@
             "sensible": {
                 "results": [
                     2
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3,
+                    4
                 ],
                 "correct": [
                     2,
@@ -678266,6 +683464,31 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "a1b38e9d-7225-46ab-ab17-a61b261faa36_1920-36": {
@@ -680260,6 +685483,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "24c447b6-094f-49a6-9c20-ed594ab0da65_947-73": {
@@ -680816,6 +686060,31 @@
                 "results": [
                     2,
                     0
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2,
+                    3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
                 ],
                 "correct": [
                     2,
@@ -682547,6 +687816,30 @@
                 "results": [
                     0,
                     0
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3
+                ],
+                "correct": [
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    1
                 ],
                 "correct": [
                     3,
@@ -689367,6 +694660,30 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "375ca7e7-1e3c-4159-9f7f-4691ef11f322_68-87": {
@@ -689836,6 +695153,28 @@
                 "results": [
                     1,
                     3
+                ],
+                "correct": [
+                    0,
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
                 ],
                 "correct": [
                     0,
@@ -691624,6 +696963,25 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "38788778-0822-4c9c-b51e-5bce8a765a97_91-28": {
@@ -692555,6 +697913,31 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "449e14cf-f05e-42ac-bb7e-0ba87617f95a_582-28": {
@@ -692971,6 +698354,30 @@
                 "results": [
                     3,
                     2
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2,
+                    3
                 ],
                 "correct": [
                     0
@@ -696460,6 +701867,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    4,
+                    4
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    4
+                ],
+                "correct": [
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "3be8d10c-8e88-4f29-af13-6eab7b509ed8_7-19": {
@@ -696890,6 +702319,29 @@
             },
             "sensible": {
                 "results": [],
+                "correct": [
+                    0,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
                 "correct": [
                     0,
                     2,
@@ -699521,6 +704973,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
+                ],
+                "correct": [
+                    0,
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "fe231042-6163-48cc-a1c4-1d1163b0a440_494-51": {
@@ -701645,6 +707120,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "952f40df-b1d7-4562-afe4-2a4ff569e949_2108-64": {
@@ -703735,6 +709231,27 @@
             }
         },
         "claude-3-7-sonnet@20250219": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
             "best": {
                 "results": [
                     0,
@@ -709781,6 +715298,27 @@
             "sensible": {
                 "results": [
                     3,
+                    2
+                ],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    1
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
                     2
                 ],
                 "correct": [
@@ -717981,6 +723519,29 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "dc4d0940-b35c-4700-af77-5f13bb530ad8_1063-54": {
@@ -720470,6 +726031,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "d66f42bb-822b-444a-bce0-ddd15b29bd1b_7-30": {
@@ -721689,6 +727272,30 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    2
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1,
+                    2,
+                    3
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
         }
     },
     "39d0559a-d1e8-4fca-b7f4-db87bbbbde7e_857-69": {
@@ -722165,6 +727772,31 @@
             "sensible": {
                 "results": [
                     0
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    2,
+                    2
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    1
                 ],
                 "correct": [
                     0,
@@ -725458,6 +731090,27 @@
             "followed": {}
         },
         "gpt-4.1-250414-48293": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1
+                ],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
             "best": {
                 "results": [
                     1,
@@ -732158,6 +737811,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
+                "correct": [
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "7d444081-73d8-405d-9bcc-9620e5feefaf_729-22": {
@@ -733345,6 +739020,27 @@
             },
             "sensible": {
                 "results": [],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    2
+                ],
                 "correct": [
                     2
                 ]
@@ -740160,6 +745856,27 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
         }
     },
     "d0925317-dc23-4cb4-a375-a7baddc06b27_901-57": {
@@ -743454,6 +749171,31 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
+                    3,
+                    4
+                ],
+                "correct": [
+                    0,
+                    1,
+                    2
+                ]
+            },
+            "followed": {}
         }
     },
     "5e7a6a04-70d3-4ce5-82ff-971ca6478328_1045-51": {
@@ -744184,6 +749926,28 @@
             },
             "sensible": {
                 "results": [
+                    3
+                ],
+                "correct": [
+                    0
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    0,
+                    0
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0,
                     3
                 ],
                 "correct": [
@@ -746153,6 +751917,28 @@
             },
             "sensible": {
                 "results": [],
+                "correct": [
+                    2
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    1,
+                    1
+                ],
+                "correct": [
+                    2,
+                    2
+                ]
+            },
+            "sensible": {
+                "results": [
+                    1,
+                    3
+                ],
                 "correct": [
                     2
                 ]
@@ -750168,6 +755954,28 @@
                 ]
             },
             "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    3,
+                    3
+                ],
+                "correct": [
+                    3,
+                    3
+                ]
+            },
+            "sensible": {
+                "results": [
+                    3
+                ],
+                "correct": [
+                    2,
+                    3
+                ]
+            },
+            "followed": {}
         }
     },
     "8b72b54f-f87c-4fdb-84dc-97e42ab111ac_824-00": {
@@ -751840,6 +757648,27 @@
             },
             "sensible": {
                 "results": [],
+                "correct": [
+                    1
+                ]
+            },
+            "followed": {}
+        },
+        "gemini-2.5-flash-preview-04-17": {
+            "best": {
+                "results": [
+                    0,
+                    0
+                ],
+                "correct": [
+                    1,
+                    1
+                ]
+            },
+            "sensible": {
+                "results": [
+                    0
+                ],
                 "correct": [
                     1
                 ]
