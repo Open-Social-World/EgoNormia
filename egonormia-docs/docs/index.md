@@ -71,13 +71,15 @@ Or you can modify the `SECRETS.env` file, adding your api keys.
 You can then run the evaluation from the `egonormia/src` directory with the following command:
 
 ```bash
-python3 evaluate.py --modelname [modelname] --jsonfile [jsonfile].json (--blind) (--description) (--azure) (--workers) (--number)
+python3 evaluate.py --modelname [modelname] --jsonfile [jsonfile].json (--blind) (--description) (--azure) (--workers) (--number) (--split [split])
 
 ```
 Include the `--blind` flag to run the evaluation without the ground truth, and the `--description` flag to include the description in the evaluation.
 `--blind` and `--description` flags are mutually exclusive. The `--azure` flag should be set when you want to use the Azure OpenAI API.
 
 The `--workers` flag specifies the number of workers to use for the evaluation. The `--number` flag specifies the number of samples to evaluate.
+
+The `--split` flag specifies the split to evaluate on, which should be the path to a json file containing the ids of the samples to evaluate. If not specified, it will evaluate on the entire dataset.
 
 ## License
 

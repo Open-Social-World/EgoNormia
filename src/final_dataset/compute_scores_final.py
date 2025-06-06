@@ -33,7 +33,7 @@ for key in data:
             continue
         nets[model] = 0
         scores[model] = {
-                'best': {'a': 0, 'j': 0, 'both': 0},
+                'best': {'both': 0, 'a': 0, 'j': 0},
                 'sensible': 0
             }
         modeltotals[model] = 0
@@ -88,28 +88,30 @@ print("#"*50)
 print_modeltotals(blind_totals)
 print("#"*50)
 print_modeltotals(desc_totals)
+
+# Round to 2 dp, print with ampersand separated values, print modelname within {}
+
+# Sort using ['best']['both'] as the key, descending
+print("Blind Models:")
 for model in sorted(scores):
     if model and 'blind' in model:
         total = modeltotals[model]
-        print(f"Model: {model}")
-        print(f"Best: {scores[model]['best']['a'] / total * 100}, {scores[model]['best']['j'] / total * 100}, {scores[model]['best']['both'] / total * 100}")
-        print(f"Sensible: {scores[model]['sensible'] / total * 100}")
+        #print(f"Model: {model}")
+        print(f"{{{model.split()}}} & {round(scores[model]['best']['both'] / total * 100, 1)} & {round(scores[model]['best']['a'] / total * 100, 1)} & {round(scores[model]['best']['j'] / total * 100, 1)} & {round(scores[model]['sensible'] / total * 100, 1)}")
 print("#"*50)
+print("Desc Models:")
 for model in sorted(scores):
     if model and 'desc' in model:
         total = modeltotals[model]
-        print(f"Model: {model}")
-        print(f"Best: {scores[model]['best']['a'] / total * 100}, {scores[model]['best']['j'] / total * 100}, {scores[model]['best']['both'] / total * 100}")
-        print(f"Sensible: {scores[model]['sensible'] / total * 100}")
+        #print(f"Model: {model}")
+        print(f"{{{model.split()}}} & {round(scores[model]['best']['both'] / total * 100, 1)} & {round(scores[model]['best']['a'] / total * 100, 1)} & {round(scores[model]['best']['j'] / total * 100, 1)} & {round(scores[model]['sensible'] / total * 100, 1)}")
 print("#"*50)
+print("Other Models:")
 for model in sorted(scores):
     if model and 'blind' not in model and 'desc' not in model:
         total = modeltotals[model]
-        print(f"Model: {model}")
-        print("Total: ", total)
-        print(f"Best: {scores[model]['best']['a'] / total * 100}, {scores[model]['best']['j'] / total * 100}, {scores[model]['best']['both'] / total * 100}")
-
-        print(f"Sensible: {scores[model]['sensible'] / total * 100}")
-        print("-"*25)
+        #print(f"Model: {model}")
+        print(f"{{{model.split()}}} & {round(scores[model]['best']['both'] / total * 100, 1)} & {round(scores[model]['best']['a'] / total * 100, 1)} & {round(scores[model]['best']['j'] / total * 100, 1)} & {round(scores[model]['sensible'] / total * 100, 1)}")
+        #print("-"*25)
 
 print("Malformed IDs: ", malforms)

@@ -27,7 +27,7 @@ import concurrent.futures
 from openai import AzureOpenAI
 
 class EvalAPI:
-    def __init__(self, model, blind, jsonfile, num_workers, desc, num_datapoints):
+    def __init__(self, model, blind, jsonfile, num_workers, desc, num_datapoints, split=None):
 
         self.modelname = model
         self.model = self.set_model()
@@ -54,9 +54,20 @@ class EvalAPI:
         self.logger = setup_logger(log_name=self.logdir)
         self.rc = ReasoningCache(dir_name=self.logdir)
 
+        if split is not None:
+            splitfile = srcdir + '/final_dataset/' + split
+            splitfile = os.path.join(srcdir, '/final_dataset', splitfile)
+            with open(splitfile, 'r') as f:
+                split_data = json.load(f)['split']
+            self.split = split_data
+        else:
+            self.split = None
+
         self.logger.info(f"Testing Conditions \n Model: {self.modelname} \n Blind: {self.blind} \n JSON File: {self.jsonfile}")
         self.logger.info(f"Desc: {self.desc}")
         self.logger.info(f"Only best: {self.only_best}")
+        if self.split is not None:
+            self.logger.info(f"Split: {len(self.split)} items")
 
         if self.only_best:
             self.logger.info("Only best mode enabled. Sensible and follow_norm tasks will not be evaluated.")
@@ -112,11 +123,17 @@ class EvalAPI:
 
         # For each id in target_vid_ids (recall id is in form uuid_timestamp)
         for cnt, vid_id in tqdm.tqdm(enumerate(target_vid_ids), desc="Loading data"):
+
             evl_res = eval_results[vid_id]
 
             # If data['answers'] has a key equal to self.modelname, skip
             if self.modelname in evl_res.keys():
                 self.logger.info(f"Skipping {vid_id}, already tested on {self.modelname}.")
+                continue
+
+            # If split is not None, check if vid_id is in split
+            if self.split is not None and vid_id not in self.split:
+                self.logger.info(f"Skipping {vid_id}, not in split.")
                 continue
 
             behaviors = behaviors_col[cnt]
@@ -126,10 +143,10 @@ class EvalAPI:
             sensible = sensible_col[cnt] # These are indices
 
             n = len(behaviors)
-            #random_indices_behaviors = random.sample(range(n), n)
-            #random_indices_justifications = random.sample(range(n), n)
-            random_indices_behaviors = [i for i in range(n)]
-            random_indices_justifications = [i for i in range(n)]
+            random_indices_behaviors = random.sample(range(n), n)
+            random_indices_justifications = random.sample(range(n), n)
+            # random_indices_behaviors = [i for i in range(n)]
+            # random_indices_justifications = [i for i in range(n)]
 
             behaviors = [behaviors[i] for i in random_indices_behaviors]
             justifications = [justifications[i] for i in random_indices_justifications]
@@ -260,6 +277,8 @@ Response example:
             correct[1] = datapoint['justification_shuffle'][correct[1]]
 
             a_results_text = self.inference(prompt, _prev) # Expect output in form of [2, 3]
+
+            print(a_results_text)
             if a_results_text == None:
                 raise ValueError("Model returned None for inference.")
 
@@ -440,9 +459,9 @@ Response example:
 
 class GeminiEvalAPI(EvalAPI):
 
-    def __init__(self, model, blind, jsonfile, num_workers, desc, num_datapoints, ablation):
+    def __init__(self, model, blind, jsonfile, num_workers, desc, num_datapoints, ablation, split):
         # Super initialization
-        super().__init__(model, blind, jsonfile, num_workers, desc, num_datapoints)
+        super().__init__(model, blind, jsonfile, num_workers, desc, num_datapoints, split)
 
         # Initialize the ablation variable
         self.ablation = ablation

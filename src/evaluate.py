@@ -12,6 +12,7 @@ parser.add_argument('--huggingface', '-hf', action='store_true', help="Use Huggi
 parser.add_argument('--vllm', '-v', action='store_true', help="Use VLLM API")
 parser.add_argument('--workers', type=int, default=1, help="Number of workers")
 parser.add_argument('--number', type=int, default=-1, help="Number of datapoints to evaluate")
+parser.add_argument('--split', type=str, help="Split filename to evaluate on, without the .json extension. If not provided, the full dataset will be used.")
 parser.add_argument('--ablation', type=str, default='', help="Ablation study of input types, can be 'video', 'discrete_frames' ")
 parser.add_argument('--azure', action='store_true', help="Use Azure OpenAI API")
 
@@ -39,7 +40,6 @@ if description and blind:
     exit()
 
 
-
 if ablation != '' and 'gemini' not in model_type:
     print("Ablation study of input types is currently only supported for Gemini models")
     exit()
@@ -54,19 +54,19 @@ if args.huggingface:
     #print("Using Huggingface pipeline API to run model locally.")
     #model = eval_api.HuggingfaceEvalAPI(model=model_type, blind=blind, jsonfile=jsonfile, num_workers=num_workers, desc=description, num_datapoints=num_datapoints, ablation=ablation)
 elif args.vllm:
-    model = eval_api.VLLMEvalAPI(model=model_type, blind=blind, jsonfile=jsonfile, num_workers=num_workers, desc=description, num_datapoints=num_datapoints)
+    model = eval_api.VLLMEvalAPI(model=model_type, blind=blind, jsonfile=jsonfile, num_workers=num_workers, desc=description, num_datapoints=num_datapoints, split=args.split)
 elif 'gemini' in model_type:
-    model = eval_api.GeminiEvalAPI(model=model_type, blind=blind, jsonfile=jsonfile, num_workers=num_workers, desc=description, num_datapoints=num_datapoints, ablation=ablation)
+    model = eval_api.GeminiEvalAPI(model=model_type, blind=blind, jsonfile=jsonfile, num_workers=num_workers, desc=description, num_datapoints=num_datapoints, ablation=ablation, split=args.split)
 elif 'gpt' in model_type or 'o4' in model_type or 'o3' in model_type:
     if use_azure:
-        model = eval_api.AzureOpenAIEvalAPI(model=model_type, blind=blind, jsonfile=jsonfile, num_workers=num_workers, desc=description, num_datapoints=num_datapoints)
+        model = eval_api.AzureOpenAIEvalAPI(model=model_type, blind=blind, jsonfile=jsonfile, num_workers=num_workers, desc=description, num_datapoints=num_datapoints, split=args.split)
     else:
-        model = eval_api.OpenAIEvalAPI(model=model_type, blind=blind, jsonfile=jsonfile, num_workers=num_workers, desc=description, num_datapoints=num_datapoints)
+        model = eval_api.OpenAIEvalAPI(model=model_type, blind=blind, jsonfile=jsonfile, num_workers=num_workers, desc=description, num_datapoints=num_datapoints, split=args.split)
 elif 'rag' in model_type.lower():
-    model = eval_api.RagEval(model=model_type, blind=blind, jsonfile=jsonfile, num_workers=num_workers, desc=description, num_datapoints=num_datapoints)
+    model = eval_api.RagEval(model=model_type, blind=blind, jsonfile=jsonfile, num_workers=num_workers, desc=description, num_datapoints=num_datapoints, split=args.split)
 elif 'claude' in model_type:
-    model = eval_api.ClaudeEvalAPI(model=model_type, blind=blind, jsonfile=jsonfile, num_workers=num_workers, desc=description, num_datapoints=num_datapoints)
+    model = eval_api.ClaudeEvalAPI(model=model_type, blind=blind, jsonfile=jsonfile, num_workers=num_workers, desc=description, num_datapoints=num_datapoints, split=args.split)
 elif 'custom' in model_type:
-    model = custom_eval_api.CustomEvalAPI(model=model_type, blind=blind, jsonfile=jsonfile, num_workers=num_workers, desc=description, num_datapoints=num_datapoints)
+    model = custom_eval_api.CustomEvalAPI(model=model_type, blind=blind, jsonfile=jsonfile, num_workers=num_workers, desc=description, num_datapoints=num_datapoints, split=args.split)
 
 model.evaluate()
