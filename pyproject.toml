@@ -17,20 +17,17 @@ authors = [
 dependencies = [
   "numpy",
   "tqdm",
-  "spacy",
-  "google-genai",
   "requests",
-  "httpx",
   "Pillow",
   "openai",
   "anthropic",
   "opencv-python",
   "python-dotenv",
   "datasets",
-  "faiss-cpu",
+  "faiss",
   "torch",
-  "mkdocs",
-  "transformers"
+  "transformers",
+  "vertexai"
 ]
 
 [project.urls]

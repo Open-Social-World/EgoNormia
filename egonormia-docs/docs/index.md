@@ -14,15 +14,12 @@ EgoNormia is a comprehensive benchmark evaluating agentic VLM capabilities in gr
 
 ## Installation
 
-Use conda or venv for installation. (Or install it all locally if you're brave.)
+To install the project dependencies using UV, ensure you have UV installed (see https://github.com/astral-sh/uv for installation instructions), then run the following command in the root directory of this project:
 
 ```bash
-conda create -n egonormia python=3.10 -y
-conda activate egonormia
-
 git clone https://github.com/Open-Social-World/EgoNormia
 cd EgoNormia
-pip install -e .
+uv pip install -e .
 ```
 
 ## Evaluate locally using HuggingFace VLM
