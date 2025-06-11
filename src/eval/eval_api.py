@@ -11,6 +11,7 @@ import PIL.Image
 import io
 from transformers import AutoModelForImageTextToText, AutoTokenizer
 import pickle
+import threading
 
 import api_keys
 from eval.utils import backoff, setup_logger, ReasoningCache
@@ -31,6 +32,9 @@ class EvalAPI:
 
         self.modelname = model
         self.model = self.set_model()
+
+        # Initialize threading event for stopping
+        self.stop_event = threading.Event()
 
         self.blind = blind
         srcdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -100,11 +104,12 @@ class EvalAPI:
     
     def load_data_final(self):
 
-        ds = load_dataset("open-social-world/EgoNormia")
-        img_url = "https://huggingface.co/datasets/open-social-world/EgoNormia/resolve/main/video/{img_id}/frame_all_prev.jpg?download=true"
+        # Load list of ids from final_data.json
+        with open(self.jsonfile, 'r') as f:
+            final_data = json.load(f)
+            target_vid_ids = final_data.keys()
 
-        # Get target_vid_ids as ids of ds['train']
-        target_vid_ids = ds['train']['id']
+        img_url = "https://huggingface.co/datasets/open-social-world/EgoNormia/resolve/main/video/{img_id}/frame_all_prev.jpg?download=true"
 
         # Check already-evaled rows
         eval = self.savefile
@@ -114,12 +119,19 @@ class EvalAPI:
         
         task_set = []
 
-        # Directly index columns of ds['train']
-        behaviors_col = ds['train']['behaviors']
-        justifications_col = ds['train']['justifications']
-        correct_col = ds['train']['correct_idx']
-        sensible_col = ds['train']['sensible_idx']
-        desc_col = ds['train']['description']
+        # Directly index each element of final_data based on target_vid_ids
+        behaviors_col = []
+        justifications_col = []
+        correct_col = []
+        sensible_col = []
+        desc_col = []
+        # Load dataset
+        for vid_id in target_vid_ids:
+            behaviors_col.append(final_data[vid_id]['behaviors'])
+            justifications_col.append(final_data[vid_id]['justifications'])
+            correct_col.append(final_data[vid_id]['correct'])
+            sensible_col.append(final_data[vid_id]['sensibles'])
+            desc_col.append(final_data[vid_id]['desc'])
 
         # For each id in target_vid_ids (recall id is in form uuid_timestamp)
         for cnt, vid_id in tqdm.tqdm(enumerate(target_vid_ids), desc="Loading data"):
@@ -143,10 +155,10 @@ class EvalAPI:
             sensible = sensible_col[cnt] # These are indices
 
             n = len(behaviors)
-            random_indices_behaviors = random.sample(range(n), n)
-            random_indices_justifications = random.sample(range(n), n)
-            # random_indices_behaviors = [i for i in range(n)]
-            # random_indices_justifications = [i for i in range(n)]
+            # random_indices_behaviors = random.sample(range(n), n)
+            # random_indices_justifications = random.sample(range(n), n)
+            random_indices_behaviors = [i for i in range(n)]
+            random_indices_justifications = [i for i in range(n)]
 
             behaviors = [behaviors[i] for i in random_indices_behaviors]
             justifications = [justifications[i] for i in random_indices_justifications]
@@ -204,6 +216,11 @@ class EvalAPI:
         return task_set      
     
     def pick_best(self, datapoint):
+
+        # Terminate if stop event is set
+        if self.stop_event.is_set():
+            self.logger.info("Stopping evaluation due to stop event.")
+            return [{'results': [-1, -1], 'correct': datapoint['correct']}, datapoint['id']]
 
         behaviors = datapoint['behaviors']
         justifications = datapoint['justifications']
@@ -277,8 +294,6 @@ Response example:
             correct[1] = datapoint['justification_shuffle'][correct[1]]
 
             a_results_text = self.inference(prompt, _prev) # Expect output in form of [2, 3]
-
-            print(a_results_text)
             if a_results_text == None:
                 raise ValueError("Model returned None for inference.")
 
@@ -325,15 +340,33 @@ Response example:
 
             return full_results
         except Exception as e:
-           self.logger.warning(f"Error: {e}, skipping.")
-           return [{'results': [-1, -1], 'correct': correct}, datapoint['id']]
+            if 'GenerateRequestsPerDayPerProjectPerModel' in str(e):
+
+                # If usage limit for day exceeded, set stop event to stop all tasks
+                self.logger.error(f"Daily usage limit exceeded: {e}. Setting stop event for all tasks.")
+                self.stop_event.set()
+                return [{'results': [-1, -1], 'correct': correct}, datapoint['id']]
+
+                
+            else:
+                self.logger.warning(f"Error: {e}, skipping.")
+                return [{'results': [-1, -1], 'correct': correct}, datapoint['id']]
 
     def pick_sensible(self, datapoint):
+
+        if self.stop_event.is_set():
+            self.logger.info("Stopping evaluation due to stop event.")
+            return [{'results': [-1, -1], 'correct': datapoint['sensible']}, datapoint['id']]
 
         behaviors = datapoint['behaviors']
         sensible = datapoint['sensible']
         _prev = datapoint['_prev']
         try:
+
+            # Check if best_futures_temp for given id is [-1, -1], if so, throw ValueError, forcing a skip
+            if datapoint['id'] in self.best_temp.keys():
+                if self.best_temp[datapoint['id']]['results'] == [-1, -1]:
+                    raise ValueError("Best futures temp for given id is [-1, -1], skipping.")
 
             if self.desc:
                 prefix = self.prefix.format(desc=datapoint['description'])
@@ -391,31 +424,99 @@ Response example:
             return full_results
 
         except Exception as e:
-            self.logger.warning(f"Error: {e}, skipping.")
-            return [{'results': [-1, -1], 'correct': sensible}, datapoint['id']]
+            if 'GenerateRequestsPerDayPerProjectPerModel' in str(e):
+
+                # If usage limit for day exceeded, set stop event to stop all tasks
+                self.logger.error(f"Daily usage limit exceeded: {e}. Setting stop event for all tasks.")
+                self.stop_event.set()
+                return [{'results': [-1, -1], 'correct': sensible}, datapoint['id']]
+
+            else:
+                self.logger.warning(f"Error: {e}, skipping.")
+                return [{'results': [-1, -1], 'correct': sensible}, datapoint['id']]
 
     def evaluate(self):
-
+        """
+        Evaluates the model on the test set, with support for early stopping.
+        """
         test_set = self.load_data_final()
+        self.best_temp = {}
+        self.stop_event.clear() # Clear the stop event for a new evaluation run
 
-        # Iterate over the test set
+        #self.logger.info("Starting 'pick_best' evaluation with ThreadPoolExecutor.")
         with concurrent.futures.ThreadPoolExecutor(max_workers=self.num_workers) as executor:
-            best_futures = list(tqdm.tqdm(executor.map(self.pick_best, test_set), total=len(test_set)))
+            # Submit tasks and store futures
+            futures_best = {executor.submit(self.pick_best, dp): dp['id'] for dp in test_set}
+            
+            best_futures = []
+            for future in tqdm.tqdm(concurrent.futures.as_completed(futures_best), total=len(futures_best), desc="Evaluating 'pick_best'"):
+                task_id = futures_best[future]
+                try:
+                    result = future.result()
+                    best_futures.append(result)
+                except concurrent.futures.CancelledError:
+                    self.logger.info(f"Task for {task_id} was cancelled for 'pick_best'.")
+                    # Handle cancelled tasks if necessary, maybe add a specific placeholder
+                    best_futures.append([{'results': [-1, -1], 'correct': [None, None]}, task_id])
+                except Exception as exc:
+                    self.logger.error(f"'{task_id}' generated an exception during 'pick_best': {exc}")
+                    # If an unhandled exception occurs, it might indicate a severe issue,
+                    # so we could set the stop event here as well if desired.
+                    best_futures.append([{'results': [-1, -1], 'correct': [None, None]}, task_id])
+
+                # Check if the stop event is set to gracefully exit the loop
+                if self.stop_event.is_set():
+                    self.logger.warning("Stop event detected during 'pick_best' evaluation. Cancelling remaining tasks.")
+                    for remaining_future in futures_best:
+                        if not remaining_future.done():
+                            remaining_future.cancel() # Attempt to cancel pending futures
+                    break # Exit the as_completed loop
+
+        self.best_temp = {k: v for v, k in best_futures}
+
+        sensible_temp = {}
+        sensible_futures = []
 
         if not self.only_best:
-            with concurrent.futures.ThreadPoolExecutor(max_workers=self.num_workers) as executor:
-                sensible_futures = list(tqdm.tqdm(executor.map(self.pick_sensible, test_set), total=len(test_set)))
+            # If stop event is set, skip sensible evaluation
+            if not self.stop_event.is_set():
+                #self.logger.info("Starting 'pick_sensible' evaluation with ThreadPoolExecutor.")
+            
+                with concurrent.futures.ThreadPoolExecutor(max_workers=self.num_workers) as executor:
+                    futures_sensible = {executor.submit(self.pick_sensible, dp): dp['id'] for dp in test_set}
+                    
+                    for future in tqdm.tqdm(concurrent.futures.as_completed(futures_sensible), total=len(futures_sensible), desc="Evaluating 'pick_sensible'"):
+                        task_id = futures_sensible[future]
+                        try:
+                            result = future.result()
+                            sensible_futures.append(result)
+                        except concurrent.futures.CancelledError:
+                            self.logger.info(f"Task for {task_id} was cancelled for 'pick_sensible'.")
+                            sensible_futures.append([{'results': [-1, -1], 'correct': None}, task_id])
+                        except Exception as exc:
+                            self.logger.error(f"'{task_id}' generated an exception during 'pick_sensible': {exc}")
+                            sensible_futures.append([{'results': [-1, -1], 'correct': None}, task_id])
+
+                        # Check if the stop event is set to gracefully exit the loop
+                        if self.stop_event.is_set():
+                            self.logger.warning("Stop event detected during 'pick_sensible' evaluation. Cancelling remaining tasks.")
+                            for remaining_future in futures_sensible:
+                                if not remaining_future.done():
+                                    remaining_future.cancel() # Attempt to cancel pending futures
+                            break # Exit the as_completed loop
+                sensible_temp = {k: v for v, k in sensible_futures}
 
         # Make results directory if it doesn't exist
-        if not os.path.exists(f'../results/{self.logdir}'):
-            os.makedirs(f'../results/{self.logdir}')
+        results_dir = f'../results/{self.logdir}'
+        if not os.path.exists(results_dir):
+            os.makedirs(results_dir)
 
-        with open(f'../results/{self.logdir}/results.pkl', 'wb') as f:
+        # It's better to save the raw futures results if you might need them for debugging later
+        with open(os.path.join(results_dir, 'best_futures.pkl'), 'wb') as f:
             pickle.dump(best_futures, f)
-            pickle.dump(sensible_futures, f)
-
-        best_temp = {k: v for v,k in best_futures}
-        sensible_temp = {k: v for v,k in sensible_futures}
+        if not self.only_best:
+            with open(os.path.join(results_dir, 'sensible_futures.pkl'), 'wb') as f:
+                pickle.dump(sensible_futures, f)
 
         eval_results = {}
 
@@ -423,13 +524,17 @@ Response example:
         for dp in test_set:
             task_id = dp['id']
 
-            best = best_temp[task_id]
-            sensible = sensible_temp[task_id]
-            follow = {}
+            best = self.best_temp.get(task_id, {'results': [-1, -1], 'correct': [None, None]})
+            sensible = sensible_temp.get(task_id, {'results': [-1, -1], 'correct': [None, None]}) # Ensure sensible is populated for all tasks
 
-            # Don't add point if malform i.e. skipped
-            if best['results'] != [-1, -1] and sensible['results'] != [-1, -1]:
+            follow = {} # Not used in this snippet, but kept for context
+
+            # Don't add point if malform or skipped due to stop signal
+            if best['results'] not in ([-1, -1]) and sensible['results'] not in ([-1, -1]):
                 eval_results[task_id] = {'best': best, 'sensible': sensible, 'followed': follow}
+            else:
+                self.logger.info(f"Skipping {task_id} from final results due to incomplete/failed evaluation (best: {best['results']}, sensible: {sensible['results']}).")
+
 
         # Once all samples are evaluated, compile results separately
         self.save_results(eval_results)
