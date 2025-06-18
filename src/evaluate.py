@@ -6,7 +6,7 @@ parser = argparse.ArgumentParser(description="A simple command-line tool.")
 
 parser.add_argument('--blind', action='store_true', help="Set blind mode")
 parser.add_argument('--description', action='store_true', help="Show description")
-parser.add_argument('--jsonfile', type=str, default='src/final_dataset/final_data.json', help="Path to the JSON file")
+parser.add_argument('--jsonfile', type=str, default='' 'final_data.json', help="Name of the JSON file in src/final_dataset")
 parser.add_argument('--modelname', type=str, default='', help="Name of the model")
 parser.add_argument('--huggingface', '-hf', action='store_true', help="Use Huggingface API")
 parser.add_argument('--vllm', '-v', action='store_true', help="Use VLLM API")

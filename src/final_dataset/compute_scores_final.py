@@ -3,7 +3,7 @@ import json
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--noblind', type=str, required=False, help='Report blind')
-parser.add_argument('--file', type=str, required=True, help='Target eval file')
+parser.add_argument('--file', type=str, required=False, help='Target eval file', default='final_data')
 parser.add_argument('--split', type=str, required=False, help='Split to use (Specify as json file path without .json extension)')
 args = parser.parse_args()
 if args.noblind:

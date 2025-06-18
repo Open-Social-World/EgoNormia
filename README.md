@@ -19,7 +19,9 @@ To install the project dependencies using UV, ensure you have UV installed (see 
 ```bash
 git clone https://github.com/Open-Social-World/EgoNormia
 cd EgoNormia
-uv pip install -e .
+uv venv
+source .venv/bin/activate
+uv pip install -r requirements.txt
 ```
 
 ## Evaluate locally using HuggingFace VLM
