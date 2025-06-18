@@ -4,7 +4,17 @@ import logging
 import os
 import csv
 
+# Custom errors for refusals
+class InvalidResponseError(Exception):
+    """Raised when model gives invalid response, treated as incorrect datapoint"""
+    pass
 
+class RefusalError(Exception):
+    """Raised when model refuses to answer, treated as incorrect datapoint"""
+    pass
+class APIError(Exception):
+    """Raised when there is an error with the API, is skipped"""
+    pass
 
 def backoff(max_retries=5, base_delay=1):
     def decorator(func):

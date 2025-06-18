@@ -14,7 +14,7 @@ import pickle
 import threading
 
 import api_keys
-from eval.utils import backoff, setup_logger, ReasoningCache
+from eval.utils import backoff, setup_logger, ReasoningCache, InvalidResponseError, RefusalError, APIError
 
 # Gemini imports
 from google import genai
@@ -220,7 +220,7 @@ class EvalAPI:
         # Terminate if stop event is set
         if self.stop_event.is_set():
             self.logger.info("Stopping evaluation due to stop event.")
-            return [{'results': [-1, -1], 'correct': datapoint['correct']}, datapoint['id']]
+            return [{'results': [-2, -2], 'correct': datapoint['correct']}, datapoint['id']]
 
         behaviors = datapoint['behaviors']
         justifications = datapoint['justifications']
@@ -295,32 +295,28 @@ Response example:
 
             a_results_text = self.inference(prompt, _prev) # Expect output in form of [2, 3]
             if a_results_text == None:
-                raise ValueError("Model returned None for inference.")
+                raise InvalidResponseError("Model returned None for inference")
 
-            # Find last integer in response and cast to int
-            a_results = int(re.findall(r'\d+', a_results_text)[-1])
-
-            a_results = a_results - 1
-            if a_results not in [0, 1, 2, 3, 4]:
-                a_results = 4
-            
-            if a_results != 4 and a_results != -1:
+            # Find last integer in response and cast to int, call invalid response if not possible
+            try:
+                a_results = int(re.findall(r'\d+', a_results_text)[-1])
+                a_results = a_results - 1
                 bb = behaviors[a_results]
-            else:
-                bb = "None"
+                assert a_results in [0, 1, 2, 3, 4] # Check if a_results is in range of behaviors
+            except:
+                raise InvalidResponseError("Model returned invalid response for 'action' subtask")
 
             just_p = self.prefix+justification_prompt.format(behavior = bb, justifications = justifications)
             j_results_text = self.inference(just_p, _prev)
             if j_results_text == None:
-                raise ValueError("Model returned None for inference.")
-
-            # Find last integer in response and cast to int
-            j_results = int(re.findall(r'\d+', j_results_text)[-1])
-
-            j_results = j_results - 1
-
-            if j_results not in [0, 1, 2, 3, 4]:
-                j_results = -1
+                raise InvalidResponseError("Model returned None for inference")
+            
+            try:
+                j_results = int(re.findall(r'\d+', j_results_text)[-1])
+                j_results = j_results - 1
+                assert j_results in [0, 1, 2, 3, 4] # Check if j_results is in range of justifications
+            except:
+                raise InvalidResponseError("Model returned invalid response for 'justification' subtask")
 
             results = [a_results, j_results]
 
@@ -328,45 +324,47 @@ Response example:
             unshuffler_a = {v: k for k, v in datapoint['behavior_shuffle'].items()}
             unshuffler_j = {v: k for k, v in datapoint['justification_shuffle'].items()}
 
-            if results[0] <= 4 and results[0] > -1:
-                results[0] = unshuffler_a[results[0]]
-
-            if results[1] <= 4 and results[1] > -1:
-                results[1] = unshuffler_j[results[1]]
+            results[0] = unshuffler_a[results[0]]
+            results[1] = unshuffler_j[results[1]]
 
             full_results = [{'results': results, 'correct': correct}, datapoint['id']]
 
             self.logger.debug(f"{full_results}")
 
             return full_results
+
+        except InvalidResponseError as e:
+            self.logger.error(f"Model refusal/malform, recording {e}. ID: {datapoint['id']}")
+
+            return [{'results': [-1, -1], 'correct': correct}, datapoint['id']]
         except Exception as e:
             if 'GenerateRequestsPerDayPerProjectPerModel' in str(e):
 
                 # If usage limit for day exceeded, set stop event to stop all tasks
                 self.logger.error(f"Daily usage limit exceeded: {e}. Setting stop event for all tasks.")
                 self.stop_event.set()
-                return [{'results': [-1, -1], 'correct': correct}, datapoint['id']]
+                return [{'results': [-2, -2], 'correct': correct}, datapoint['id']]
 
                 
             else:
-                self.logger.warning(f"Error: {e}, skipping.")
-                return [{'results': [-1, -1], 'correct': correct}, datapoint['id']]
+                self.logger.warning(f"Error: {e}, skipping. ID: {datapoint['id']}")
+                return [{'results': [-2, -2], 'correct': correct}, datapoint['id']]
 
     def pick_sensible(self, datapoint):
 
         if self.stop_event.is_set():
             self.logger.info("Stopping evaluation due to stop event.")
-            return [{'results': [-1, -1], 'correct': datapoint['sensible']}, datapoint['id']]
+            return [{'results': [-2, -2], 'correct': datapoint['sensible']}, datapoint['id']]
 
         behaviors = datapoint['behaviors']
         sensible = datapoint['sensible']
         _prev = datapoint['_prev']
         try:
 
-            # Check if best_futures_temp for given id is [-1, -1], if so, throw ValueError, forcing a skip
+            # Check if best_futures_temp for given id is [-2, -2], if so, throw ValueError, forcing a skip
             if datapoint['id'] in self.best_temp.keys():
-                if self.best_temp[datapoint['id']]['results'] == [-1, -1]:
-                    raise ValueError("Best futures temp for given id is [-1, -1], skipping.")
+                if self.best_temp[datapoint['id']]['results'] == [-2, -2]:
+                    raise ValueError("Best futures temp for given id is [-2, -2], skipping.")
 
             if self.desc:
                 prefix = self.prefix.format(desc=datapoint['description'])
@@ -405,10 +403,13 @@ Response example:
 
             text_results = self.inference(prompt, _prev)
             if text_results == None:
-                raise ValueError("Model returned None for inference.")
-            sensible_response = re.findall(r'\[.*\]', text_results)[-1]
-            results = ast.literal_eval(sensible_response)
-            results = [r - 1 for r in results]
+                raise InvalidResponseError("Model returned None for inference")
+            try:
+                sensible_response = re.findall(r'\[.*\]', text_results)[-1]
+                results = ast.literal_eval(sensible_response)
+                results = [r - 1 for r in results]
+            except:
+                raise InvalidResponseError("Model returned invalid response for 'sensible' subtask")
 
             unshuffler_a = {v: k for k, v in datapoint['behavior_shuffle'].items()}
 
@@ -423,17 +424,22 @@ Response example:
 
             return full_results
 
+        except InvalidResponseError as e:
+            self.logger.error(f"Model refusal/malform, recording {e}. ID: {datapoint['id']}")
+
+            return [{'results': [-1, -1], 'correct': sensible}, datapoint['id']]
+
         except Exception as e:
             if 'GenerateRequestsPerDayPerProjectPerModel' in str(e):
 
                 # If usage limit for day exceeded, set stop event to stop all tasks
                 self.logger.error(f"Daily usage limit exceeded: {e}. Setting stop event for all tasks.")
                 self.stop_event.set()
-                return [{'results': [-1, -1], 'correct': sensible}, datapoint['id']]
+                return [{'results': [-2, -2], 'correct': sensible}, datapoint['id']]
 
             else:
                 self.logger.warning(f"Error: {e}, skipping.")
-                return [{'results': [-1, -1], 'correct': sensible}, datapoint['id']]
+                return [{'results': [-2, -2], 'correct': sensible}, datapoint['id']]
 
     def evaluate(self):
         """
@@ -456,13 +462,10 @@ Response example:
                     best_futures.append(result)
                 except concurrent.futures.CancelledError:
                     self.logger.info(f"Task for {task_id} was cancelled for 'pick_best'.")
-                    # Handle cancelled tasks if necessary, maybe add a specific placeholder
-                    best_futures.append([{'results': [-1, -1], 'correct': [None, None]}, task_id])
+                    best_futures.append([{'results': [-2, -2], 'correct': [None, None]}, task_id])
                 except Exception as exc:
                     self.logger.error(f"'{task_id}' generated an exception during 'pick_best': {exc}")
-                    # If an unhandled exception occurs, it might indicate a severe issue,
-                    # so we could set the stop event here as well if desired.
-                    best_futures.append([{'results': [-1, -1], 'correct': [None, None]}, task_id])
+                    best_futures.append([{'results': [-2, -2], 'correct': [None, None]}, task_id])
 
                 # Check if the stop event is set to gracefully exit the loop
                 if self.stop_event.is_set():
@@ -492,10 +495,10 @@ Response example:
                             sensible_futures.append(result)
                         except concurrent.futures.CancelledError:
                             self.logger.info(f"Task for {task_id} was cancelled for 'pick_sensible'.")
-                            sensible_futures.append([{'results': [-1, -1], 'correct': None}, task_id])
+                            sensible_futures.append([{'results': [-2, -2], 'correct': None}, task_id])
                         except Exception as exc:
                             self.logger.error(f"'{task_id}' generated an exception during 'pick_sensible': {exc}")
-                            sensible_futures.append([{'results': [-1, -1], 'correct': None}, task_id])
+                            sensible_futures.append([{'results': [-2, -2], 'correct': None}, task_id])
 
                         # Check if the stop event is set to gracefully exit the loop
                         if self.stop_event.is_set():
@@ -524,13 +527,19 @@ Response example:
         for dp in test_set:
             task_id = dp['id']
 
-            best = self.best_temp.get(task_id, {'results': [-1, -1], 'correct': [None, None]})
-            sensible = sensible_temp.get(task_id, {'results': [-1, -1], 'correct': [None, None]}) # Ensure sensible is populated for all tasks
+            best = self.best_temp[task_id]
+            sensible = sensible_temp[task_id] # Ensure sensible is populated for all tasks
 
             follow = {} # Not used in this snippet, but kept for context
 
-            # Don't add point if malform or skipped due to stop signal
-            if best['results'] not in ([-1, -1]) and sensible['results'] not in ([-1, -1]):
+            # Don't add point if skipped due to stop signal, add (none) response if invalid/refusal answer
+            # Glossary:
+            # [-1, -1] -> Invalid response (model refused or response malformed)
+            # [-2, -2] -> API error (e.g., rate limit exceeded) 
+            # [0-4, 0-4] -> Valid response, saved with results
+            # Anything else -> Skipped, not saved
+
+            if best['results'] != [-2, -2] and (s in [0, 1, 2, 3, 4] for s in sensible['results']):
                 eval_results[task_id] = {'best': best, 'sensible': sensible, 'followed': follow}
             else:
                 self.logger.info(f"Skipping {task_id} from final results due to incomplete/failed evaluation (best: {best['results']}, sensible: {sensible['results']}).")
